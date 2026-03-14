@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://madinatalsaada.ae/index.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/index.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/about.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/about.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/services.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/services.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/services.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/projects.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/projects.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/equipment.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/equipment.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/equipment.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/technical.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/technical.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/technical.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/contact.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/contact.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/faq.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/faq.html"/>
+  </url>
+
+  <!-- Arabic Pages -->
+  <url>
+    <loc>https://madinatalsaada.ae/ar/index.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/index.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/ar/about.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/about.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/ar/services.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/services.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/ar/projects.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/projects.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/ar/equipment.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/equipment.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/equipment.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/ar/technical.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/technical.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/technical.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/ar/contact.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/contact.html"/>
+  </url>
+  <url>
+    <loc>https://madinatalsaada.ae/ar/faq.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/faq.html"/>
+  </url>
+
+</urlset>

@@ -1,0 +1,126 @@
+/* ==========================================================================
+   RTL OVERRIDES — Arabic pages
+   Main CSS already uses logical properties where possible; these handle
+   the remaining visual adjustments for right-to-left text.
+   ========================================================================== */
+
+[dir="rtl"] {
+  font-family: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+/* --- Typography spacing -------------------------------------------------- */
+
+[dir="rtl"] .section__label {
+  letter-spacing: 0.02em;
+}
+
+[dir="rtl"] .hero__badge {
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .footer h4 {
+  letter-spacing: 0;
+}
+
+/* --- FAQ ----------------------------------------------------------------- */
+
+[dir="rtl"] .faq-item__question {
+  text-align: right;
+}
+
+[dir="rtl"] .faq-item__question::after {
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+}
+
+[dir="rtl"] details summary {
+  text-align: right;
+}
+
+[dir="rtl"] details summary::marker,
+[dir="rtl"] details summary::-webkit-details-marker {
+  /* Keeps marker on inline-start (right in RTL) */
+}
+
+/* --- Service features list ----------------------------------------------- */
+
+[dir="rtl"] .service-features li::before {
+  /* Bullet stays on inline-start side via logical properties in base CSS */
+}
+
+[dir="rtl"] .service-features li {
+  padding-inline-start: 1.5em;
+  padding-inline-end: 0;
+}
+
+/* --- Navbar -------------------------------------------------------------- */
+
+[dir="rtl"] .navbar__mobile {
+  inset-inline-end: 0;
+  inset-inline-start: auto;
+}
+
+[dir="rtl"] .nav-menu {
+  direction: rtl;
+}
+
+/* --- Icons & decorative arrows ------------------------------------------ */
+
+[dir="rtl"] .btn--icon-end svg,
+[dir="rtl"] .btn--icon-end .icon {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .arrow-link::after {
+  transform: scaleX(-1);
+}
+
+/* --- Cards & grid -------------------------------------------------------- */
+
+[dir="rtl"] .card__body {
+  text-align: right;
+}
+
+[dir="rtl"] .stat__label {
+  text-align: right;
+}
+
+/* --- Contact form -------------------------------------------------------- */
+
+[dir="rtl"] .form-group label {
+  text-align: right;
+}
+
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  text-align: right;
+}
+
+/* --- Breadcrumbs --------------------------------------------------------- */
+
+[dir="rtl"] .breadcrumb__sep {
+  transform: scaleX(-1);
+}
+
+/* --- Timeline / process steps ------------------------------------------- */
+
+[dir="rtl"] .process__line {
+  inset-inline-start: auto;
+  inset-inline-end: 1.5rem;
+}
+
+/* --- Misc alignment fixes ------------------------------------------------ */
+
+[dir="rtl"] .hero__actions {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] blockquote {
+  border-inline-start: none;
+  border-inline-end: 4px solid var(--clr-primary, #0a4d8c);
+  padding-inline-start: 0;
+  padding-inline-end: 1.5rem;
+}
