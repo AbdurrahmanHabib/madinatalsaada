@@ -802,3 +802,201 @@
   width: 18px;
   height: 18px;
 }
+
+/* ==========================================================================
+   CTA SECTION ALIAS
+   ========================================================================== */
+
+.cta-section {
+  padding-block: var(--space-20);
+  background: var(--color-navy-dark);
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: var(--color-white);
+  margin-block-end: var(--space-4);
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: var(--text-lg);
+  margin-block-end: var(--space-8);
+  margin-inline: auto;
+}
+
+/* ==========================================================================
+   SERVICE DETAIL ALIASES (old naming)
+   ========================================================================== */
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.service-detail--reverse {
+  direction: ltr;
+}
+
+[dir="rtl"] .service-detail--reverse {
+  direction: rtl;
+}
+
+.service-content h3 {
+  font-size: var(--text-2xl);
+  margin-block-end: var(--space-4);
+}
+
+.service-content > p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  margin-block-end: var(--space-6);
+}
+
+.service-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.service-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* ==========================================================================
+   ABOUT PAGE ALIASES
+   ========================================================================== */
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.highlight-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(26, 58, 92, 0.1);
+  border-radius: var(--radius-md);
+  color: var(--color-navy);
+}
+
+.highlight-item span {
+  font-weight: var(--weight-semibold);
+  color: var(--color-gray-700);
+}
+
+/* ==========================================================================
+   QC NUMBER ALIAS
+   ========================================================================== */
+
+.qc-number {
+  width: 40px;
+  height: 40px;
+  margin-inline: auto;
+  margin-block-end: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-navy);
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-lg);
+  border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   PROJECT CARD TEXT ALIASES
+   ========================================================================== */
+
+.project-location {
+  color: var(--color-accent);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-sm);
+  margin-block-end: var(--space-1);
+}
+
+.project-type {
+  color: var(--color-gray-500);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+/* ==========================================================================
+   DOWNLOAD SECTION ALIASES
+   ========================================================================== */
+
+.download__content h2 {
+  margin-block-end: var(--space-4);
+}
+
+.download__content p {
+  margin-block-end: var(--space-6);
+  max-width: 500px;
+}
+
+.download__preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* ==========================================================================
+   SECTION BADGE ALIAS
+   ========================================================================== */
+
+.section-badge {
+  display: inline-block;
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-navy);
+  background: rgba(26, 58, 92, 0.08);
+  border-radius: var(--radius-sm);
+  margin-block-end: var(--space-3);
+}
+
+.section--dark .section-badge,
+.bg-navy .section-badge {
+  color: var(--color-accent);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ==========================================================================
+   SYSTEM COMPARISON ALIAS
+   ========================================================================== */
+
+.system-comparison {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .system-comparison {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.system-card__badge {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  background: var(--color-navy);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+}

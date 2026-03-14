@@ -120,7 +120,7 @@
 
 [dir="rtl"] blockquote {
   border-inline-start: none;
-  border-inline-end: 4px solid var(--clr-primary, #0a4d8c);
+  border-inline-end: 4px solid var(--color-navy, #0a4d8c);
   padding-inline-start: 0;
   padding-inline-end: 1.5rem;
 }
