@@ -1,0 +1,308 @@
+/* ============================================================
+   ARABIC RTL STYLESHEET
+   Mirrors the English design for Right-to-Left layout
+   ============================================================ */
+
+/* Base RTL Settings */
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Arabic Typography */
+html[dir="rtl"] body {
+    font-family: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+    font-family: 'Cairo', 'Inter', sans-serif;
+}
+
+/* Navigation RTL */
+html[dir="rtl"] .navbar {
+    direction: rtl;
+}
+
+html[dir="rtl"] .navbar .container {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-menu {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-actions {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .navbar-brand {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .navbar-brand span {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+html[dir="rtl"] .lang-switch svg {
+    margin-right: 0;
+    margin-left: 6px;
+}
+
+/* Mobile Menu RTL */
+html[dir="rtl"] .mobile-menu {
+    text-align: right;
+}
+
+/* Hero Section RTL */
+html[dir="rtl"] .hero-grid {
+    direction: rtl;
+}
+
+@media (min-width: 992px) {
+    html[dir="rtl"] .hero-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    html[dir="rtl"] .hero-content {
+        order: 1;
+    }
+    
+    html[dir="rtl"] .hero-visual {
+        order: 2;
+    }
+}
+
+html[dir="rtl"] .hero-btns {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .partner-names {
+    flex-direction: row-reverse;
+}
+
+/* Stats RTL */
+html[dir="rtl"] .stats {
+    flex-direction: row-reverse;
+}
+
+/* Section Headers RTL */
+html[dir="rtl"] .section-header {
+    text-align: center;
+}
+
+/* Grid RTL */
+html[dir="rtl"] .grid {
+    direction: rtl;
+}
+
+/* Cards RTL */
+html[dir="rtl"] .icon-card,
+html[dir="rtl"] .card {
+    text-align: right;
+}
+
+html[dir="rtl"] .icon-card .icon {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Process Timeline RTL */
+html[dir="rtl"] .process-timeline {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .process-step {
+    text-align: center;
+}
+
+/* Project Cards RTL */
+html[dir="rtl"] .project-overlay {
+    text-align: right;
+}
+
+/* Brand Cards RTL */
+html[dir="rtl"] .brand-card {
+    text-align: center;
+}
+
+/* Cert Cards RTL */
+html[dir="rtl"] .cert-card {
+    text-align: center;
+}
+
+html[dir="rtl"] .cert-grid {
+    direction: rtl;
+}
+
+/* Partners Grid RTL */
+html[dir="rtl"] .partners-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .partner-item {
+    text-align: center;
+}
+
+/* FAQ RTL */
+html[dir="rtl"] .faq-question {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+html[dir="rtl"] .faq-question span:first-child {
+    text-align: right;
+}
+
+html[dir="rtl"] .faq-icon {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+html[dir="rtl"] .faq-answer-inner {
+    text-align: right;
+}
+
+/* Footer RTL */
+html[dir="rtl"] .footer {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .footer-grid {
+    direction: rtl;
+}
+
+html[dir="rtl"] .footer-brand {
+    text-align: right;
+}
+
+html[dir="rtl"] .footer-social {
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .footer-col {
+    text-align: right;
+}
+
+html[dir="rtl"] .footer-links {
+    text-align: right;
+}
+
+html[dir="rtl"] .footer-contact li {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+html[dir="rtl"] .footer-contact svg {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+html[dir="rtl"] .footer-bottom {
+    text-align: center;
+}
+
+/* WhatsApp Button RTL */
+html[dir="rtl"] .whatsapp-btn {
+    right: auto;
+    left: 30px;
+}
+
+/* Buttons RTL */
+html[dir="rtl"] .btn {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .btn svg {
+    margin-left: 0;
+    margin-right: 8px;
+    transform: scaleX(-1);
+}
+
+/* CTA Section RTL */
+html[dir="rtl"] .cta-section .hero-btns {
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+/* Text Alignment Utilities */
+html[dir="rtl"] .text-center {
+    text-align: center;
+}
+
+html[dir="rtl"] .text-right {
+    text-align: left;
+}
+
+html[dir="rtl"] .text-left {
+    text-align: right;
+}
+
+/* Mobile Responsive RTL */
+@media (max-width: 991px) {
+    html[dir="rtl"] .hero-btns {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    html[dir="rtl"] .hero-btns .btn {
+        justify-content: center;
+    }
+    
+    html[dir="rtl"] .stats {
+        flex-direction: column;
+    }
+    
+    html[dir="rtl"] .process-timeline {
+        flex-direction: column;
+    }
+    
+    html[dir="rtl"] .footer-grid {
+        text-align: center;
+    }
+    
+    html[dir="rtl"] .footer-brand,
+    html[dir="rtl"] .footer-col {
+        text-align: center;
+    }
+    
+    html[dir="rtl"] .footer-social {
+        justify-content: center;
+    }
+    
+    html[dir="rtl"] .footer-contact li {
+        justify-content: center;
+    }
+}
+
+/* Fix for specific Arabic text display */
+html[dir="rtl"] .stat-number {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
+/* Ensure proper number display */
+html[dir="rtl"] .cert-code {
+    direction: ltr;
+    display: inline-block;
+}
+
+/* Hero Background for RTL - Mirror the diagonal */
+html[dir="rtl"] .hero-bg {
+    right: auto;
+    left: 0;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+/* Ensure proper letter spacing for Arabic */
+html[dir="rtl"] .hero-badge,
+html[dir="rtl"] .section-badge {
+    letter-spacing: 0;
+}
