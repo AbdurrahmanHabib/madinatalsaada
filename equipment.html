@@ -1,475 +1,552 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="State-of-the-art fabrication facility with 15 specialized machines — CNC machining, double-head cutting, crimping, and more. ISO certified.">
-    <title>Equipment &amp; Machinery | Madinat Al Saada</title>
-<meta property="og:title" content="Equipment & Machinery | Madinat Al Saada">  <meta property="og:description" content="State-of-the-art fabrication facility with 15 specialized machines — CNC machining, double-head cutting, crimping and more.">  <meta property="og:image" content="https://madinatalsaada.ae/img/og-image.jpg">  <meta property="og:url" content="https://madinatalsaada.ae/equipment.html">  <meta property="og:type" content="website">  <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://madinatalsaada.ae/equipment.html">
-    <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/equipment.html">
-    <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/equipment.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Madinat Al Saada factory equipment — 15 specialized machines including Emmegi CNC, Phantomatic 4-axis, and precision cutting systems for aluminium facade fabrication.">
+  <title>Equipment &amp; Machinery | Madinat Al Saada — Factory Capabilities</title>
+  <meta property="og:title" content="Equipment & Machinery | Madinat Al Saada — Factory Capabilities">
+  <meta property="og:description" content="15 specialized machines for precision aluminium fabrication — CNC machining, cutting, crimping, cladding, and quality-controlled production.">
+  <meta property="og:image" content="https://madinatalsaada.ae/img/og-image.jpg">
+  <meta property="og:url" content="https://madinatalsaada.ae/equipment.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://madinatalsaada.ae/equipment.html">
+  <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/equipment.html">
+  <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/equipment.html">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" type="image/webp" href="img/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/factory/factory-overview.webp" fetchpriority="high">
+  <style>
+    /* ================================================================
+       MADINAT AL SAADA — ARCHITECTURAL EDITORIAL
+       Photography-first. Cinematic. Confident. Premium.
+       Font: Playfair Display (editorial headings) + DM Sans (clean body)
+       ================================================================ */
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'DM Sans',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+    button{font:inherit;cursor:pointer;border:none;background:none}
+    ::selection{background:#1a3a5c;color:#fff}
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/tokens.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages.css">
+    :root{
+      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
+      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
+      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
+      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+    }
 
-    <!-- Theme & Favicon -->
-    <meta name="theme-color" content="#1a3a5c">
-    <link rel="icon" type="image/webp" href="img/logo.webp">
+    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
+    .skip:focus{top:16px}
+
+    /* ================================================================
+       NAV — Floating, transparent on hero, solid on scroll
+       ================================================================ */
+    .nav{
+      position:fixed;top:0;left:0;right:0;z-index:100;
+      padding:0 24px;transition:background .4s,backdrop-filter .4s;
+    }
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
+
+    .nav__logo{display:flex;align-items:center;gap:12px}
+    .nav__logo img{height:42px;width:auto;border-radius:0}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav.is-solid .nav__logo-text{color:var(--gray-900)}
+    @media(max-width:767px){.nav__logo-text{display:none}}
+
+    .nav__links{display:none;gap:32px}
+    @media(min-width:1024px){.nav__links{display:flex}}
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
+    .nav__links a:hover{color:#fff}
+    .nav__links a[aria-current="page"]{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-600)}
+    .nav.is-solid .nav__links a:hover{color:var(--gray-900)}
+    .nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900)}
+
+    .nav__right{display:flex;align-items:center;gap:16px}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
+
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    @media(min-width:768px){.nav__cta-btn{display:block}}
+    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
+
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    @media(min-width:1024px){.nav__burger{display:none}}
+    .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
+    .nav.is-solid .nav__burger span{background:var(--gray-900)}
+    .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+    .nav__burger.is-open span:nth-child(2){opacity:0}
+    .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+    .nav__drawer{
+      display:none;position:fixed;inset:0;top:72px;background:#fff;
+      padding:32px 24px;z-index:99;flex-direction:column;gap:0;
+    }
+    .nav__drawer.is-open{display:flex}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a:last-child{border:none}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+
+    /* ================================================================
+       HERO — Page hero
+       ================================================================ */
+    .hero{
+      position:relative;min-height:70svh;display:flex;align-items:flex-end;
+      overflow:hidden;background:var(--black);
+    }
+    .hero__img{
+      position:absolute;inset:0;
+      background:url('img/factory/factory-overview.webp') center/cover no-repeat;
+      transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate;
+    }
+    @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+    .hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7) 0%,rgba(0,0,0,.2) 40%,rgba(0,0,0,.1) 70%,rgba(0,0,0,.3) 100%)}
+
+    .hero__content{
+      position:relative;z-index:2;padding:0 24px 60px;width:100%;max-width:1400px;margin:0 auto;
+    }
+    @media(min-width:768px){.hero__content{padding:0 40px 80px}}
+    @media(min-width:1200px){.hero__content{padding:0 40px 100px}}
+
+    .hero__tag{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+      color:rgba(255,255,255,.7);margin-bottom:24px;
+    }
+    .hero__tag::before{content:'';width:40px;height:1px;background:rgba(255,255,255,.4)}
+
+    .hero h1{
+      font-family:'Playfair Display',serif;font-size:clamp(2.5rem,8vw,6rem);
+      font-weight:400;color:#fff;line-height:1.05;letter-spacing:-.03em;
+      max-width:900px;margin-bottom:24px;
+    }
+    .hero h1 strong{font-weight:600;font-style:italic}
+
+    .hero__sub{font-size:clamp(15px,1.8vw,19px);color:rgba(255,255,255,.65);max-width:520px;line-height:1.7;margin-bottom:40px}
+
+    /* ================================================================
+       NUMBERS — Bold stats strip
+       ================================================================ */
+    .numbers{padding:56px 24px;background:var(--gray-900)}
+    @media(min-width:768px){.numbers{padding:72px 40px}}
+    .numbers__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:1200px;margin:0 auto}
+    @media(min-width:768px){.numbers__grid{grid-template-columns:repeat(4,1fr);gap:48px}}
+    .numbers__item{text-align:center}
+    .numbers__val{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:400;color:#fff;line-height:1;letter-spacing:-.02em}
+    .numbers__label{font-size:13px;color:rgba(255,255,255,.45);margin-top:8px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+
+    /* ================================================================
+       SECTION — Generous whitespace
+       ================================================================ */
+    .s{padding:80px 24px}
+    @media(min-width:768px){.s{padding:120px 40px}}
+    @media(min-width:1200px){.s{padding:160px 40px}}
+    .s--gray{background:var(--gray-100)}
+    .s--dark{background:var(--gray-900)}
+    .s__inner{max-width:1200px;margin:0 auto}
+
+    .s__head{margin-bottom:56px}
+    @media(min-width:768px){.s__head{margin-bottom:80px}}
+    .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
+    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .s--dark .s__tag{color:var(--accent)}
+    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
+    .s__head h2 em{font-style:italic;font-weight:500}
+    .s--dark .s__head h2{color:#fff}
+    .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
+    .s__head--center p{margin:0 auto}
+    .s--dark .s__head p{color:rgba(255,255,255,.5)}
+
+    /* ================================================================
+       SERVICES — Minimal cards (reused for machine lists)
+       ================================================================ */
+    .svc-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--gray-200);border:1px solid var(--gray-200);border-radius:8px;overflow:hidden}
+    @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+    .svc{padding:40px 32px;background:#fff;transition:background .3s}
+    .svc:hover{background:var(--gray-100)}
+    .svc__num{font-family:'Playfair Display',serif;font-size:32px;color:var(--gray-200);margin-bottom:20px;line-height:1;font-weight:400}
+    .svc h3{font-size:17px;font-weight:600;margin-bottom:10px;letter-spacing:-.01em}
+    .svc p{font-size:14px;color:var(--gray-500);line-height:1.65;margin:0}
+
+    /* ================================================================
+       EQUIPMENT — 2-column photo + list layout
+       ================================================================ */
+    .eq-split{display:grid;grid-template-columns:1fr;gap:40px;align-items:start}
+    @media(min-width:768px){.eq-split{grid-template-columns:1fr 1fr;gap:64px}}
+    .eq-split__img{border-radius:8px;overflow:hidden}
+    .eq-split__img img{width:100%;height:100%;object-fit:cover;border-radius:0;aspect-ratio:4/3}
+    .eq-list{display:flex;flex-direction:column;gap:0}
+    .eq-item{padding:28px 0;border-bottom:1px solid var(--gray-200)}
+    .eq-item:first-child{padding-top:0}
+    .eq-item:last-child{border-bottom:none}
+    .eq-item h3{font-size:17px;font-weight:600;margin-bottom:6px;letter-spacing:-.01em}
+    .eq-item p{font-size:14px;color:var(--gray-500);line-height:1.65;margin:0}
+    .s--gray .eq-item{border-color:var(--gray-200)}
+
+    /* ================================================================
+       SHOWCASE — Full-width image with overlay
+       ================================================================ */
+    .showcase{position:relative;min-height:500px;display:flex;align-items:center;overflow:hidden}
+    @media(min-width:768px){.showcase{min-height:600px}}
+    .showcase__bg{position:absolute;inset:0}
+    .showcase__bg img{width:100%;height:100%;object-fit:cover;border-radius:0}
+    .showcase__bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.75) 0%,rgba(0,0,0,.3) 60%,rgba(0,0,0,.1) 100%)}
+    @media(max-width:767px){.showcase__bg::after{background:rgba(0,0,0,.65)}}
+    .showcase__content{position:relative;z-index:2;padding:80px 24px;width:100%;max-width:1200px;margin:0 auto}
+    @media(min-width:768px){.showcase__content{padding:80px 40px;max-width:600px;margin:0 0 0 calc((100% - 1200px)/2 + 40px)}}
+    @media(min-width:1200px){.showcase__content{margin-left:calc((100vw - 1200px)/2)}}
+    .showcase__content h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
+    .showcase__content h2 em{font-style:italic;font-weight:500}
+    .showcase__content p{color:rgba(255,255,255,.65);font-size:17px;line-height:1.7;max-width:460px}
+
+    /* ================================================================
+       FLOOR — Full-width image with overlay text
+       ================================================================ */
+    .floor{position:relative;min-height:400px;display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center}
+    @media(min-width:768px){.floor{min-height:500px}}
+    .floor__bg{position:absolute;inset:0}
+    .floor__bg img{width:100%;height:100%;object-fit:cover;border-radius:0}
+    .floor__bg::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.6)}
+    .floor__content{position:relative;z-index:2;padding:60px 24px;max-width:700px}
+    @media(min-width:768px){.floor__content{padding:80px 40px}}
+    .floor__content h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
+    .floor__content h2 em{font-style:italic;font-weight:500}
+    .floor__content p{color:rgba(255,255,255,.6);font-size:17px;line-height:1.7}
+
+    /* ================================================================
+       CTA — Full-bleed image
+       ================================================================ */
+    .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
+    @media(min-width:768px){.cta{padding:160px 40px}}
+    .cta__bg{position:absolute;inset:0;background:url('img/hero/aykon-hero.webp') center/cover no-repeat}
+    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
+    .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
+    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
+    .cta h2 em{font-style:italic;font-weight:500}
+    .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
+    .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
+    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
+    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
+    .cta .btn--white:hover{background:var(--gray-100)}
+    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
+    .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+
+    /* ================================================================
+       FOOTER
+       ================================================================ */
+    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    @media(min-width:768px){.foot{padding:96px 40px 0}}
+    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
+    @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
+    .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
+    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__links a:hover{color:#fff}
+    .foot__contact li{margin-bottom:10px;font-size:14px}
+    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a:hover{color:#fff}
+    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
+    @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
+    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
+
+    /* ================================================================
+       WHATSAPP
+       ================================================================ */
+    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    .wa:hover{transform:scale(1.1);color:#fff}
+    .wa svg{width:24px;height:24px}
+
+    /* ================================================================
+       SCROLL REVEAL
+       ================================================================ */
+    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+    [data-r].in{opacity:1;transform:none}
+
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+      [data-r]{opacity:1;transform:none}
+      .hero__img{animation:none;transform:none}
+    }
+  </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-      <div class="container navbar__inner">
-        <a href="/" class="navbar__brand">
-          <img src="img/logo.webp" alt="Madinat Al Saada" width="40" height="40">
-          <span>Madinat Al Saada</span>
-        </a>
-        <ul class="navbar__menu" role="menubar">
-          <li><a href="/">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="equipment.html" aria-current="page">Equipment</a></li>
-          <li><a href="technical.html">Technical</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="navbar__actions">
-          <a href="ar/equipment.html" class="lang-switch">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            العربية
-          </a>
-          <a href="contact.html" class="btn btn--primary btn--sm">Get Quote</a>
-          <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
-      <div class="navbar__mobile" id="navMobile">
-        <a href="/">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="equipment.html">Equipment</a>
-        <a href="technical.html">Technical</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
 
-    <!-- Main Content -->
-    <main id="main">
+<a href="#main" class="skip">Skip to content</a>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <div class="breadcrumb">
-                <a href="/">Home</a>
-                <span>/</span>
-                <span class="current">Equipment</span>
-            </div>
-            <h1>Equipment &amp; Machinery</h1>
-            <p>Our state-of-the-art fabrication facility in Ajman Industrial Area.</p>
-        </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="section--sm section--alt">
-        <div class="container">
-            <div class="stats">
-                <div class="stat-item">
-                    <div class="stat-number">15</div>
-                    <div class="stat-label">Specialized Machines</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">4</div>
-                    <div class="stat-label">Cutting Machines</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">1</div>
-                    <div class="stat-label">CNC 4-Axis</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">3</div>
-                    <div class="stat-label">ISO Certifications</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cutting & Machining -->
-    <section class="section">
-        <div class="container">
-            <div class="section__header">
-                <span class="section-badge">Our Facility</span>
-                <h2>Cutting &amp; Machining Equipment</h2>
-            </div>
-
-            <div class="grid grid--3">
-                <!-- 1. Emmegi Classic Magic -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Emmegi Classic Magic</h3>
-                        <p>Double Head Cutting Machine</p>
-                    </div>
-                </div>
-
-                <!-- 2. Emmegi Classic VIS 50 -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Emmegi Classic VIS 50</h3>
-                        <p>Double Head Cutting Machine</p>
-                    </div>
-                </div>
-
-                <!-- 3. Single Head Cutters -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Single Head Cutters (2x)</h3>
-                        <p>Precision Single Head Machines</p>
-                    </div>
-                </div>
-
-                <!-- 4. Phantomatic CNC -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-                            <line x1="7" y1="2" x2="7" y2="22"></line>
-                            <line x1="17" y1="2" x2="17" y2="22"></line>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <line x1="2" y1="7" x2="7" y2="7"></line>
-                            <line x1="2" y1="17" x2="7" y2="17"></line>
-                            <line x1="17" y1="17" x2="22" y2="17"></line>
-                            <line x1="17" y1="7" x2="22" y2="7"></line>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Phantomatic 4-Axis CNC</h3>
-                        <p>Computer Controlled Machining Center</p>
-                    </div>
-                </div>
-
-                <!-- 5. Fomindustrie Mirage XZ -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                            <polyline points="2 17 12 22 22 17"></polyline>
-                            <polyline points="2 12 12 17 22 12"></polyline>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Fomindustrie Mirage XZ</h3>
-                        <p>Automatic Angle Cutting</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Crimping & Assembly -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="section__header">
-                <span class="section-badge">Assembly</span>
-                <h2>Crimping &amp; Assembly Equipment</h2>
-            </div>
-
-            <div class="grid grid--3">
-                <!-- 1. Jolly Cianfrinatrice -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Jolly Cianfrinatrice</h3>
-                        <p>Professional Crimping Machine</p>
-                    </div>
-                </div>
-
-                <!-- 2. Standard Crimping Machine -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Standard Crimping Machine</h3>
-                        <p>Corner Joint Assembly</p>
-                    </div>
-                </div>
-
-                <!-- 3. Fomindustrie Calco -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Fomindustrie Calco</h3>
-                        <p>Freezing Machine</p>
-                    </div>
-                </div>
-
-                <!-- 4. Infismac Group -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Infismac Group S.R.L</h3>
-                        <p>Freezing Machine</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cladding & Finishing -->
-    <section class="section">
-        <div class="container">
-            <div class="section__header">
-                <span class="section-badge">Finishing</span>
-                <h2>Cladding &amp; Finishing Equipment</h2>
-            </div>
-
-            <div class="grid grid--3">
-                <!-- 1. Bala CPM -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="9" y1="21" x2="9" y2="9"></line>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Bala CPM 2B2040</h3>
-                        <p>ACP Cladding Machine</p>
-                    </div>
-                </div>
-
-                <!-- 2. Reinhardt Bonding Machine -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                            <path d="M2 2l7.586 7.586"></path>
-                            <circle cx="11" cy="11" r="2"></circle>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Reinhardt Bonding Machine</h3>
-                        <p>Silicone Application</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Drilling & Grinding -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="section__header">
-                <span class="section-badge">Drilling</span>
-                <h2>Drilling &amp; Grinding Equipment</h2>
-            </div>
-
-            <div class="grid grid--3">
-                <!-- 1. Floor Drill Press -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 12V4a2 2 0 0 0-4 0v8"></path>
-                            <path d="M18 12V4a2 2 0 0 0-4 0"></path>
-                            <path d="M6 12V4a2 2 0 0 1 4 0"></path>
-                            <rect x="2" y="12" width="20" height="8" rx="2"></rect>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Floor Drill Press DP51032F</h3>
-                        <p>Precision Drilling</p>
-                    </div>
-                </div>
-
-                <!-- 2. Drill Press ZJ5132 -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 12V4a2 2 0 0 0-4 0v8"></path>
-                            <path d="M18 12V4a2 2 0 0 0-4 0"></path>
-                            <path d="M6 12V4a2 2 0 0 1 4 0"></path>
-                            <rect x="2" y="12" width="20" height="8" rx="2"></rect>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Drill Press ZJ5132</h3>
-                        <p>Precision Drilling</p>
-                    </div>
-                </div>
-
-                <!-- 3. Simba Bench Grinders -->
-                <div class="equipment-card">
-                    <div class="equipment-card__icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg>
-                    </div>
-                    <div class="equipment-card__info">
-                        <h3>Simba Bench Grinders (2x)</h3>
-                        <p>Surface Finishing</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quality Control -->
-    <section class="section">
-        <div class="container">
-            <div class="section__header">
-                <span class="section-badge">Quality</span>
-                <h2>Quality Control Process</h2>
-                <p>Every product undergoes rigorous inspection before leaving our facility.</p>
-            </div>
-
-            <div class="qc-steps">
-                <div class="qc-step">
-                    <div class="qc-number">1</div>
-                    <h4>Material Inspection</h4>
-                    <p>Incoming materials verified against project specifications and international standards before entering the production line.</p>
-                </div>
-                <div class="qc-step">
-                    <div class="qc-number">2</div>
-                    <h4>In-Process Check</h4>
-                    <p>Quality verification at every stage of fabrication, from cutting accuracy to assembly tolerances.</p>
-                </div>
-                <div class="qc-step">
-                    <div class="qc-number">3</div>
-                    <h4>Dimensional Accuracy</h4>
-                    <p>Precise measurement of all components using calibrated instruments to ensure exact conformity with shop drawings.</p>
-                </div>
-                <div class="qc-step">
-                    <div class="qc-number">4</div>
-                    <h4>Final Inspection</h4>
-                    <p>Complete quality check including visual inspection, sealant integrity, and hardware function before packaging and delivery.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-        <div class="container text-center">
-            <h2>Visit Our Facility</h2>
-            <p>Schedule a visit to our fabrication facility in Ajman and see our equipment in action.</p>
-            <div class="cta__buttons">
-                <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-                <a href="technical.html" class="btn btn-outline btn-lg">Technical Specs</a>
-            </div>
-        </div>
-    </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__grid">
-          <div class="footer__col">
-            <a href="/" class="footer__brand">
-              <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
-              <span>Madinat Al Saada</span>
-            </a>
-            <p class="footer__tagline">Precision aluminium fabrication and expert installation for the UAE's leading contractors.</p>
-            <div class="footer__social">
-              <a href="https://www.linkedin.com/company/madinat-al-saada" target="_blank" rel="noopener" aria-label="LinkedIn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="footer__col">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="equipment.html">Equipment</a></li>
-              <li><a href="technical.html">Technical</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3>Services</h3>
-            <ul>
-              <li><a href="services.html">Curtain Walls</a></li>
-              <li><a href="services.html">ACP Cladding</a></li>
-              <li><a href="services.html">Skylights</a></li>
-              <li><a href="services.html">Doors &amp; Windows</a></li>
-              <li><a href="services.html">Glass Balustrades</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3>Contact</h3>
-            <ul class="footer__contact">
-              <li>Amman Street, Industrial Area 1, Ajman, UAE</li>
-              <li><a href="tel:+97165260556">+971 6 526 0556</a></li>
-              <li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <p>&copy; 2026 Madinat Al Saada Aluminium &amp; Glass Works LLC. All rights reserved.</p>
-          <p>ISO 9001:2015 &middot; ISO 14001:2015 &middot; ISO 45001:2018</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/97165260556" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__wrap">
+    <a href="/" class="nav__logo">
+      <img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42">
+      <span class="nav__logo-text">Madinat Al Saada</span>
     </a>
+    <div class="nav__links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="equipment.html" aria-current="page">Equipment</a>
+      <a href="technical.html">Technical</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav__right">
+      <a href="ar/equipment.html" class="nav__lang">العربية</a>
+      <a href="contact.html" class="nav__cta-btn">Get Quote</a>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__drawer" id="drawer">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="equipment.html" aria-current="page">Equipment</a>
+    <a href="technical.html">Technical</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav__drawer-cta">Get Quote →</a>
+  </div>
+</nav>
 
-    <!-- Scripts -->
-    <script src="js/main.js" defer></script>
+<!-- HERO -->
+<header class="hero" id="main">
+  <div class="hero__img" role="presentation"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content" data-r>
+    <div class="hero__tag">Factory · Ajman, UAE</div>
+    <h1>Equipment &amp; <strong>Machinery</strong></h1>
+    <p class="hero__sub">15 specialized machines for precision aluminium fabrication — cutting, CNC machining, crimping, cladding, and finishing under one roof.</p>
+  </div>
+</header>
+
+<!-- NUMBERS -->
+<section class="numbers" data-r>
+  <div class="numbers__grid">
+    <div class="numbers__item"><div class="numbers__val">15</div><div class="numbers__label">Machines</div></div>
+    <div class="numbers__item"><div class="numbers__val">4</div><div class="numbers__label">Cutting</div></div>
+    <div class="numbers__item"><div class="numbers__val">1</div><div class="numbers__label">CNC 4-Axis</div></div>
+    <div class="numbers__item"><div class="numbers__val">3</div><div class="numbers__label">ISO Certs</div></div>
+  </div>
+</section>
+
+<!-- CUTTING & MACHINING -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="s__head">
+      <span class="s__tag">Cutting &amp; Machining</span>
+      <h2>Precision <em>Cutting Systems</em></h2>
+      <p>Italian-engineered saws and CNC machining centres for accurate aluminium profile processing.</p>
+    </div>
+    <div class="eq-split">
+      <div class="eq-split__img">
+        <img src="img/factory/cutting-machine.webp" alt="Emmegi aluminium cutting machine in Madinat Al Saada factory" width="800" height="600" loading="lazy">
+      </div>
+      <div class="eq-list">
+        <div class="eq-item">
+          <h3>Emmegi Classic Magic</h3>
+          <p>Double-head automatic cutting saw with programmable angles for high-volume aluminium profile cutting up to 600mm.</p>
+        </div>
+        <div class="eq-item">
+          <h3>Emmegi Classic VIS 50</h3>
+          <p>Single-head precision mitre saw for detail cuts — compound angles, notching, and trim work on aluminium sections.</p>
+        </div>
+        <div class="eq-item">
+          <h3>Single Head Cutters (2x)</h3>
+          <p>Manual single-head saws for rapid profile cutting on shorter runs and custom one-off pieces.</p>
+        </div>
+        <div class="eq-item">
+          <h3>Phantomatic 4-Axis CNC</h3>
+          <p>Emmegi Phantomatic CNC machining centre with 4 interpolated axes — drilling, milling, tapping, and routing in a single setup.</p>
+        </div>
+        <div class="eq-item">
+          <h3>Fomindustrie Mirage XZ</h3>
+          <p>Copy router for aluminium profiles — euro-groove routing, water drainage slots, and lock-hole milling with template guidance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CRIMPING & ASSEMBLY -->
+<section class="s s--gray" data-r>
+  <div class="s__inner">
+    <div class="s__head">
+      <span class="s__tag">Crimping &amp; Assembly</span>
+      <h2>Corner <em>Assembly</em></h2>
+      <p>Hydraulic crimping and pressing machines for strong, watertight aluminium frame joints.</p>
+    </div>
+    <div class="eq-split">
+      <div class="eq-split__img">
+        <img src="img/factory/drill-press.webp" alt="Hydraulic crimping and drill press machines in factory" width="800" height="600" loading="lazy">
+      </div>
+      <div class="eq-list">
+        <div class="eq-item">
+          <h3>Jolly Cianfrinatrice</h3>
+          <p>Hydraulic corner crimping press for aluminium door and window frames — produces tight, square joints with consistent pressure.</p>
+        </div>
+        <div class="eq-item">
+          <h3>Standard Crimping Machine</h3>
+          <p>Heavy-duty mechanical crimper for high-volume corner assembly of casement and sliding window frames.</p>
+        </div>
+        <div class="eq-item">
+          <h3>Fomindustrie Calco</h3>
+          <p>End-milling machine for aluminium profile tenon preparation — ensures precise fit before crimping and assembly.</p>
+        </div>
+        <div class="eq-item">
+          <h3>Infismac Group Press</h3>
+          <p>Hydraulic punching and pressing machine for hardware preparation — hinge slots, lock pockets, and drainage holes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLADDING & FINISHING -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="s__head">
+      <span class="s__tag">Cladding &amp; Finishing</span>
+      <h2>Panel <em>Processing</em></h2>
+      <p>Composite panel routing, grooving, and bonding machines for ACP cladding fabrication.</p>
+    </div>
+    <div class="eq-split">
+      <div class="eq-split__img">
+        <img src="img/factory/cladding-machine.webp" alt="ACP cladding panel processing machine" width="800" height="600" loading="lazy">
+      </div>
+      <div class="eq-list">
+        <div class="eq-item">
+          <h3>Bala CPM 2B2040</h3>
+          <p>Composite panel grooving machine — V-grooves aluminium composite panels for precise folding into cassette shapes for facade cladding.</p>
+        </div>
+        <div class="eq-item">
+          <h3>Reinhardt Bonding Machine</h3>
+          <p>Structural silicone and adhesive bonding press for laminating glass to aluminium frames and assembling insulated panel systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CNC SHOWCASE -->
+<section class="showcase" data-r>
+  <div class="showcase__bg">
+    <img src="img/factory/cnc-emmegi.webp" alt="Emmegi Phantomatic 4-Axis CNC machining centre" width="1200" height="600" loading="lazy">
+  </div>
+  <div class="showcase__content">
+    <span class="s__tag" style="color:var(--accent)">CNC Centre</span>
+    <h2>Phantomatic <em>4-Axis CNC</em></h2>
+    <p>Our Emmegi Phantomatic processes complex aluminium profiles with 4 interpolated axes — drilling, milling, tapping, and slot routing in a single clamping. Programmable tool changers and barcode scanning eliminate setup time between batches, delivering consistent precision at production speed.</p>
+  </div>
+</section>
+
+<!-- FACTORY FLOOR -->
+<section class="floor" data-r>
+  <div class="floor__bg">
+    <img src="img/factory/factory-floor.webp" alt="Madinat Al Saada factory floor with workers and machinery" width="1200" height="600" loading="lazy">
+  </div>
+  <div class="floor__content">
+    <span class="s__tag" style="color:var(--accent)">Our Workforce</span>
+    <h2>90+ Skilled <em>Workers</em></h2>
+    <p>Our factory floor operates with over 90 trained fabricators, welders, and installers working across cutting, assembly, glazing, and finishing lines — delivering projects on schedule across the UAE.</p>
+  </div>
+</section>
+
+<!-- QUALITY CONTROL -->
+<section class="s s--gray" data-r>
+  <div class="s__inner">
+    <div class="s__head s__head--center">
+      <span class="s__tag">Quality Assurance</span>
+      <h2>Quality <em>Control</em></h2>
+      <p>Four-stage inspection process ensuring every component meets ISO 9001 standards before leaving the factory.</p>
+    </div>
+    <div class="svc-grid" style="grid-template-columns:repeat(2,1fr)">
+      <div class="svc">
+        <div class="svc__num">01</div>
+        <h3>Material Inspection</h3>
+        <p>Incoming aluminium profiles and glass panels verified against mill certificates, alloy grades, and dimensional tolerances before entering production.</p>
+      </div>
+      <div class="svc">
+        <div class="svc__num">02</div>
+        <h3>In-Process Check</h3>
+        <p>Random sampling at each production stage — cut lengths, drill positions, and crimp pressure verified against shop drawings.</p>
+      </div>
+      <div class="svc">
+        <div class="svc__num">03</div>
+        <h3>Dimensional Accuracy</h3>
+        <p>Finished frames and panels measured with calibrated instruments — diagonal checks, squareness, and gasket groove depths confirmed.</p>
+      </div>
+      <div class="svc">
+        <div class="svc__num">04</div>
+        <h3>Final Inspection</h3>
+        <p>Complete unit assembly trial, hardware function test, and visual surface inspection before protective wrapping and dispatch to site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta__bg" role="presentation"></div>
+  <div class="cta__content" data-r>
+    <h2>Visit Our <em>Facility</em></h2>
+    <p>See our factory in action — schedule a visit to our Ajman facility and meet the team behind the machines.</p>
+    <div class="cta__btns">
+      <a href="contact.html" class="btn--white">Schedule a Visit</a>
+      <a href="tel:+97165260556" class="btn--outline">Call 06-5260556</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
+      <p>Precision aluminium fabrication and installation for the UAE's leading contractors. Trusted since 2016.</p>
+    </div>
+    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a></div></div>
+    <div><h4>Services</h4><div class="foot__links"><a href="services.html">Curtain Walls</a><a href="services.html">ACP Cladding</a><a href="services.html">Skylights</a><a href="services.html">Doors &amp; Windows</a><a href="services.html">Balustrades</a></div></div>
+    <div><h4>Contact</h4><ul class="foot__contact"><li>Amman St, Industrial Area 1, Ajman</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
+  </div>
+  <div class="foot__bottom">
+    <p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p>
+    <p>ISO 9001 · ISO 14001 · ISO 45001</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Nav
+const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
+// Scroll nav
+let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
+// Reveal
+const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
+// Year
+document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Equipment & Machinery | Madinat Al Saada","description":"15 specialized machines for precision aluminium facade fabrication","url":"https://madinatalsaada.ae/equipment.html","isPartOf":{"@type":"WebSite","name":"Madinat Al Saada","url":"https://madinatalsaada.ae"}}</script>
+
 </body>
 </html>

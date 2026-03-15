@@ -1,349 +1,717 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional aluminium fabrication and installation — curtain walls, ACP cladding, skylights, doors, windows, balustrades. Trusted UAE subcontractor.">
-  <title>Services | Madinat Al Saada</title>
-  <meta property="og:title" content="Services | Madinat Al Saada">
-  <meta property="og:description" content="Professional aluminium fabrication and installation — curtain walls, ACP cladding, skylights, doors, windows, balustrades. Trusted UAE subcontractor.">
-  <meta property="og:image" content="https://madinatalsaada.ae/img/og-image.jpg">
+  <meta name="description" content="Aluminium facade services by Madinat Al Saada — Curtain walls, ACP cladding, skylights, doors &amp; windows, glass balustrades, automatic doors, and rolling shutters. Subcontractor specialists in the UAE.">
+  <title>Our Services | Madinat Al Saada — Aluminium Facade Specialists</title>
+  <meta property="og:title" content="Services | Madinat Al Saada — Aluminium Facade Specialists">
+  <meta property="og:description" content="Curtain walls, ACP cladding, skylights, doors and windows, glass balustrades, automatic doors, and rolling shutters. Fabricated in-house, installed by our crews.">
+  <meta property="og:image" content="https://madinatalsaada.ae/img/hero/aykon-hero.webp">
   <meta property="og:url" content="https://madinatalsaada.ae/services.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://madinatalsaada.ae/services.html">
   <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/services.html">
   <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/services.html">
-  <meta name="theme-color" content="#1a3a5c">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="icon" type="image/webp" href="img/logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero/aykon-hero.webp" fetchpriority="high">
+  <style>
+    /* ================================================================
+       MADINAT AL SAADA — ARCHITECTURAL EDITORIAL
+       Photography-first. Cinematic. Confident. Premium.
+       Font: Playfair Display (editorial headings) + DM Sans (clean body)
+       ================================================================ */
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'DM Sans',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+    button{font:inherit;cursor:pointer;border:none;background:none}
+    ::selection{background:#1a3a5c;color:#fff}
+
+    :root{
+      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
+      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
+      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
+      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+    }
+
+    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
+    .skip:focus{top:16px}
+
+    /* ================================================================
+       NAV
+       ================================================================ */
+    .nav{
+      position:fixed;top:0;left:0;right:0;z-index:100;
+      padding:0 24px;transition:background .4s,backdrop-filter .4s;
+    }
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
+
+    .nav__logo{display:flex;align-items:center;gap:12px}
+    .nav__logo img{height:42px;width:auto;border-radius:0}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav.is-solid .nav__logo-text{color:var(--gray-900)}
+    @media(max-width:767px){.nav__logo-text{display:none}}
+
+    .nav__links{display:none;gap:32px}
+    @media(min-width:1024px){.nav__links{display:flex}}
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
+    .nav__links a:hover{color:#fff}
+    .nav__links a[aria-current="page"]{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-600)}
+    .nav.is-solid .nav__links a:hover{color:var(--gray-900)}
+    .nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900);font-weight:600}
+
+    .nav__right{display:flex;align-items:center;gap:16px}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
+
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    @media(min-width:768px){.nav__cta-btn{display:block}}
+    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
+
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    @media(min-width:1024px){.nav__burger{display:none}}
+    .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
+    .nav.is-solid .nav__burger span{background:var(--gray-900)}
+    .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+    .nav__burger.is-open span:nth-child(2){opacity:0}
+    .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+    .nav__drawer{
+      display:none;position:fixed;inset:0;top:72px;background:#fff;
+      padding:32px 24px;z-index:99;flex-direction:column;gap:0;
+    }
+    .nav__drawer.is-open{display:flex}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a:last-child{border:none}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+
+    /* ================================================================
+       HERO
+       ================================================================ */
+    .hero{
+      position:relative;min-height:100svh;display:flex;align-items:flex-end;
+      overflow:hidden;background:var(--black);
+    }
+    .hero__img{
+      position:absolute;inset:0;
+      background:url('img/hero/marinashores-hero.webp') center/cover no-repeat;
+      transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate;
+    }
+    @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+    .hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7) 0%,rgba(0,0,0,.2) 40%,rgba(0,0,0,.1) 70%,rgba(0,0,0,.3) 100%)}
+
+    .hero__content{
+      position:relative;z-index:2;padding:0 24px 60px;width:100%;max-width:1400px;margin:0 auto;
+    }
+    @media(min-width:768px){.hero__content{padding:0 40px 80px}}
+    @media(min-width:1200px){.hero__content{padding:0 40px 100px}}
+
+    .hero__tag{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+      color:rgba(255,255,255,.7);margin-bottom:24px;
+    }
+    .hero__tag::before{content:'';width:40px;height:1px;background:rgba(255,255,255,.4)}
+
+    .hero h1{
+      font-family:'Playfair Display',serif;font-size:clamp(2.5rem,8vw,6rem);
+      font-weight:400;color:#fff;line-height:1.05;letter-spacing:-.03em;
+      max-width:900px;margin-bottom:24px;
+    }
+    .hero h1 strong{font-weight:600;font-style:italic}
+
+    .hero__sub{font-size:clamp(15px,1.8vw,19px);color:rgba(255,255,255,.65);max-width:520px;line-height:1.7;margin-bottom:40px}
+
+    .hero__btns{display:flex;flex-direction:column;gap:12px}
+    @media(min-width:480px){.hero__btns{flex-direction:row;gap:16px}}
+    .hero__btns a{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:16px 32px;font-size:14px;font-weight:600;border-radius:100px;
+      transition:all .3s;letter-spacing:.02em;
+    }
+    .btn--filled{color:#fff;background:var(--navy);border:1px solid transparent}
+    .btn--filled:hover{background:#fff;color:var(--navy)}
+    .btn--ghost{color:#fff;border:1px solid rgba(255,255,255,.3);background:transparent}
+    .btn--ghost:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6)}
+
+    .hero__scroll{
+      position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;
+      display:flex;flex-direction:column;align-items:center;gap:8px;
+      font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);
+    }
+    .hero__scroll-line{width:1px;height:40px;background:rgba(255,255,255,.2);position:relative;overflow:hidden}
+    .hero__scroll-line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:50%;background:#fff;animation:scrollLine 2s ease-in-out infinite}
+    @keyframes scrollLine{0%{top:-50%}100%{top:150%}}
+
+    /* ================================================================
+       NUMBERS
+       ================================================================ */
+    .numbers{padding:56px 24px;background:var(--gray-900)}
+    @media(min-width:768px){.numbers{padding:72px 40px}}
+    .numbers__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:1200px;margin:0 auto}
+    @media(min-width:768px){.numbers__grid{grid-template-columns:repeat(4,1fr);gap:48px}}
+    .numbers__item{text-align:center}
+    .numbers__val{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:400;color:#fff;line-height:1;letter-spacing:-.02em}
+    .numbers__label{font-size:13px;color:rgba(255,255,255,.45);margin-top:8px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+
+    /* ================================================================
+       SECTION
+       ================================================================ */
+    .s{padding:80px 24px}
+    @media(min-width:768px){.s{padding:120px 40px}}
+    @media(min-width:1200px){.s{padding:160px 40px}}
+    .s--gray{background:var(--gray-100)}
+    .s--dark{background:var(--gray-900)}
+    .s__inner{max-width:1200px;margin:0 auto}
+
+    .s__head{margin-bottom:56px}
+    @media(min-width:768px){.s__head{margin-bottom:80px}}
+    .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
+    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .s--dark .s__tag{color:var(--accent)}
+    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
+    .s__head h2 em{font-style:italic;font-weight:500}
+    .s--dark .s__head h2{color:#fff}
+    .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
+    .s__head--center p{margin:0 auto}
+    .s--dark .s__head p{color:rgba(255,255,255,.5)}
+
+    /* ================================================================
+       SERVICES — Minimal cards
+       ================================================================ */
+    .svc-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--gray-200);border:1px solid var(--gray-200);border-radius:8px;overflow:hidden}
+    @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+    .svc{padding:40px 32px;background:#fff;transition:background .3s}
+    .svc:hover{background:var(--gray-100)}
+    .svc__num{font-family:'Playfair Display',serif;font-size:32px;color:var(--gray-200);margin-bottom:20px;line-height:1;font-weight:400}
+    .svc h3{font-size:17px;font-weight:600;margin-bottom:10px;letter-spacing:-.01em}
+    .svc p{font-size:14px;color:var(--gray-500);line-height:1.65;margin:0}
+
+    .s__link{margin-top:48px;text-align:center}
+    .s__link a{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--navy);transition:gap .2s}
+    .s__link a:hover{gap:14px}
+    .s__link a::after{content:'\2192'}
+
+    /* ================================================================
+       PROJECTS
+       ================================================================ */
+    .proj-grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:768px){.proj-grid{grid-template-columns:repeat(3,1fr);gap:20px}}
+    .proj{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4}
+    @media(min-width:768px){.proj{aspect-ratio:4/5}}
+    .proj img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;border-radius:0}
+    .proj:hover img{transform:scale(1.04)}
+    .proj__info{position:absolute;bottom:0;left:0;right:0;padding:32px;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 100%)}
+    .proj__info h3{font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,24px);color:#fff;font-weight:400;margin-bottom:4px}
+    .proj__info p{font-size:13px;color:rgba(255,255,255,.6);margin:0}
+
+    /* ================================================================
+       BRANDS
+       ================================================================ */
+    .brands{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--gray-200);border:1px solid var(--gray-200);border-radius:8px;overflow:hidden}
+    @media(min-width:768px){.brands{grid-template-columns:repeat(3,1fr)}}
+    .brand{padding:40px 24px;background:#fff;text-align:center;transition:background .3s}
+    .brand:hover{background:var(--gray-100)}
+    .brand__name{font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);margin-bottom:8px;font-weight:500}
+    .brand p{font-size:13px;color:var(--gray-500);margin:0;line-height:1.5}
+
+    /* ================================================================
+       CERTIFICATIONS
+       ================================================================ */
+    .certs{display:grid;grid-template-columns:1fr;gap:24px}
+    @media(min-width:768px){.certs{grid-template-columns:repeat(3,1fr);gap:32px}}
+    .cert{text-align:center;padding:40px 24px}
+    .cert__iso{font-family:'Playfair Display',serif;font-size:28px;color:var(--navy);margin-bottom:8px;font-weight:400}
+    .cert h3{font-size:14px;font-weight:600;margin-bottom:8px;letter-spacing:.03em;text-transform:uppercase;color:var(--gray-600)}
+    .cert p{font-size:14px;color:var(--gray-500);line-height:1.6;margin:0 auto;max-width:300px}
+
+    /* ================================================================
+       PARTNERS
+       ================================================================ */
+    .partners{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+    .partner{padding:16px 32px;font-size:14px;font-weight:600;color:var(--gray-700);border:1px solid var(--gray-200);border-radius:100px;transition:border-color .2s}
+    .partner:hover{border-color:var(--navy)}
+
+    /* ================================================================
+       FAQ
+       ================================================================ */
+    .faq{max-width:720px;margin:0 auto}
+    .faq details{border-bottom:1px solid var(--gray-200)}
+    .faq summary{display:flex;align-items:center;justify-content:space-between;padding:24px 0;font-size:16px;font-weight:500;color:var(--gray-900);cursor:pointer;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:'+';font-size:24px;font-weight:300;color:var(--gray-400);transition:transform .3s}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq .faq__a{padding:0 0 24px;font-size:15px;color:var(--gray-500);line-height:1.7;max-width:600px}
+
+    /* ================================================================
+       CTA
+       ================================================================ */
+    .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
+    @media(min-width:768px){.cta{padding:160px 40px}}
+    .cta__bg{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat}
+    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
+    .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
+    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
+    .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
+    .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
+    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
+    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
+    .cta .btn--white:hover{background:var(--gray-100)}
+    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
+    .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+
+    /* ================================================================
+       FOOTER
+       ================================================================ */
+    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    @media(min-width:768px){.foot{padding:96px 40px 0}}
+    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
+    @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
+    .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
+    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__links a:hover{color:#fff}
+    .foot__contact li{margin-bottom:10px;font-size:14px}
+    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a:hover{color:#fff}
+    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
+    @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
+    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
+
+    /* ================================================================
+       WHATSAPP
+       ================================================================ */
+    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    .wa:hover{transform:scale(1.1);color:#fff}
+    .wa svg{width:24px;height:24px}
+
+    /* ================================================================
+       SCROLL REVEAL
+       ================================================================ */
+    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+    [data-r].in{opacity:1;transform:none}
+
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+      [data-r]{opacity:1;transform:none}
+      .hero__img{animation:none;transform:none}
+      .page-hero__img{animation:none;transform:none}
+    }
+
+    /* ================================================================
+       PAGE HERO — Shorter inner-page hero (50vh)
+       ================================================================ */
+    .page-hero{
+      position:relative;min-height:50svh;display:flex;align-items:flex-end;
+      overflow:hidden;background:var(--black);
+    }
+    .page-hero__img{
+      position:absolute;inset:0;
+      background-position:center;background-size:cover;background-repeat:no-repeat;
+      transform:scale(1.03);animation:heroZoom 20s ease-in-out infinite alternate;
+    }
+    .page-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.4) 100%)}
+    .page-hero__content{
+      position:relative;z-index:2;padding:0 24px 48px;width:100%;max-width:1400px;margin:0 auto;
+    }
+    @media(min-width:768px){.page-hero__content{padding:0 40px 64px}}
+    @media(min-width:1200px){.page-hero__content{padding:0 40px 80px}}
+
+    .page-hero__breadcrumb{
+      display:flex;align-items:center;gap:8px;
+      font-size:13px;color:rgba(255,255,255,.5);margin-bottom:20px;
+    }
+    .page-hero__breadcrumb a{color:rgba(255,255,255,.5);transition:color .2s}
+    .page-hero__breadcrumb a:hover{color:#fff}
+    .page-hero__breadcrumb span{color:rgba(255,255,255,.3)}
+
+    .page-hero h1{
+      font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,4.5rem);
+      font-weight:400;color:#fff;line-height:1.1;letter-spacing:-.03em;
+      max-width:800px;margin-bottom:16px;
+    }
+    .page-hero h1 strong{font-weight:600;font-style:italic}
+    .page-hero__sub{font-size:clamp(15px,1.6vw,18px);color:rgba(255,255,255,.6);max-width:560px;line-height:1.7}
+
+    /* ================================================================
+       CALLOUT BOX
+       ================================================================ */
+    .callout{
+      background:var(--gray-100);border-left:3px solid var(--accent);
+      padding:24px 28px;border-radius:0 8px 8px 0;margin-top:24px;
+    }
+    .callout h4{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:8px}
+    .callout p{font-size:15px;color:var(--gray-600);line-height:1.7;margin:0}
+
+    /* ================================================================
+       SERVICE DETAIL — Alternating image + text rows
+       ================================================================ */
+    .sd{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+    @media(min-width:768px){.sd{grid-template-columns:1fr 1fr;gap:80px}}
+    .sd--reverse .sd__img{order:0}
+    @media(min-width:768px){.sd--reverse .sd__img{order:2}}
+
+    .sd__img{border-radius:8px;overflow:hidden}
+    .sd__img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:0;transition:transform .6s}
+    .sd__img:hover img{transform:scale(1.03)}
+
+    .sd__text span.s__tag{margin-bottom:12px}
+    .sd__text h3{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:400;line-height:1.2;letter-spacing:-.02em;margin-bottom:16px}
+    .sd__text h3 em{font-style:italic;font-weight:500}
+    .sd__text p{font-size:15px;color:var(--gray-500);line-height:1.8;margin-bottom:24px}
+
+    .sd__features{display:flex;flex-direction:column;gap:12px}
+    .sd__feature{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--gray-600);line-height:1.6}
+    .sd__feature::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%;flex-shrink:0;margin-top:7px}
+
+    /* Divider between services */
+    .sd-divider{max-width:1200px;margin:0 auto;height:1px;background:var(--gray-200)}
+
+    /* ================================================================
+       PROCESS TIMELINE
+       ================================================================ */
+    .process{display:grid;grid-template-columns:1fr;gap:32px;counter-reset:step}
+    @media(min-width:768px){.process{grid-template-columns:repeat(5,1fr);gap:24px}}
+    .process__step{position:relative;padding:32px 24px;background:#fff;border:1px solid var(--gray-200);border-radius:8px;counter-increment:step;transition:box-shadow .3s}
+    .process__step:hover{box-shadow:0 8px 32px rgba(0,0,0,.06)}
+    .process__step::before{
+      content:counter(step,decimal-leading-zero);
+      font-family:'Playfair Display',serif;font-size:28px;color:var(--gray-200);
+      display:block;margin-bottom:16px;font-weight:400;line-height:1;
+    }
+    .process__step h4{font-size:15px;font-weight:600;margin-bottom:8px;color:var(--gray-900)}
+    .process__step p{font-size:13px;color:var(--gray-500);line-height:1.65;margin:0}
+
+    /* Connector line between steps (desktop only) */
+    @media(min-width:768px){
+      .process__step:not(:last-child)::after{
+        content:'';position:absolute;top:46px;right:-13px;
+        width:24px;height:1px;background:var(--gray-200);
+      }
+    }
+  </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
-  <!-- Navbar -->
-  <nav class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="/" class="navbar__brand">
-        <img src="img/logo.webp" alt="Madinat Al Saada" width="40" height="40">
-        <span>Madinat Al Saada</span>
-      </a>
-      <ul class="navbar__menu" role="menubar">
-        <li><a href="/">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" aria-current="page">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="equipment.html">Equipment</a></li>
-        <li><a href="technical.html">Technical</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="navbar__actions">
-        <a href="ar/services.html" class="lang-switch">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          العربية
-        </a>
-        <a href="contact.html" class="btn btn--primary btn--sm">Get Quote</a>
-        <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-    <div class="navbar__mobile" id="navMobile">
-      <a href="/">Home</a>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__wrap">
+    <a href="/" class="nav__logo">
+      <img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42">
+      <span class="nav__logo-text">Madinat Al Saada</span>
+    </a>
+    <div class="nav__links">
       <a href="about.html">About</a>
-      <a href="services.html">Services</a>
+      <a href="services.html" aria-current="page">Services</a>
       <a href="projects.html">Projects</a>
       <a href="equipment.html">Equipment</a>
       <a href="technical.html">Technical</a>
       <a href="contact.html">Contact</a>
     </div>
-  </nav>
+    <div class="nav__right">
+      <a href="ar/services.html" class="nav__lang">العربية</a>
+      <a href="contact.html" class="nav__cta-btn">Get Quote</a>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__drawer" id="drawer">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="technical.html">Technical</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav__drawer-cta">Get Quote &rarr;</a>
+  </div>
+</nav>
 
-  <!-- Main Content -->
-  <main id="main">
+<!-- PAGE HERO -->
+<header class="page-hero" id="main">
+  <div class="page-hero__img" style="background-image:url('img/hero/aykon-hero.webp')" role="presentation"></div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content" data-r>
+    <div class="page-hero__breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>Services</span>
+    </div>
+    <h1>Our <strong>Services</strong></h1>
+    <p class="page-hero__sub">End-to-end aluminium and glass facade solutions &mdash; fabricated in our own factory, installed by our own crews.</p>
+  </div>
+</header>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <div class="breadcrumb">
-                <a href="/">Home</a>
-                <span>/</span>
-                <span class="current">Services</span>
-            </div>
-            <h1>Our Services</h1>
-            <p>Expert fabrication and installation of architectural aluminium and glass systems.</p>
-        </div>
-    </section>
+<!-- INTRO -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="s__head">
+      <span class="s__tag">What We Do</span>
+      <h2>Fabrication &amp; <em>Installation</em></h2>
+      <p>We fabricate and install seven categories of aluminium and glass systems for the UAE's leading main contractors. All work is performed in-house from our Ajman factory and deployed by our own site teams.</p>
+    </div>
+    <div class="callout">
+      <h4>Important Notice</h4>
+      <p>Madinat Al Saada operates exclusively as a B2B subcontractor. We work only with main aluminium and glass contractors&mdash;not directly with developers, consultants, or end clients. Materials and profile systems are supplied by the main contractor.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Services Intro -->
-    <section class="section">
-        <div class="container">
-            <div class="section__header">
-                <span class="section__label">What We Do</span>
-                <h2>Fabrication & Installation Specialists</h2>
-                <p>We work exclusively as a subcontractor, focusing on precision fabrication and expert installation for main aluminium contractors.</p>
-            </div>
-
-            <div class="service-note">
-                <div class="note-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="12" y1="16" x2="12" y2="12"></line>
-                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                    </svg>
-                </div>
-                <div class="note-content">
-                    <strong>Important:</strong> We do not provide design, consulting, or project quotation services. Materials are supplied by the main contractor. We focus solely on fabrication and installation excellence.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Main Services -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="services-grid">
-
-                <!-- 1. Curtain Wall Systems -->
-                <div class="service-detail" id="curtain-walls">
-                    <div class="service-image">
-                        <img src="img/projects/aykon-800.webp" width="800" height="600" loading="lazy" alt="Curtain wall system installed on AYKON City Tower facade in Dubai">
-                    </div>
-                    <div class="service-content">
-                        <h3>Curtain Wall Systems</h3>
-                        <p>We fabricate and install both stick and unitized curtain wall systems for commercial and residential high-rise buildings. Our team works with all major international systems including Technal, Reynaers, AluK, and Guttmann, delivering precision-assembled facades that meet the most demanding architectural specifications.</p>
-                        <ul class="service-features">
-                            <li>Stick curtain wall fabrication</li>
-                            <li>Unitized curtain wall assembly</li>
-                            <li>Structural glazing systems</li>
-                            <li>Point-fixed glazing</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 2. ACP Cladding -->
-                <div class="service-detail service-detail--reverse" id="acp-cladding">
-                    <div class="service-content">
-                        <h3>ACP Cladding</h3>
-                        <p>Aluminium Composite Panel cladding systems transform building exteriors with clean, modern aesthetics. We handle the full fabrication process -- panel cutting, bending, cassette assembly -- followed by professional on-site installation with weather-sealed joints and precise subframe alignment for a seamless finished facade.</p>
-                        <ul class="service-features">
-                            <li>Panel cutting and shaping</li>
-                            <li>Cassette fabrication</li>
-                            <li>Subframe installation</li>
-                            <li>Weather-sealed joints</li>
-                        </ul>
-                    </div>
-                    <div class="service-image">
-                        <img src="img/projects/malta-800.webp" width="800" height="600" loading="lazy" alt="ACP cladding installation on Damac Lagoons Malta villas project">
-                    </div>
-                </div>
-
-                <!-- 3. Skylights -->
-                <div class="service-detail" id="skylights">
-                    <div class="service-image">
-                        <img src="img/projects/harmony1-800.webp" width="800" height="600" loading="lazy" alt="Architectural skylight system fabricated and installed by Madinat Al Saada">
-                    </div>
-                    <div class="service-content">
-                        <h3>Skylights</h3>
-                        <p>Architectural skylight systems bring natural light into lobbies, atriums, and common areas while maintaining weatherproofing and thermal performance. From simple flat configurations to complex pyramidal and barrel vault structures, we fabricate and install skylight systems that combine structural integrity with elegant design.</p>
-                        <ul class="service-features">
-                            <li>Flat skylight systems</li>
-                            <li>Pyramidal skylights</li>
-                            <li>Barrel vault designs</li>
-                            <li>Operable skylights</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 4. Doors & Windows -->
-                <div class="service-detail service-detail--reverse" id="doors-windows">
-                    <div class="service-content">
-                        <h3>Doors & Windows</h3>
-                        <p>High-performance aluminium door and window systems for commercial towers, residential developments, and hospitality projects. We fabricate and install a wide range of configurations -- from standard swing and sliding units to premium folding and pivot systems -- all engineered for thermal efficiency and long-term durability in the UAE climate.</p>
-                        <ul class="service-features">
-                            <li>Swing doors and windows</li>
-                            <li>Sliding systems</li>
-                            <li>Folding doors</li>
-                            <li>Pivot systems</li>
-                        </ul>
-                    </div>
-                    <div class="service-image">
-                        <img src="img/projects/masaar-800.webp" width="800" height="600" loading="lazy" alt="Aluminium door and window installation at Masaar development by Arada">
-                    </div>
-                </div>
-
-                <!-- 5. Glass Balustrades -->
-                <div class="service-detail" id="balustrades">
-                    <div class="service-image">
-                        <img src="img/projects/thecove-800.webp" width="800" height="600" loading="lazy" alt="Glass balustrade system installed on The Cove residential tower balconies">
-                    </div>
-                    <div class="service-content">
-                        <h3>Glass Balustrades</h3>
-                        <p>Frameless and semi-frameless glass railing systems for balconies, staircases, pool areas, and terraces. Our installations combine strict safety compliance with elegant, unobstructed views. Every balustrade is fabricated to exact measurements and installed with precision-machined fittings for a flawless finish.</p>
-                        <ul class="service-features">
-                            <li>Frameless glass systems</li>
-                            <li>Semi-frameless railings</li>
-                            <li>Handrail integration</li>
-                            <li>Custom configurations</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 6. Automatic Doors -->
-                <div class="service-detail service-detail--reverse" id="automatic-doors">
-                    <div class="service-content">
-                        <h3>Automatic Doors</h3>
-                        <p>Sensor-operated automatic door systems for commercial entrances, hotel lobbies, retail storefronts, and office buildings. We install sliding, revolving, and swing automatic door units that provide seamless accessibility while maintaining security, energy efficiency, and a premium aesthetic at every entrance point.</p>
-                        <ul class="service-features">
-                            <li>Sliding automatic doors</li>
-                            <li>Revolving doors</li>
-                            <li>Swing automatic systems</li>
-                            <li>Access control integration</li>
-                        </ul>
-                    </div>
-                    <div class="service-image">
-                        <img src="img/projects/aloft1-800.webp" width="800" height="600" loading="lazy" alt="Automatic door system installed at Aloft Hotel entrance">
-                    </div>
-                </div>
-
-                <!-- 7. Rolling Shutters -->
-                <div class="service-detail" id="rolling-shutters">
-                    <div class="service-image">
-                        <img src="img/projects/dubaisouth-800.webp" width="800" height="600" loading="lazy" alt="Aluminium rolling shutter installation at Dubai South project">
-                    </div>
-                    <div class="service-content">
-                        <h3>Rolling Shutters</h3>
-                        <p>Aluminium rolling shutter systems for security, privacy, and climate control across retail, industrial, and residential applications. Available in manual and motorized configurations with options for perforated visibility, fire-rated protection, and remote-controlled operation to suit any commercial or residential requirement.</p>
-                        <ul class="service-features">
-                            <li>Security shutters</li>
-                            <li>Perforated designs</li>
-                            <li>Motorized systems</li>
-                            <li>Fire-rated options</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Process -->
-    <section class="section">
-        <div class="container">
-            <div class="section__header">
-                <span class="section__label">Our Process</span>
-                <h2>How We Work</h2>
-                <p>From material receipt to final installation -- quality at every step.</p>
-            </div>
-
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>Order Receipt</h3>
-                    <p>Materials and specifications received from main contractor</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>Shop Drawings</h3>
-                    <p>Detailed fabrication drawings prepared and approved</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>Fabrication</h3>
-                    <p>Precision cutting, machining, and assembly in our facility</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>Quality Check</h3>
-                    <p>Rigorous inspection before delivery to site</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <h3>Installation</h3>
-                    <p>Professional on-site installation by our expert team</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-      <div class="container">
-        <h2>Need Fabrication &amp; Installation Services?</h2>
-        <p>Contact us to discuss your project requirements with our technical team.</p>
-        <div class="cta__actions">
-          <a href="contact.html" class="btn btn--outline-white btn--lg">Contact Us</a>
-          <a href="equipment.html" class="btn btn--primary btn--lg">View Our Equipment</a>
-        </div>
+<!-- SERVICE 1: Curtain Walls -->
+<section class="s s--gray" data-r>
+  <div class="s__inner">
+    <div class="sd">
+      <div class="sd__img">
+        <img src="img/projects/aykon-800.webp" alt="AYKON City curtain wall installation" width="800" height="600" loading="lazy">
       </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__col">
-          <a href="/" class="footer__brand">
-            <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
-            <span>Madinat Al Saada</span>
-          </a>
-          <p class="footer__tagline">Precision aluminium fabrication and expert installation for the UAE's leading contractors.</p>
-          <div class="footer__social">
-            <a href="https://www.linkedin.com/company/madinat-al-saada" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
+      <div class="sd__text">
+        <span class="s__tag">01</span>
+        <h3>Curtain Wall <em>Systems</em></h3>
+        <p>High-performance unitized and stick-system curtain wall facades for commercial towers, residential high-rises, and mixed-use developments. We handle full fabrication, assembly, and on-site installation.</p>
+        <div class="sd__features">
+          <div class="sd__feature">Unitized panel fabrication with factory-sealed joints</div>
+          <div class="sd__feature">Stick-system assembly for complex geometries</div>
+          <div class="sd__feature">Structural silicone glazing and pressure-plate systems</div>
+          <div class="sd__feature">Compatible with Technal, Sch&uuml;co, Reynaers, and AluK profiles</div>
         </div>
-        <div class="footer__col">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="equipment.html">Equipment</a></li>
-            <li><a href="technical.html">Technical</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>Services</h3>
-          <ul>
-            <li><a href="services.html">Curtain Walls</a></li>
-            <li><a href="services.html">ACP Cladding</a></li>
-            <li><a href="services.html">Skylights</a></li>
-            <li><a href="services.html">Doors &amp; Windows</a></li>
-            <li><a href="services.html">Glass Balustrades</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>Contact</h3>
-          <ul class="footer__contact">
-            <li>Amman Street, Industrial Area 1, Ajman, UAE</li>
-            <li><a href="tel:+97165260556">+971 6 526 0556</a></li>
-            <li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Madinat Al Saada Aluminium &amp; Glass Works LLC. All rights reserved.</p>
-        <p>ISO 9001:2015 &middot; ISO 14001:2015 &middot; ISO 45001:2018</p>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/97165260556" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+<!-- SERVICE 2: ACP Cladding -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="sd sd--reverse">
+      <div class="sd__img">
+        <img src="img/projects/malta-800.webp" alt="Malta villas ACP cladding project" width="800" height="600" loading="lazy">
+      </div>
+      <div class="sd__text">
+        <span class="s__tag">02</span>
+        <h3>ACP <em>Cladding</em></h3>
+        <p>Aluminium Composite Panel cladding systems with concealed fix framing for clean, contemporary building envelopes. Precision-routed and folded in our factory for seamless on-site assembly.</p>
+        <div class="sd__features">
+          <div class="sd__feature">Concealed-fix and riveted cassette systems</div>
+          <div class="sd__feature">CNC routing and folding for exact panel geometry</div>
+          <div class="sd__feature">Fire-rated A2 core panels available</div>
+          <div class="sd__feature">Custom colour matching and finish coordination</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="js/main.js" defer></script>
+<!-- SERVICE 3: Skylights -->
+<section class="s s--gray" data-r>
+  <div class="s__inner">
+    <div class="sd">
+      <div class="sd__img">
+        <img src="img/projects/harmony1-800.webp" alt="Harmony project skylight system" width="800" height="600" loading="lazy">
+      </div>
+      <div class="sd__text">
+        <span class="s__tag">03</span>
+        <h3><em>Skylights</em></h3>
+        <p>Structural glass roof systems that bring natural light into lobbies, atriums, and public spaces. Engineered for thermal performance, waterproofing, and wind load resistance in the UAE climate.</p>
+        <div class="sd__features">
+          <div class="sd__feature">Pyramid, ridge, barrel vault, and flat-glass configurations</div>
+          <div class="sd__feature">Thermally broken aluminium rafter systems</div>
+          <div class="sd__feature">Laminated and insulated glass options</div>
+          <div class="sd__feature">Integrated drainage and condensation management</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 4: Doors & Windows -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="sd sd--reverse">
+      <div class="sd__img">
+        <img src="img/projects/masaar-800.webp" alt="Masaar project doors and windows" width="800" height="600" loading="lazy">
+      </div>
+      <div class="sd__text">
+        <span class="s__tag">04</span>
+        <h3>Doors &amp; <em>Windows</em></h3>
+        <p>Complete door and window fabrication across all standard and premium configurations. Thermal break profiles with multi-point locking for security, sound insulation, and energy performance.</p>
+        <div class="sd__features">
+          <div class="sd__feature">Casement, sliding, tilt-and-turn, and folding systems</div>
+          <div class="sd__feature">Thermal break profiles for energy efficiency</div>
+          <div class="sd__feature">Multi-point locking and hardware installation</div>
+          <div class="sd__feature">Large-format sliding doors up to 3m height</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 5: Glass Balustrades -->
+<section class="s s--gray" data-r>
+  <div class="s__inner">
+    <div class="sd">
+      <div class="sd__img">
+        <img src="img/projects/thecove-800.webp" alt="The Cove glass balustrade installation" width="800" height="600" loading="lazy">
+      </div>
+      <div class="sd__text">
+        <span class="s__tag">05</span>
+        <h3>Glass <em>Balustrades</em></h3>
+        <p>Frameless and semi-frameless glass balustrade systems for balconies, staircases, podium edges, and pool surrounds. Engineered for safety and designed for minimal visual obstruction.</p>
+        <div class="sd__features">
+          <div class="sd__feature">Frameless channel-set and point-fixed systems</div>
+          <div class="sd__feature">Semi-frameless with aluminium or stainless steel posts</div>
+          <div class="sd__feature">Tempered and laminated safety glass</div>
+          <div class="sd__feature">Handrail integration in round and rectangular profiles</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 6: Automatic Doors -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="sd sd--reverse">
+      <div class="sd__img">
+        <img src="img/projects/aloft1-800.webp" alt="Aloft hotel automatic door installation" width="800" height="600" loading="lazy">
+      </div>
+      <div class="sd__text">
+        <span class="s__tag">06</span>
+        <h3>Automatic <em>Doors</em></h3>
+        <p>Motorized sliding, swing, and revolving door systems for hotels, commercial buildings, and retail spaces. Complete installation including operators, sensors, and safety compliance.</p>
+        <div class="sd__features">
+          <div class="sd__feature">Sliding, swing, and telescopic automatic operators</div>
+          <div class="sd__feature">Motion sensors and safety beam integration</div>
+          <div class="sd__feature">Fire-rated and emergency breakout configurations</div>
+          <div class="sd__feature">Maintenance and service support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 7: Rolling Shutters -->
+<section class="s s--gray" data-r>
+  <div class="s__inner">
+    <div class="sd">
+      <div class="sd__img">
+        <img src="img/projects/dubaisouth-800.webp" alt="Dubai South rolling shutter installation" width="800" height="600" loading="lazy">
+      </div>
+      <div class="sd__text">
+        <span class="s__tag">07</span>
+        <h3>Rolling <em>Shutters</em></h3>
+        <p>Motorized and manual aluminium rolling shutters for warehouses, retail units, parking entries, and residential applications. Built for durability, security, and smooth daily operation.</p>
+        <div class="sd__features">
+          <div class="sd__feature">Motorized tubular motor and chain-drive options</div>
+          <div class="sd__feature">Perforated, solid, and vision-panel slat profiles</div>
+          <div class="sd__feature">Wind-lock guides for high-wind exposure</div>
+          <div class="sd__feature">Remote control and smart-home integration</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="s s--gray" style="padding-top:0" data-r>
+  <div class="s__inner">
+    <div class="s__head s__head--center">
+      <span class="s__tag">How It Works</span>
+      <h2>Our <em>Process</em></h2>
+      <p>From shop drawings to handover, a clear five-step workflow that keeps every project on track.</p>
+    </div>
+    <div class="process">
+      <div class="process__step">
+        <h4>Shop Drawings</h4>
+        <p>Detailed fabrication drawings prepared from consultant-approved architectural plans.</p>
+      </div>
+      <div class="process__step">
+        <h4>Material Coordination</h4>
+        <p>Profile systems and glass specifications confirmed with the main contractor.</p>
+      </div>
+      <div class="process__step">
+        <h4>Factory Fabrication</h4>
+        <p>CNC cutting, machining, assembly, and quality inspection in our Ajman facility.</p>
+      </div>
+      <div class="process__step">
+        <h4>Site Installation</h4>
+        <p>Our crews install all systems on-site with full safety compliance and coordination.</p>
+      </div>
+      <div class="process__step">
+        <h4>Handover &amp; Snag</h4>
+        <p>Final inspection, snag clearance, and handover documentation to close the project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta__bg" style="background-image:url('img/factory/factory-overview.webp')" role="presentation"></div>
+  <div class="cta__content" data-r>
+    <h2>Need Fabrication <em>Services?</em></h2>
+    <p>Whether it's curtain walls for a 50-floor tower or rolling shutters for a retail strip, we have the capacity and the crew. Let's talk.</p>
+    <div class="cta__btns">
+      <a href="contact.html" class="btn--white">Request a Quote</a>
+      <a href="tel:+97165260556" class="btn--outline">Call 06-5260556</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
+      <p>Precision aluminium fabrication and installation for the UAE's leading contractors. Trusted since 2016.</p>
+    </div>
+    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a></div></div>
+    <div><h4>Services</h4><div class="foot__links"><a href="services.html">Curtain Walls</a><a href="services.html">ACP Cladding</a><a href="services.html">Skylights</a><a href="services.html">Doors &amp; Windows</a><a href="services.html">Balustrades</a></div></div>
+    <div><h4>Contact</h4><ul class="foot__contact"><li>Amman St, Industrial Area 1, Ajman</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
+  </div>
+  <div class="foot__bottom">
+    <p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p>
+    <p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Nav
+const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
+// Scroll nav
+let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
+// Reveal
+const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
+// Year
+document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","provider":{"@type":"Organization","name":"Madinat Al Saada Aluminium & Glass Works LLC","url":"https://madinatalsaada.ae"},"serviceType":"Aluminium Facade Fabrication and Installation","areaServed":{"@type":"Country","name":"United Arab Emirates"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Facade Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Curtain Wall Systems","description":"Unitized and stick-system facades for high-rise towers and commercial buildings"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"ACP Cladding","description":"Aluminium composite panel systems with concealed fix for clean, modern finishes"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Skylights","description":"Structural glass roof systems including pyramids, ridges, barrel vaults"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Doors & Windows","description":"Casement, sliding, tilt-and-turn, and folding systems with thermal break profiles"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Glass Balustrades","description":"Frameless and semi-frameless systems for balconies, staircases, and podium edges"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Automatic Doors","description":"Motorized sliding, swing, and revolving door systems"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Rolling Shutters","description":"Motorized and manual aluminium shutters for security and climate control"}}]}}</script>
+
 </body>
 </html>

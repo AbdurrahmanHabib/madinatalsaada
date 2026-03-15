@@ -1,81 +1,184 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Frequently asked questions about Madinat Al Saada's aluminium fabrication and installation services, certifications, and partnership model.">
-  <title>FAQ | Madinat Al Saada</title>
-
-  <!-- Canonical & Alternates -->
-  <link rel="canonical" href="https://madinatalsaada.ae/faq.html">
-  <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/faq.html">
-  <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/index.html">
-
-  <!-- Open Graph -->
+  <meta name="description" content="Frequently asked questions about Madinat Al Saada — aluminium facade fabrication, installation services, certifications, and partnership process in the UAE.">
+  <title>FAQ | Madinat Al Saada — Aluminium Facade Questions Answered</title>
   <meta property="og:title" content="FAQ | Madinat Al Saada">
-  <meta property="og:description" content="Frequently asked questions about Madinat Al Saada's aluminium fabrication and installation services, certifications, and partnership model.">
+  <meta property="og:description" content="Common questions about our aluminium facade fabrication, installation services, quality certifications, and how to partner with us.">
   <meta property="og:image" content="https://madinatalsaada.ae/img/og-image.jpg">
   <meta property="og:url" content="https://madinatalsaada.ae/faq.html">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FAQ | Madinat Al Saada">
-  <meta name="twitter:description" content="Frequently asked questions about Madinat Al Saada's aluminium fabrication and installation services, certifications, and partnership model.">
-  <meta name="twitter:image" content="https://madinatalsaada.ae/img/og-image.jpg">
-
-  <!-- Theme & Favicon -->
-  <meta name="theme-color" content="#1a3a5c">
+  <link rel="canonical" href="https://madinatalsaada.ae/faq.html">
+  <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/faq.html">
+  <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/faq.html">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="icon" type="image/webp" href="img/logo.webp">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'DM Sans',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+    button{font:inherit;cursor:pointer;border:none;background:none}
+    ::selection{background:#1a3a5c;color:#fff}
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/pages.css">
+    :root{
+      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
+      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
+      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
+      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+    }
+
+    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
+    .skip:focus{top:16px}
+
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,backdrop-filter .4s}
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
+
+    .nav__logo{display:flex;align-items:center;gap:12px}
+    .nav__logo img{height:42px;width:auto;border-radius:0}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav.is-solid .nav__logo-text{color:var(--gray-900)}
+    @media(max-width:767px){.nav__logo-text{display:none}}
+
+    .nav__links{display:none;gap:32px}
+    @media(min-width:1024px){.nav__links{display:flex}}
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
+    .nav__links a:hover{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-600)}
+    .nav.is-solid .nav__links a:hover{color:var(--gray-900)}
+
+    .nav__right{display:flex;align-items:center;gap:16px}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
+
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    @media(min-width:768px){.nav__cta-btn{display:block}}
+    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
+
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    @media(min-width:1024px){.nav__burger{display:none}}
+    .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
+    .nav.is-solid .nav__burger span{background:var(--gray-900)}
+    .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+    .nav__burger.is-open span:nth-child(2){opacity:0}
+    .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column;gap:0}
+    .nav__drawer.is-open{display:flex}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a:last-child{border:none}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+
+    /* PAGE HERO */
+    .page-hero{position:relative;padding:160px 24px 80px;background:var(--black);text-align:center;overflow:hidden}
+    @media(min-width:768px){.page-hero{padding:200px 40px 100px}}
+    .page-hero__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:400;color:#fff;line-height:1.1;letter-spacing:-.03em;max-width:800px;margin:0 auto 16px}
+    .page-hero h1 em{font-style:italic;font-weight:500}
+    .page-hero p{font-size:17px;color:rgba(255,255,255,.5);max-width:560px;margin:0 auto;line-height:1.7}
+
+    /* SECTIONS */
+    .s{padding:80px 24px}
+    @media(min-width:768px){.s{padding:120px 40px}}
+    @media(min-width:1200px){.s{padding:160px 40px}}
+    .s--gray{background:var(--gray-100)}
+    .s--dark{background:var(--gray-900)}
+    .s__inner{max-width:1200px;margin:0 auto}
+
+    .s__head{margin-bottom:56px}
+    @media(min-width:768px){.s__head{margin-bottom:80px}}
+    .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
+    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
+    .s__head h2 em{font-style:italic;font-weight:500}
+    .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
+    .s__head--center p{margin:0 auto}
+
+    /* FAQ */
+    .faq{max-width:720px;margin:0 auto}
+    .faq details{border-bottom:1px solid var(--gray-200)}
+    .faq summary{display:flex;align-items:center;justify-content:space-between;padding:24px 0;font-size:16px;font-weight:500;color:var(--gray-900);cursor:pointer;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:'+';font-size:24px;font-weight:300;color:var(--gray-400);transition:transform .3s}
+    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq .faq__a{padding:0 0 24px;font-size:15px;color:var(--gray-500);line-height:1.7;max-width:600px}
+
+    .faq__category{font-family:'Playfair Display',serif;font-size:22px;font-weight:500;color:var(--navy);margin:48px 0 8px;padding-bottom:16px;border-bottom:2px solid var(--gray-200);letter-spacing:-.01em}
+    .faq__category:first-child{margin-top:0}
+
+    /* CTA */
+    .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
+    @media(min-width:768px){.cta{padding:160px 40px}}
+    .cta__bg{position:absolute;inset:0;background:url('img/hero/aykon-hero.webp') center/cover no-repeat}
+    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
+    .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
+    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
+    .cta h2 em{font-style:italic;font-weight:500}
+    .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
+    .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
+    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
+    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
+    .cta .btn--white:hover{background:var(--gray-100)}
+    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
+    .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+
+    /* FOOTER */
+    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    @media(min-width:768px){.foot{padding:96px 40px 0}}
+    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
+    @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
+    .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
+    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__links a:hover{color:#fff}
+    .foot__contact li{margin-bottom:10px;font-size:14px}
+    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a:hover{color:#fff}
+    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
+    @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
+    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
+
+    /* WHATSAPP */
+    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    .wa:hover{transform:scale(1.1);color:#fff}
+    .wa svg{width:24px;height:24px}
+
+    /* SCROLL REVEAL */
+    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+    [data-r].in{opacity:1;transform:none}
+
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+      [data-r]{opacity:1;transform:none}
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Skip Link -->
-  <a href="#main" class="skip-link">Skip to main content</a>
+<a href="#main" class="skip">Skip to content</a>
 
-  <!-- Navbar -->
-  <nav class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="/" class="navbar__brand">
-        <img src="img/logo.webp" alt="Madinat Al Saada" width="40" height="40">
-        <span>Madinat Al Saada</span>
-      </a>
-      <ul class="navbar__menu" role="menubar">
-        <li><a href="/">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="equipment.html">Equipment</a></li>
-        <li><a href="technical.html">Technical</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="navbar__actions">
-        <a href="ar/faq.html" class="lang-switch">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          العربية
-        </a>
-        <a href="contact.html" class="btn btn--primary btn--sm">Get Quote</a>
-        <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-    <div class="navbar__mobile" id="navMobile">
-      <a href="/">Home</a>
+<!-- NAV -->
+<nav class="nav is-solid" id="nav">
+  <div class="nav__wrap">
+    <a href="/" class="nav__logo">
+      <img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42">
+      <span class="nav__logo-text">Madinat Al Saada</span>
+    </a>
+    <div class="nav__links">
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="projects.html">Projects</a>
@@ -83,328 +186,174 @@
       <a href="technical.html">Technical</a>
       <a href="contact.html">Contact</a>
     </div>
-  </nav>
-
-  <!-- Main Content -->
-  <main id="main">
-
-    <!-- Page Hero -->
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb">
-          <a href="/">Home</a>
-          <span>/</span>
-          <span class="current">FAQ</span>
-        </div>
-        <h1>Frequently Asked Questions</h1>
-        <p>Common questions about our services and how we work.</p>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section">
-      <div class="container">
-
-        <!-- General -->
-        <h3 class="faq-category">General</h3>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary class="faq-item__question">What does Madinat Al Saada do?</summary>
-            <div class="faq-item__answer">
-              <p>We specialise in the fabrication and installation of aluminium and glass systems for the construction industry. Our scope covers curtain walls, ACP cladding, skylights, aluminium doors and windows, glass balustrades, automatic doors, and rolling shutters. We handle the full cycle from shop drawings and factory fabrication to on-site installation and commissioning.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">Do you work directly with end clients?</summary>
-            <div class="faq-item__answer">
-              <p>No. We operate exclusively as a B2B subcontractor. We partner with main contractors, aluminium trading companies, and construction firms who engage us for fabrication and installation on their projects. If you are a homeowner or property developer, we recommend contacting one of our partner contractors who can coordinate the full supply-and-install scope.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">Where is your facility located?</summary>
-            <div class="faq-item__answer">
-              <p>Our fabrication facility is located on Amman Street in Industrial Area 1, Ajman, UAE. The 15,000 sq ft factory houses CNC machinery, double-head cutting saws, copy routers, crimping machines, and a dedicated quality inspection area. We serve projects across all Emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Umm Al Quwain, and Fujairah.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">How long have you been in business?</summary>
-            <div class="faq-item__answer">
-              <p>Madinat Al Saada Aluminium &amp; Glass Works LLC was founded in 2016. With 10 years of experience and over 17 completed projects, we have built a strong track record delivering aluminium and glass installations for residential towers, commercial buildings, and mixed-use developments ranging from villa clusters to 39-floor high-rise towers.</p>
-            </div>
-          </details>
-        </div>
-
-        <!-- Services -->
-        <h3 class="faq-category">Services</h3>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary class="faq-item__question">What aluminium systems do you work with?</summary>
-            <div class="faq-item__answer">
-              <p>We are experienced with all major international aluminium profile systems including Technal, Sch&uuml;co, Reynaers, AluK, and Guttmann. We also work with local extrusion suppliers for bespoke profiles. Our factory is equipped to handle unitized curtain walls, stick-system facades, and standard door and window assemblies across all these brands.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">Do you supply materials?</summary>
-            <div class="faq-item__answer">
-              <p>No. Materials&mdash;including aluminium profiles, glass, hardware, and sealants&mdash;are supplied by the main contractor or their nominated suppliers. We focus exclusively on fabrication and installation, which allows us to maintain competitive pricing and concentrate on what we do best: precision manufacturing and expert site work.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">What is the difference between stick and unitized curtain walls?</summary>
-            <div class="faq-item__answer">
-              <p>Stick systems are assembled piece-by-piece on site: mullions and transoms are installed first, then glazing panels are added individually. They are more cost-effective and flexible for complex geometries but slower to install. Unitized systems are pre-assembled in our factory as complete panels with glass already fitted, then lifted and connected on site. They offer faster installation, better quality control, and are ideal for high-rise buildings where speed and weather-tightness are critical.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">Do you handle both fabrication and installation?</summary>
-            <div class="faq-item__answer">
-              <p>Yes. We provide a complete fabrication-and-installation service. Aluminium profiles are cut, machined, and assembled in our Ajman factory, then transported to site where our trained installation crews handle anchoring, glazing, sealing, and final commissioning. This integrated approach ensures quality consistency from factory floor to finished facade.</p>
-            </div>
-          </details>
-        </div>
-
-        <!-- Quality -->
-        <h3 class="faq-category">Quality</h3>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary class="faq-item__question">What certifications do you hold?</summary>
-            <div class="faq-item__answer">
-              <p>We maintain three internationally recognised ISO certifications: ISO 9001:2015 for quality management, ISO 14001:2015 for environmental management, and ISO 45001:2018 for occupational health and safety. These certifications are audited annually and cover our factory operations, site installations, and management processes.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">How do you ensure quality?</summary>
-            <div class="faq-item__answer">
-              <p>We follow a 4-step quality control process on every project: (1) incoming material inspection to verify profiles, glass, and hardware meet specifications; (2) in-process checks during cutting, machining, and assembly; (3) dimensional verification of completed units against shop drawings; and (4) final inspection and sign-off before dispatch to site. On site, our supervisors conduct daily installation quality audits.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">What equipment do you use?</summary>
-            <div class="faq-item__answer">
-              <p>Our 15,000 sq ft factory is equipped with 15 specialised machines including CNC routers for precision machining, double-head cutting saws for accurate profile cutting, copy routers, single-head saws, crimping machines, corner cleaning machines, glass processing equipment, and drilling machines. This comprehensive equipment lineup allows us to handle all major aluminium profile systems in-house.</p>
-            </div>
-          </details>
-        </div>
-
-        <!-- Partnership -->
-        <h3 class="faq-category">Partnership</h3>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary class="faq-item__question">How do we start working together?</summary>
-            <div class="faq-item__answer">
-              <p>Contact us via phone at <a href="tel:+97165260556">06-5260556</a>, email at <a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a>, or through the <a href="contact.html">contact form</a> on our website. Share your project details, drawings, and BOQ, and our estimation team will provide a competitive quotation within 48 hours. We work with both established contractors and new partners looking for a reliable fabrication and installation subcontractor.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">What areas do you cover?</summary>
-            <div class="faq-item__answer">
-              <p>We serve projects across all UAE emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Umm Al Quwain, and Fujairah. Our factory is centrally located in Ajman with easy access to all major highways, allowing efficient delivery and crew deployment to project sites throughout the country.</p>
-            </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__question">What project sizes do you handle?</summary>
-            <div class="faq-item__answer">
-              <p>We handle projects of all scales, from residential villa developments with standard door and window packages to large-scale high-rise towers up to 39 floors requiring full curtain wall fabrication and installation. Our workforce of 90+ direct workers and subcontractor teams can be scaled to match project timelines and complexity requirements.</p>
-            </div>
-          </details>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-      <div class="container">
-        <h2>Have More Questions?</h2>
-        <p>Our team is ready to discuss your project requirements, provide technical guidance, and answer any questions about our capabilities.</p>
-        <div class="cta__actions">
-          <a href="contact.html" class="btn btn--outline-white btn--lg">Contact Us</a>
-          <a href="services.html" class="btn btn--primary btn--lg">View Our Services</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__col">
-          <a href="/" class="footer__brand">
-            <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
-            <span>Madinat Al Saada</span>
-          </a>
-          <p class="footer__tagline">Precision aluminium fabrication and expert installation for the UAE's leading contractors.</p>
-          <div class="footer__social">
-            <a href="https://www.linkedin.com/company/madinat-al-saada" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer__col">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="equipment.html">Equipment</a></li>
-            <li><a href="technical.html">Technical</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>Services</h3>
-          <ul>
-            <li><a href="services.html">Curtain Walls</a></li>
-            <li><a href="services.html">ACP Cladding</a></li>
-            <li><a href="services.html">Skylights</a></li>
-            <li><a href="services.html">Doors &amp; Windows</a></li>
-            <li><a href="services.html">Glass Balustrades</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3>Contact</h3>
-          <ul class="footer__contact">
-            <li>Amman Street, Industrial Area 1, Ajman, UAE</li>
-            <li><a href="tel:+97165260556">+971 6 526 0556</a></li>
-            <li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Madinat Al Saada Aluminium &amp; Glass Works LLC. All rights reserved.</p>
-        <p>ISO 9001:2015 &middot; ISO 14001:2015 &middot; ISO 45001:2018</p>
-      </div>
+    <div class="nav__right">
+      <a href="ar/faq.html" class="nav__lang">العربية</a>
+      <a href="contact.html" class="nav__cta-btn">Get Quote</a>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </footer>
+  </div>
+  <div class="nav__drawer" id="drawer">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="equipment.html">Equipment</a>
+    <a href="technical.html">Technical</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav__drawer-cta">Get Quote →</a>
+  </div>
+</nav>
 
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/97165260556" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+<!-- PAGE HERO -->
+<header class="page-hero" id="main">
+  <span class="page-hero__tag">Knowledge Base</span>
+  <h1>Frequently Asked <em>Questions</em></h1>
+  <p>Everything you need to know about our aluminium facade fabrication, installation services, and partnership process.</p>
+</header>
 
-  <!-- Structured Data: FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What does Madinat Al Saada do?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We specialise in the fabrication and installation of aluminium and glass systems for the construction industry. Our scope covers curtain walls, ACP cladding, skylights, aluminium doors and windows, glass balustrades, automatic doors, and rolling shutters. We handle the full cycle from shop drawings and factory fabrication to on-site installation and commissioning."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work directly with end clients?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. We operate exclusively as a B2B subcontractor. We partner with main contractors, aluminium trading companies, and construction firms who engage us for fabrication and installation on their projects. If you are a homeowner or property developer, we recommend contacting one of our partner contractors who can coordinate the full supply-and-install scope."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where is your facility located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our fabrication facility is located on Amman Street in Industrial Area 1, Ajman, UAE. The 15,000 sq ft factory houses CNC machinery, double-head cutting saws, copy routers, crimping machines, and a dedicated quality inspection area. We serve projects across all Emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Umm Al Quwain, and Fujairah."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long have you been in business?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Madinat Al Saada Aluminium & Glass Works LLC was founded in 2016. With 10 years of experience and over 17 completed projects, we have built a strong track record delivering aluminium and glass installations for residential towers, commercial buildings, and mixed-use developments ranging from villa clusters to 39-floor high-rise towers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What aluminium systems do you work with?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We are experienced with all major international aluminium profile systems including Technal, Schuco, Reynaers, AluK, and Guttmann. We also work with local extrusion suppliers for bespoke profiles. Our factory is equipped to handle unitized curtain walls, stick-system facades, and standard door and window assemblies across all these brands."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you supply materials?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Materials — including aluminium profiles, glass, hardware, and sealants — are supplied by the main contractor or their nominated suppliers. We focus exclusively on fabrication and installation, which allows us to maintain competitive pricing and concentrate on what we do best: precision manufacturing and expert site work."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the difference between stick and unitized curtain walls?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Stick systems are assembled piece-by-piece on site: mullions and transoms are installed first, then glazing panels are added individually. They are more cost-effective and flexible for complex geometries but slower to install. Unitized systems are pre-assembled in our factory as complete panels with glass already fitted, then lifted and connected on site. They offer faster installation, better quality control, and are ideal for high-rise buildings where speed and weather-tightness are critical."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you handle both fabrication and installation?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We provide a complete fabrication-and-installation service. Aluminium profiles are cut, machined, and assembled in our Ajman factory, then transported to site where our trained installation crews handle anchoring, glazing, sealing, and final commissioning. This integrated approach ensures quality consistency from factory floor to finished facade."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What certifications do you hold?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We maintain three internationally recognised ISO certifications: ISO 9001:2015 for quality management, ISO 14001:2015 for environmental management, and ISO 45001:2018 for occupational health and safety. These certifications are audited annually and cover our factory operations, site installations, and management processes."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do you ensure quality?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We follow a 4-step quality control process on every project: (1) incoming material inspection to verify profiles, glass, and hardware meet specifications; (2) in-process checks during cutting, machining, and assembly; (3) dimensional verification of completed units against shop drawings; and (4) final inspection and sign-off before dispatch to site. On site, our supervisors conduct daily installation quality audits."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What equipment do you use?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our 15,000 sq ft factory is equipped with 15 specialised machines including CNC routers for precision machining, double-head cutting saws for accurate profile cutting, copy routers, single-head saws, crimping machines, corner cleaning machines, glass processing equipment, and drilling machines. This comprehensive equipment lineup allows us to handle all major aluminium profile systems in-house."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do we start working together?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Contact us via phone at 06-5260556, email at info@madinatalsaada.ae, or through the contact form on our website. Share your project details, drawings, and BOQ, and our estimation team will provide a competitive quotation within 48 hours. We work with both established contractors and new partners looking for a reliable fabrication and installation subcontractor."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What areas do you cover?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We serve projects across all UAE emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Umm Al Quwain, and Fujairah. Our factory is centrally located in Ajman with easy access to all major highways, allowing efficient delivery and crew deployment to project sites throughout the country."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What project sizes do you handle?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We handle projects of all scales, from residential villa developments with standard door and window packages to large-scale high-rise towers up to 39 floors requiring full curtain wall fabrication and installation. Our workforce of 90+ direct workers and subcontractor teams can be scaled to match project timelines and complexity requirements."
-        }
-      }
-    ]
-  }
-  </script>
+<!-- FAQ -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="faq">
 
-  <script src="js/main.js" defer></script>
+      <!-- GENERAL -->
+      <h3 class="faq__category">General</h3>
+
+      <details>
+        <summary>What does Madinat Al Saada do?</summary>
+        <div class="faq__a">Madinat Al Saada Aluminium &amp; Glass Works LLC specializes in the fabrication and installation of aluminium facade systems. We work on curtain walls, ACP cladding, skylights, doors &amp; windows, glass balustrades, automatic doors, and rolling shutters for construction projects across the UAE.</div>
+      </details>
+
+      <details>
+        <summary>Do you work directly with end clients?</summary>
+        <div class="faq__a">No. We operate exclusively as a subcontractor for main aluminium contractors and facade companies. Materials are supplied by the main contractor — we provide the skilled labor, factory fabrication, and on-site installation. This model allows us to focus entirely on precision workmanship.</div>
+      </details>
+
+      <details>
+        <summary>Where is your facility located?</summary>
+        <div class="faq__a">Our factory and office are located on Amman Street in Industrial Area 1, Ajman, United Arab Emirates. We serve projects across all Emirates including Dubai, Abu Dhabi, Sharjah, Ras Al Khaimah, and the Northern Emirates.</div>
+      </details>
+
+      <details>
+        <summary>How long has the company been in business?</summary>
+        <div class="faq__a">Madinat Al Saada was established in 2016. Over the past decade, we have completed 17+ major projects including high-rise towers, commercial developments, and villa communities across the UAE, building a reputation for reliable, high-quality facade work.</div>
+      </details>
+
+      <!-- SERVICES -->
+      <h3 class="faq__category">Services</h3>
+
+      <details>
+        <summary>What aluminium systems do you work with?</summary>
+        <div class="faq__a">We are proficient with all major international aluminium systems including Technal, Sch&uuml;co, Reynaers, AluK, Guttmann, Hydro, Hueck, Alumil, UCS, and others. We do not work with generic or unbranded profiles — only premium systems engineered for performance.</div>
+      </details>
+
+      <details>
+        <summary>Do you supply the materials?</summary>
+        <div class="faq__a">No. As a subcontractor, materials (aluminium profiles, glass, hardware, sealants) are supplied by the main contractor. We receive the materials at our factory, fabricate according to approved shop drawings, and install on site. This separation ensures clear accountability and cost transparency.</div>
+      </details>
+
+      <details>
+        <summary>What is the difference between stick and unitized curtain walls?</summary>
+        <div class="faq__a">Stick systems are assembled piece-by-piece on site — mullions, transoms, and glass installed individually. They suit low to mid-rise buildings and irregular geometries. Unitized systems are factory-assembled as complete panels, then crane-lifted and installed floor by floor. They are faster (up to 50% time savings), have better quality control, and are ideal for high-rise towers with repetitive floor plates.</div>
+      </details>
+
+      <details>
+        <summary>Do you handle both fabrication and installation?</summary>
+        <div class="faq__a">Yes. We are a full-service facade subcontractor. Our factory in Ajman handles all fabrication — cutting, machining, assembly, and quality checks. Our site crews then install the finished products across project locations in the UAE. This end-to-end approach ensures consistency from factory to facade.</div>
+      </details>
+
+      <!-- QUALITY -->
+      <h3 class="faq__category">Quality</h3>
+
+      <details>
+        <summary>What certifications do you hold?</summary>
+        <div class="faq__a">We hold three ISO certifications: ISO 9001:2015 (Quality Management System), ISO 14001:2015 (Environmental Management System), and ISO 45001:2018 (Occupational Health &amp; Safety Management System). These are independently audited and renewed annually.</div>
+      </details>
+
+      <details>
+        <summary>How do you ensure quality during fabrication?</summary>
+        <div class="faq__a">Our ISO 9001 quality management system governs every stage — incoming material inspection, CNC machining tolerances, assembly checks, and final QC before dispatch. We maintain detailed checklists, non-conformance reports, and traceability records for every project. All work follows approved shop drawings signed off by the main contractor's engineering team.</div>
+      </details>
+
+      <details>
+        <summary>What equipment do you use?</summary>
+        <div class="faq__a">Our factory houses 15+ specialized machines including double-head cutting saws, CNC machining centers, copy routers, crimping machines, corner cleaning machines, glass processing equipment, and sealant application systems. All equipment is regularly maintained and calibrated to manufacturer standards.</div>
+      </details>
+
+      <!-- PARTNERSHIP -->
+      <h3 class="faq__category">Partnership</h3>
+
+      <details>
+        <summary>How do we start working together?</summary>
+        <div class="faq__a">Contact us with your project details — scope, system type, quantities, and timeline. We will review the requirements, visit the site if needed, and provide a competitive quotation within 48 hours. Once awarded, we assign a dedicated project manager and begin shop drawing coordination immediately.</div>
+      </details>
+
+      <details>
+        <summary>What areas of the UAE do you cover?</summary>
+        <div class="faq__a">We cover all seven Emirates. Our active project sites span Dubai (Marina, Business Bay, Creek Harbour, Dubai South), Abu Dhabi, Sharjah, Ajman, and Ras Al Khaimah. Our central location in Ajman gives us efficient access to projects across the northern and central UAE.</div>
+      </details>
+
+      <details>
+        <summary>What project sizes do you handle?</summary>
+        <div class="faq__a">We handle projects ranging from villa communities and low-rise commercial buildings to 50+ floor high-rise towers. Our workforce of 90+ skilled workers across 10+ active sites allows us to manage multiple projects simultaneously without compromising quality or timelines.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta__bg" role="presentation"></div>
+  <div class="cta__content" data-r>
+    <h2>Have More <em>Questions?</em></h2>
+    <p>Our team is ready to discuss your project requirements and answer any technical questions you may have.</p>
+    <div class="cta__btns">
+      <a href="contact.html" class="btn--white">Contact Us</a>
+      <a href="tel:+97165260556" class="btn--outline">Call 06-5260556</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
+      <p>Precision aluminium fabrication and installation for the UAE's leading contractors. Trusted since 2016.</p>
+    </div>
+    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a></div></div>
+    <div><h4>Services</h4><div class="foot__links"><a href="services.html">Curtain Walls</a><a href="services.html">ACP Cladding</a><a href="services.html">Skylights</a><a href="services.html">Doors &amp; Windows</a><a href="services.html">Balustrades</a></div></div>
+    <div><h4>Contact</h4><ul class="foot__contact"><li>Amman St, Industrial Area 1, Ajman</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
+  </div>
+  <div class="foot__bottom">
+    <p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p>
+    <p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Nav
+const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
+let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
+// Reveal
+const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
+// FAQ single open
+document.querySelectorAll('.faq details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.faq details').forEach(o=>{if(o!==d)o.open=false})}));
+// Year
+document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Madinat Al Saada do?","acceptedAnswer":{"@type":"Answer","text":"Madinat Al Saada Aluminium & Glass Works LLC specializes in the fabrication and installation of aluminium facade systems. We work on curtain walls, ACP cladding, skylights, doors & windows, glass balustrades, automatic doors, and rolling shutters for construction projects across the UAE."}},{"@type":"Question","name":"Do you work directly with end clients?","acceptedAnswer":{"@type":"Answer","text":"No. We operate exclusively as a subcontractor for main aluminium contractors and facade companies. Materials are supplied by the main contractor — we provide the skilled labor, factory fabrication, and on-site installation."}},{"@type":"Question","name":"Where is your facility located?","acceptedAnswer":{"@type":"Answer","text":"Our factory and office are located on Amman Street in Industrial Area 1, Ajman, United Arab Emirates. We serve projects across all Emirates including Dubai, Abu Dhabi, Sharjah, and the Northern Emirates."}},{"@type":"Question","name":"How long has the company been in business?","acceptedAnswer":{"@type":"Answer","text":"Madinat Al Saada was established in 2016. Over the past decade, we have completed 17+ major projects including high-rise towers, commercial developments, and villa communities across the UAE."}},{"@type":"Question","name":"What aluminium systems do you work with?","acceptedAnswer":{"@type":"Answer","text":"We are proficient with all major international aluminium systems including Technal, Schüco, Reynaers, AluK, Guttmann, Hydro, Hueck, Alumil, UCS, and others. We do not work with generic or unbranded profiles."}},{"@type":"Question","name":"Do you supply the materials?","acceptedAnswer":{"@type":"Answer","text":"No. As a subcontractor, materials are supplied by the main contractor. We receive the materials at our factory, fabricate according to approved shop drawings, and install on site."}},{"@type":"Question","name":"What is the difference between stick and unitized curtain walls?","acceptedAnswer":{"@type":"Answer","text":"Stick systems are assembled piece-by-piece on site. They suit low to mid-rise buildings and irregular geometries. Unitized systems are factory-assembled as complete panels, then crane-lifted and installed floor by floor. They are faster, have better quality control, and are ideal for high-rise towers."}},{"@type":"Question","name":"Do you handle both fabrication and installation?","acceptedAnswer":{"@type":"Answer","text":"Yes. We are a full-service facade subcontractor. Our factory in Ajman handles all fabrication and our site crews install the finished products across project locations in the UAE."}},{"@type":"Question","name":"What certifications do you hold?","acceptedAnswer":{"@type":"Answer","text":"We hold three ISO certifications: ISO 9001:2015 (Quality Management), ISO 14001:2015 (Environmental Management), and ISO 45001:2018 (Occupational Health & Safety). These are independently audited and renewed annually."}},{"@type":"Question","name":"How do you ensure quality during fabrication?","acceptedAnswer":{"@type":"Answer","text":"Our ISO 9001 quality management system governs every stage — incoming material inspection, CNC machining tolerances, assembly checks, and final QC before dispatch. We maintain detailed checklists and traceability records for every project."}},{"@type":"Question","name":"What equipment do you use?","acceptedAnswer":{"@type":"Answer","text":"Our factory houses 15+ specialized machines including double-head cutting saws, CNC machining centers, copy routers, crimping machines, corner cleaning machines, glass processing equipment, and sealant application systems."}},{"@type":"Question","name":"How do we start working together?","acceptedAnswer":{"@type":"Answer","text":"Contact us with your project details — scope, system type, quantities, and timeline. We will review the requirements, visit the site if needed, and provide a competitive quotation within 48 hours."}},{"@type":"Question","name":"What areas of the UAE do you cover?","acceptedAnswer":{"@type":"Answer","text":"We cover all seven Emirates. Our active project sites span Dubai, Abu Dhabi, Sharjah, Ajman, and Ras Al Khaimah. Our central location in Ajman gives us efficient access to projects across the UAE."}},{"@type":"Question","name":"What project sizes do you handle?","acceptedAnswer":{"@type":"Answer","text":"We handle projects ranging from villa communities and low-rise commercial buildings to 50+ floor high-rise towers. Our workforce of 90+ skilled workers across 10+ active sites allows us to manage multiple projects simultaneously."}}]}</script>
+
 </body>
 </html>
