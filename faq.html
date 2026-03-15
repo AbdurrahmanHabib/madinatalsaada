@@ -46,17 +46,19 @@
     @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
 
     .nav__logo{display:flex;align-items:center;gap:12px}
-    .nav__logo img{height:42px;width:auto;border-radius:0}
+    .nav__logo img{height:38px;width:auto;border-radius:0}
+    @media(min-width:768px){.nav__logo img{height:44px}}
     .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    @media(min-width:768px){.nav__logo-text{font-size:19px}}
     .nav.is-solid .nav__logo-text{color:var(--gray-900)}
     @media(max-width:767px){.nav__logo-text{display:none}}
 
     .nav__links{display:none;gap:32px}
     @media(min-width:1024px){.nav__links{display:flex}}
     .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
-    .nav__links a:hover{color:#fff}
+    .nav__links a:hover,.nav__links a[aria-current="page"]{color:#fff}
     .nav.is-solid .nav__links a{color:var(--gray-600)}
-    .nav.is-solid .nav__links a:hover{color:var(--gray-900)}
+    .nav.is-solid .nav__links a:hover,.nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900)}
 
     .nav__right{display:flex;align-items:center;gap:16px}
     .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}

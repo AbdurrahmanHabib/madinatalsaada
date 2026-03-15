@@ -319,9 +319,11 @@
 
       <!-- RIGHT: Form -->
       <div>
-        <form id="contactForm" class="form">
-          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-          <input type="hidden" name="subject" value="New Quote Request from madinatalsaada.ae">
+        <form id="contactForm" class="form" action="https://formsubmit.co/info@madinatalsaada.ae" method="POST">
+          <input type="hidden" name="_subject" value="New Quote Request — madinatalsaada.ae">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://madinatalsaada.ae/contact.html?sent=true">
+          <input type="text" name="_honey" style="display:none">
 
           <div class="form__row">
             <div class="form__group">
@@ -425,18 +427,17 @@ const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target
 document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
 // Year
 document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
-// Form
-document.getElementById('contactForm').addEventListener('submit',async function(e){
-  e.preventDefault();
-  const form=this,btn=form.querySelector('.form__submit'),sMsg=document.getElementById('successMsg'),eMsg=document.getElementById('errorMsg');
-  btn.disabled=true;btn.textContent='Sending...';sMsg.style.display='none';eMsg.style.display='none';
-  try{
-    const data=new FormData(form);
-    const res=await fetch('https://api.web3forms.com/submit',{method:'POST',body:data});
-    const json=await res.json();
-    if(json.success){sMsg.style.display='block';form.reset()}else{eMsg.style.display='block'}
-  }catch(err){eMsg.style.display='block'}
-  btn.disabled=false;btn.textContent='Submit Quote Request';
+// Form — show success if redirected back with ?sent=true
+if(window.location.search.includes('sent=true')){
+  const sMsg=document.getElementById('successMsg');
+  if(sMsg)sMsg.style.display='block';
+  window.history.replaceState({},'',window.location.pathname);
+}
+// Form submit loading state
+const cf=document.getElementById('contactForm');
+if(cf)cf.addEventListener('submit',function(){
+  const btn=cf.querySelector('.form__submit');
+  if(btn){btn.disabled=true;btn.textContent='Sending...';}
 });
 </script>
 
