@@ -3,570 +3,552 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="مدينة السعادة للألمنيوم والزجاج — 10 سنوات من التصنيع الدقيق والتركيب الاحترافي. حاصلون على شهادات ISO، موثوقون من كبرى شركات المقاولات في الإمارات منذ 2016.">
-  <title>من نحن | مدينة السعادة</title>
-
-  <meta property="og:title" content="من نحن | مدينة السعادة">
-  <meta property="og:description" content="مدينة السعادة للألمنيوم والزجاج — 10 سنوات من التصنيع الدقيق والتركيب الاحترافي. حاصلون على شهادات ISO، موثوقون من كبرى شركات المقاولات في الإمارات منذ 2016.">
-  <meta property="og:image" content="https://madinatalsaada.ae/img/og-image.jpg">
+  <meta name="description" content="عن مدينة السعادة — عقد من التصنيع والتركيب الدقيق لواجهات الألمنيوم في الإمارات. حاصلون على شهادات ISO، أنظمة دولية، متخصصون في المقاولات من الباطن منذ 2016.">
+  <title>من نحن | مدينة السعادة — متخصصون في واجهات الألمنيوم</title>
+  <meta property="og:title" content="عن مدينة السعادة | متخصصون في واجهات الألمنيوم">
+  <meta property="og:description" content="عقد من التصنيع والتركيب الدقيق لواجهات الألمنيوم في الإمارات. حاصلون على شهادات ISO، أنظمة دولية، متخصصون في المقاولات من الباطن.">
+  <meta property="og:image" content="https://madinatalsaada.ae/img/factory/factory-floor.webp">
   <meta property="og:url" content="https://madinatalsaada.ae/ar/about.html">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="ar_AE">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="canonical" href="https://madinatalsaada.ae/ar/about.html">
-  <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/about.html">
   <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/about.html">
-
-  <meta name="theme-color" content="#1a3a5c">
+  <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/about.html">
+  <meta name="theme-color" content="#0a0a0a">
   <link rel="icon" type="image/webp" href="../img/logo.webp">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="../img/factory/factory-floor.webp" fetchpriority="high">
+  <style>
+    /* ================================================================
+       MADINAT AL SAADA — ARCHITECTURAL EDITORIAL (RTL)
+       Photography-first. Cinematic. Confident. Premium.
+       Font: Playfair Display (editorial headings) + Cairo (Arabic body)
+       ================================================================ */
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/tokens.css">
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/layout.css">
-  <link rel="stylesheet" href="../css/components.css">
-  <link rel="stylesheet" href="../css/pages.css">
-  <link rel="stylesheet" href="../css/rtl.css">
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'DM Sans',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+    button{font:inherit;cursor:pointer;border:none;background:none}
+    ::selection{background:#1a3a5c;color:#fff}
+
+    :root{
+      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
+      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
+      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
+      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+    }
+
+    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
+    .skip:focus{top:16px}
+
+    /* ================================================================
+       NAV
+       ================================================================ */
+    .nav{
+      position:fixed;top:0;left:0;right:0;z-index:100;
+      padding:0 24px;transition:background .4s,backdrop-filter .4s;
+    }
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
+    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
+
+    .nav__logo{display:flex;align-items:center;gap:12px}
+    .nav__logo img{height:42px;width:auto;border-radius:0}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav.is-solid .nav__logo-text{color:var(--gray-900)}
+    @media(max-width:767px){.nav__logo-text{display:none}}
+
+    .nav__links{display:none;gap:32px}
+    @media(min-width:1024px){.nav__links{display:flex}}
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
+    .nav__links a:hover{color:#fff}
+    .nav__links a[aria-current="page"]{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-600)}
+    .nav.is-solid .nav__links a:hover{color:var(--gray-900)}
+    .nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900);font-weight:600}
+
+    .nav__right{display:flex;align-items:center;gap:16px}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
+
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    @media(min-width:768px){.nav__cta-btn{display:block}}
+    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
+
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    @media(min-width:1024px){.nav__burger{display:none}}
+    .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
+    .nav.is-solid .nav__burger span{background:var(--gray-900)}
+    .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+    .nav__burger.is-open span:nth-child(2){opacity:0}
+    .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+    .nav__drawer{
+      display:none;position:fixed;inset:0;top:72px;background:#fff;
+      padding:32px 24px;z-index:99;flex-direction:column;gap:0;
+    }
+    .nav__drawer.is-open{display:flex}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a:last-child{border:none}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+
+    /* ================================================================
+       PAGE HERO — Shorter inner-page hero (50vh)
+       ================================================================ */
+    .page-hero{
+      position:relative;min-height:50svh;display:flex;align-items:flex-end;
+      overflow:hidden;background:var(--black);
+    }
+    .page-hero__img{
+      position:absolute;inset:0;
+      background-position:center;background-size:cover;background-repeat:no-repeat;
+      transform:scale(1.03);animation:heroZoom 20s ease-in-out infinite alternate;
+    }
+    @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+    .page-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.4) 100%)}
+    .page-hero__content{
+      position:relative;z-index:2;padding:0 24px 48px;width:100%;max-width:1400px;margin:0 auto;
+    }
+    @media(min-width:768px){.page-hero__content{padding:0 40px 64px}}
+    @media(min-width:1200px){.page-hero__content{padding:0 40px 80px}}
+
+    .page-hero__breadcrumb{
+      display:flex;align-items:center;gap:8px;
+      font-size:13px;color:rgba(255,255,255,.5);margin-bottom:20px;
+    }
+    .page-hero__breadcrumb a{color:rgba(255,255,255,.5);transition:color .2s}
+    .page-hero__breadcrumb a:hover{color:#fff}
+    .page-hero__breadcrumb span{color:rgba(255,255,255,.3)}
+
+    .page-hero h1{
+      font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,4.5rem);
+      font-weight:400;color:#fff;line-height:1.1;letter-spacing:-.03em;
+      max-width:800px;margin-bottom:16px;
+    }
+    .page-hero h1 strong{font-weight:600;font-style:italic}
+    .page-hero__sub{font-size:clamp(15px,1.6vw,18px);color:rgba(255,255,255,.6);max-width:560px;line-height:1.7}
+
+    /* ================================================================
+       NUMBERS
+       ================================================================ */
+    .numbers{padding:56px 24px;background:var(--gray-900)}
+    @media(min-width:768px){.numbers{padding:72px 40px}}
+    .numbers__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:1200px;margin:0 auto}
+    @media(min-width:768px){.numbers__grid{grid-template-columns:repeat(4,1fr);gap:48px}}
+    .numbers__item{text-align:center}
+    .numbers__val{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:400;color:#fff;line-height:1;letter-spacing:-.02em}
+    .numbers__label{font-size:13px;color:rgba(255,255,255,.45);margin-top:8px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+
+    /* ================================================================
+       SECTION
+       ================================================================ */
+    .s{padding:80px 24px}
+    @media(min-width:768px){.s{padding:120px 40px}}
+    @media(min-width:1200px){.s{padding:160px 40px}}
+    .s--gray{background:var(--gray-100)}
+    .s--dark{background:var(--gray-900)}
+    .s__inner{max-width:1200px;margin:0 auto}
+
+    .s__head{margin-bottom:56px}
+    @media(min-width:768px){.s__head{margin-bottom:80px}}
+    .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
+    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .s--dark .s__tag{color:var(--accent)}
+    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
+    .s__head h2 em{font-style:italic;font-weight:500}
+    .s--dark .s__head h2{color:#fff}
+    .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
+    .s__head--center p{margin:0 auto}
+    .s--dark .s__head p{color:rgba(255,255,255,.5)}
+
+    /* ================================================================
+       SERVICES — Minimal cards
+       ================================================================ */
+    .svc-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--gray-200);border:1px solid var(--gray-200);border-radius:8px;overflow:hidden}
+    @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+    .svc{padding:40px 32px;background:#fff;transition:background .3s}
+    .svc:hover{background:var(--gray-100)}
+    .svc__num{font-family:'Playfair Display',serif;font-size:32px;color:var(--gray-200);margin-bottom:20px;line-height:1;font-weight:400}
+    .svc h3{font-size:17px;font-weight:600;margin-bottom:10px;letter-spacing:-.01em}
+    .svc p{font-size:14px;color:var(--gray-500);line-height:1.65;margin:0}
+
+    .s__link{margin-top:48px;text-align:center}
+    .s__link a{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--navy);transition:gap .2s}
+    .s__link a:hover{gap:14px}
+    .s__link a::after{content:'\2192'}
+
+    /* ================================================================
+       STORY — Two-column text + image
+       ================================================================ */
+    .story{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+    @media(min-width:768px){.story{grid-template-columns:1fr 1fr;gap:80px}}
+    .story__text h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:400;line-height:1.15;letter-spacing:-.02em;margin-bottom:24px}
+    .story__text h2 em{font-style:italic;font-weight:500}
+    .story__text p{font-size:16px;color:var(--gray-500);line-height:1.8;margin-bottom:20px}
+    .story__img{border-radius:8px;overflow:hidden}
+    .story__img img{width:100%;height:auto;border-radius:0;aspect-ratio:4/5;object-fit:cover}
+
+    .story__checks{margin-top:32px;display:flex;flex-direction:column;gap:16px}
+    .story__check{display:flex;align-items:center;gap:12px;font-size:15px;font-weight:500;color:var(--gray-700)}
+    .story__check svg{width:20px;height:20px;color:var(--accent);flex-shrink:0}
+
+    /* ================================================================
+       LEADERSHIP — Cards
+       ================================================================ */
+    .leaders{display:grid;grid-template-columns:1fr;gap:24px;max-width:720px;margin:0 auto}
+    @media(min-width:640px){.leaders{grid-template-columns:repeat(2,1fr);gap:32px}}
+    .leader{background:#fff;border-radius:8px;padding:48px 32px;text-align:center;border:1px solid var(--gray-200);transition:box-shadow .3s}
+    .leader:hover{box-shadow:0 8px 32px rgba(0,0,0,.06)}
+    .leader__avatar{width:80px;height:80px;border-radius:50%;background:var(--gray-100);display:flex;align-items:center;justify-content:center;margin:0 auto 24px}
+    .leader__avatar svg{width:36px;height:36px;color:var(--gray-400)}
+    .leader h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:500;margin-bottom:4px;color:var(--gray-900)}
+    .leader__role{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .leader p{font-size:14px;color:var(--gray-500);line-height:1.7}
+
+    /* ================================================================
+       CERT CARDS — With real certificate images
+       ================================================================ */
+    .cert-cards{display:grid;grid-template-columns:1fr;gap:24px}
+    @media(min-width:768px){.cert-cards{grid-template-columns:repeat(3,1fr);gap:32px}}
+    .cert-card{background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--gray-200);transition:box-shadow .3s}
+    .cert-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.06)}
+    .cert-card__img{aspect-ratio:3/4;overflow:hidden;cursor:pointer;background:var(--gray-100)}
+    .cert-card__img img{width:100%;height:100%;object-fit:contain;padding:16px;border-radius:0;transition:transform .4s}
+    .cert-card:hover .cert-card__img img{transform:scale(1.03)}
+    .cert-card__body{padding:24px;text-align:center}
+    .cert-card__body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:500;color:var(--navy);margin-bottom:4px}
+    .cert-card__body p{font-size:13px;color:var(--gray-500);margin:0}
+
+    /* Lightbox */
+    .lightbox{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.92);align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+    .lightbox.is-open{display:flex}
+    .lightbox img{max-width:90vw;max-height:90vh;border-radius:0}
+    .lightbox__close{position:absolute;top:24px;right:24px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;cursor:pointer;background:rgba(255,255,255,.1);border-radius:50%;border:none;transition:background .2s}
+    .lightbox__close:hover{background:rgba(255,255,255,.2)}
+
+    /* ================================================================
+       CTA
+       ================================================================ */
+    .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
+    @media(min-width:768px){.cta{padding:160px 40px}}
+    .cta__bg{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat}
+    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
+    .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
+    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
+    .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
+    .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
+    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
+    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
+    .cta .btn--white:hover{background:var(--gray-100)}
+    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
+    .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+
+    /* ================================================================
+       FOOTER
+       ================================================================ */
+    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    @media(min-width:768px){.foot{padding:96px 40px 0}}
+    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
+    @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
+    .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
+    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__links a:hover{color:#fff}
+    .foot__contact li{margin-bottom:10px;font-size:14px}
+    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a:hover{color:#fff}
+    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
+    @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
+    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
+
+    /* ================================================================
+       WHATSAPP
+       ================================================================ */
+    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    .wa:hover{transform:scale(1.1);color:#fff}
+    .wa svg{width:24px;height:24px}
+
+    /* ================================================================
+       SCROLL REVEAL
+       ================================================================ */
+    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+    [data-r].in{opacity:1;transform:none}
+
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+      [data-r]{opacity:1;transform:none}
+      .page-hero__img{animation:none;transform:none}
+    }
+
+    /* ================================================================
+       RTL OVERRIDES
+       ================================================================ */
+    [dir="rtl"]{font-family:'Cairo','DM Sans',sans-serif}
+    [dir="rtl"] .hero__tag::before{margin-left:8px;margin-right:0}
+    [dir="rtl"] .s__link a::after{content:'\2190'}
+    [dir="rtl"] .faq summary::after{content:'+'}
+  </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
 
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <img src="../img/logo.webp" alt="شعار مدينة السعادة">
-        <span>مدينة السعادة</span>
-      </a>
+<a href="#main" class="skip">تخطي إلى المحتوى</a>
 
-      <ul class="nav-menu">
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="about.html" class="active" aria-current="page">من نحن</a></li>
-        <li><a href="services.html">خدماتنا</a></li>
-        <li><a href="projects.html">مشاريعنا</a></li>
-        <li><a href="equipment.html">المعدات</a></li>
-        <li><a href="technical.html">المواصفات</a></li>
-        <li><a href="contact.html">اتصل بنا</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <a href="../about.html" class="lang-switch">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-          </svg>
-          English
-        </a>
-        <a href="contact.html" class="nav-cta">طلب عرض سعر</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="فتح القائمة">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">الرئيسية</a>
-      <a href="about.html">من نحن</a>
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav__wrap">
+    <a href="index.html" class="nav__logo">
+      <img src="../img/logo.webp" alt="مدينة السعادة" width="42" height="42">
+      <span class="nav__logo-text">مدينة السعادة</span>
+    </a>
+    <div class="nav__links">
+      <a href="about.html" aria-current="page">من نحن</a>
       <a href="services.html">خدماتنا</a>
       <a href="projects.html">مشاريعنا</a>
       <a href="equipment.html">المعدات</a>
       <a href="technical.html">المواصفات</a>
       <a href="contact.html">اتصل بنا</a>
     </div>
-  </nav>
+    <div class="nav__right">
+      <a href="../about.html" class="nav__lang">English</a>
+      <a href="contact.html" class="nav__cta-btn">طلب عرض سعر</a>
+      <button class="nav__burger" id="burger" aria-label="القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__drawer" id="drawer">
+    <a href="about.html">من نحن</a>
+    <a href="services.html">خدماتنا</a>
+    <a href="projects.html">مشاريعنا</a>
+    <a href="equipment.html">المعدات</a>
+    <a href="technical.html">المواصفات</a>
+    <a href="contact.html">اتصل بنا</a>
+    <a href="contact.html" class="nav__drawer-cta">طلب عرض سعر ←</a>
+  </div>
+</nav>
 
-  <main id="main">
+<!-- PAGE HERO -->
+<header class="page-hero" id="main">
+  <div class="page-hero__img" style="background-image:url('../img/factory/factory-floor.webp')" role="presentation"></div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content" data-r>
+    <div class="page-hero__breadcrumb">
+      <a href="index.html">الرئيسية</a>
+      <span>/</span>
+      <span>من نحن</span>
+    </div>
+    <h1>عن <strong>مدينة السعادة</strong></h1>
+    <p class="page-hero__sub">عقد من التصنيع والتركيب الدقيق لواجهات الألمنيوم، مبني على الحرفية والانضباط والأنظمة العالمية.</p>
+  </div>
+</header>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb">
-          <a href="index.html">الرئيسية</a>
-          <span>/</span>
-          <span class="current">من نحن</span>
-        </div>
-        <h1>عن مدينة السعادة</h1>
-        <p>شريكك الموثوق في تصنيع وتركيب الألمنيوم باحترافية منذ عام 2016.</p>
-      </div>
-    </section>
-
-    <!-- Our Story -->
-    <section class="section">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-grid__content">
-            <span class="section__label">قصتنا</span>
-            <h2>بناء التميز منذ 2016</h2>
-            <p>تأسست مدينة السعادة للألمنيوم والزجاج ذ.م.م عام 2016 برؤية واضحة: أن نصبح المقاول من الباطن الأكثر موثوقية في تصنيع وتركيب الألمنيوم والزجاج في الإمارات. ما بدأ كورشة صغيرة في عجمان نما ليصبح منشأة مجهزة بالكامل تخدم مشاريع البناء الكبرى في جميع الإمارات.</p>
-            <p>نعمل حصرياً مع كبرى شركات المقاولات الرئيسية، ونقدم لهم خدمات تصنيع دقيقة وتركيب احترافي للأبراج السكنية والفلل الفاخرة ومشاريع الضيافة والمباني التجارية. شراكاتنا مع شركات مثل ناشيونال ألمنيوم ذ.م.م والقاسم للألمنيوم والزجاج بُنيت على سنوات من الجودة المتسقة والتسليم في الموعد.</p>
-            <p>على خلاف المقاولين الشاملين الذين يوزعون مواردهم على التصميم والتوريد وإدارة المشاريع، نركز بالكامل على التصنيع والتركيب. هذا التخصص يمكّننا من الاستثمار بعمق في معداتنا وتدريب قوتنا العاملة على أعلى المعايير وتقديم نتائج تفوق التوقعات في كل مشروع نتولاه.</p>
-
-            <div class="about-grid__highlights">
-              <div class="highlight-item">
-                <div class="highlight-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
-                </div>
-                <span>متخصصون في المقاولة من الباطن</span>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
-                </div>
-                <span>أنظمة علامات تجارية دولية فقط</span>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                  </svg>
-                </div>
-                <span>عمليات معتمدة من ISO</span>
-              </div>
-            </div>
+<!-- OUR STORY -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="story">
+      <div class="story__text">
+        <span class="s__tag">قصتنا</span>
+        <h2>بُنيت على <em>الدقة</em>، ونمت بالثقة</h2>
+        <p>تأسست شركة مدينة السعادة للألمنيوم والزجاج ذ.م.م عام 2016 في عجمان بالإمارات، برؤية واضحة: تقديم تصنيع وتركيب واجهات ألمنيوم بجودة عالمية كمقاول باطن متخصص.</p>
+        <p>من مصنعنا المجهّز في المنطقة الصناعية 1، نخدم كبار مقاولي الألمنيوم الرئيسيين في الإمارات. لا نتعامل مع العملاء أو المطورين مباشرة — هذا النموذج المركّز يتيح لنا الاستثمار بالكامل في الحرفية والمعدات وجودة القوى العاملة.</p>
+        <p>اليوم، نعمل في أكثر من 10 مواقع مشاريع نشطة في وقت واحد، مع أكثر من 90 عاملاً ماهراً وأسطول من 15 ماكينة CNC وتصنيع من Emmegi وRinaldi وPressta Eisele.</p>
+        <div class="story__checks">
+          <div class="story__check">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            متخصصون في المقاولات من الباطن
           </div>
-          <div class="about-grid__image">
-            <img src="../img/projects/marinashores-800.webp" width="800" height="600" loading="lazy" alt="واجهة برج مارينا شورز من تنفيذ مدينة السعادة تعرض تركيب الحائط الستائري">
+          <div class="story__check">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            أنظمة عالمية حصراً
+          </div>
+          <div class="story__check">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            حاصلون على ثلاث شهادات ISO
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Leadership -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label">القيادة</span>
-          <h2>فريق إداري ذو خبرة</h2>
-          <p>تمتلك قيادتنا أكثر من 60 عاماً من الخبرة المشتركة في القطاع.</p>
-        </div>
-
-        <div class="grid grid--2" style="max-width: 900px; margin: 0 auto;">
-          <div class="leader-card">
-            <div class="leader-card__avatar">
-              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <h3>محمد شريف بيشداد</h3>
-            <p class="leader-card__title">الشريك الإداري</p>
-            <p class="leader-card__exp">خبرة تتجاوز 36 عاماً</p>
-            <p>بأكثر من ثلاثة عقود في صناعة الألمنيوم والزجاج تمتد عبر مشاريع في الشرق الأوسط وآسيا الوسطى، يجلب محمد خبرة تقنية لا مثيل لها ورؤية استراتيجية. يشرف على علاقات العملاء وتطوير الأعمال ويضمن أن كل مشروع يتوافق مع التزام الشركة بالتميز.</p>
-          </div>
-          <div class="leader-card">
-            <div class="leader-card__avatar">
-              <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <h3>حبيب الله</h3>
-            <p class="leader-card__title">الشريك الإداري العام</p>
-            <p class="leader-card__exp">خبرة تتجاوز 25 عاماً</p>
-            <p>يشرف حبيب الله على جميع عمليات التصنيع والتركيب، ويدير قوة عاملة تتجاوز 90 فنياً ماهراً عبر مواقع مشاريع متعددة. قيادته الميدانية تضمن الحفاظ على معايير الجودة من أرضية المصنع إلى التركيب النهائي، والوفاء بكل موعد تسليم دون مساومة.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="section section--dark">
-      <div class="container">
-        <div class="stats">
-          <div class="stat-item">
-            <div class="stat-number" data-count="17">+17</div>
-            <div class="stat-label">مشروع مكتمل</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-count="10">10</div>
-            <div class="stat-label">سنوات في العمل</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-count="15">15</div>
-            <div class="stat-label">ماكينة متخصصة</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-count="3">3</div>
-            <div class="stat-label">شهادات ISO</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Approach -->
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label">طريقة عملنا</span>
-          <h2>ميزة المقاولة من الباطن</h2>
-          <p>بنينا أعمالنا على التميز فيما نتقنه — التصنيع والتركيب.</p>
-        </div>
-
-        <div class="grid grid--3">
-          <div class="icon-card card">
-            <div class="icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-              </svg>
-            </div>
-            <h3>خبرة مركّزة</h3>
-            <p>لا نوزع مهاراتنا على تخصصات متعددة. فريقنا بالكامل الذي يتجاوز 90 عاملاً مكرّس حصرياً للتميز في التصنيع والتركيب، مع تدريب متخصص على كل نظام ألمنيوم نعمل به.</p>
-          </div>
-          <div class="icon-card card">
-            <div class="icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <h3>شراكات موثوقة</h3>
-            <p>علاقاتنا الطويلة مع ناشيونال ألمنيوم ذ.م.م ومجموعة إنوفو وبرايم ميتال إندستريز والقاسم للألمنيوم والزجاج تعكس الثقة التي يضعها المقاولون الرائدون في عملنا.</p>
-          </div>
-          <div class="icon-card card">
-            <div class="icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-            </div>
-            <h3>التسليم في الموعد</h3>
-            <p>ندرك أن التأخير يكلّف أموالاً. عملياتنا المبسّطة وفرق الموقع المخصصة وإدارة المشاريع الاستباقية تضمن أن نسلّم المكونات المصنّعة ونكمل التركيب في الموعد المحدد.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label">الشهادات</span>
-          <h2>جودة معتمدة من ISO</h2>
-          <p>التزامنا بالتميز مُصدَّق بشهادات دولية.</p>
-        </div>
-
-        <div class="cert-grid">
-          <div class="cert-card">
-            <div class="cert-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-            </div>
-            <h3>إدارة الجودة</h3>
-            <div class="cert-code">ISO 9001:2015</div>
-            <p>نظام إدارة جودة معتمد يضمن التميز المتسق في المنتجات عبر كل مشروع.</p>
-          </div>
-          <div class="cert-card">
-            <div class="cert-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                <path d="M12 8v4l3 3"></path>
-              </svg>
-            </div>
-            <h3>الإدارة البيئية</h3>
-            <div class="cert-code">ISO 14001:2015</div>
-            <p>ملتزمون بتقليل الأثر البيئي من خلال التعامل المسؤول مع المواد وتقليل النفايات.</p>
-          </div>
-          <div class="cert-card">
-            <div class="cert-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <h3>الصحة والسلامة</h3>
-            <div class="cert-code">ISO 45001:2018</div>
-            <p>شهادة إدارة الصحة والسلامة المهنية لحماية قوتنا العاملة في كل موقع.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section bg-navy">
-      <div class="container text-center">
-        <h2>شراكة معنا</h2>
-        <p>تبحث عن شريك موثوق في التصنيع والتركيب لمشروعك القادم؟</p>
-        <div style="display: flex; gap: 16px; justify-content: center; margin-top: 30px; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-outline btn-lg">تواصل معنا</a>
-          <a href="projects.html" class="btn btn-primary btn-lg">عرض مشاريعنا</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="../img/logo.webp" alt="شعار مدينة السعادة">
-          <p>تصنيع وتركيب احترافي لأنظمة الألمنيوم المعمارية. مقاول من الباطن موثوق منذ 2016.</p>
-          <div class="footer-social">
-            <a href="https://www.linkedin.com/company/madinat-al-saada" target="_blank" rel="noopener" aria-label="لينكد إن">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>روابط سريعة</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">من نحن</a></li>
-            <li><a href="services.html">خدماتنا</a></li>
-            <li><a href="projects.html">مشاريعنا</a></li>
-            <li><a href="equipment.html">المعدات</a></li>
-            <li><a href="technical.html">المواصفات</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>خدماتنا</h4>
-          <ul class="footer-links">
-            <li><a href="services.html">الحوائط الستائرية</a></li>
-            <li><a href="services.html">كسوة ACP</a></li>
-            <li><a href="services.html">المناور</a></li>
-            <li><a href="services.html">الأبواب والنوافذ</a></li>
-            <li><a href="services.html">الدرابزينات الزجاجية</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>تواصل معنا</h4>
-          <ul class="footer-contact">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <span>شارع عمان، المنطقة الصناعية 1، عجمان - الإمارات</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              <span>06-5260556</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              <a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 مدينة السعادة للألمنيوم والزجاج ذ.م.م. جميع الحقوق محفوظة.</p>
-        <p>ISO 9001:2015 &middot; ISO 14001:2015 &middot; ISO 45001:2018</p>
+      <div class="story__img">
+        <img src="../img/projects/marinashores-800.webp" alt="برج مارينا شورز — مشروع حائط ستائري من 52 طابقاً بتنفيذ مدينة السعادة" width="800" height="1000" loading="lazy">
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/97165260556" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-  </a>
+<!-- LEADERSHIP -->
+<section class="s s--gray" data-r>
+  <div class="s__inner">
+    <div class="s__head s__head--center">
+      <span class="s__tag">القيادة</span>
+      <h2>الأشخاص <em>وراء الحرفية</em></h2>
+    </div>
+    <div class="leaders">
+      <div class="leader">
+        <div class="leader__avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>محمد شريف بيشداد</h3>
+        <span class="leader__role">الشريك الإداري</span>
+        <p>بخبرة تتجاوز 36 عاماً في صناعة الألمنيوم والزجاج، يجلب محمد خبرة عميقة في أنظمة الواجهات الكبيرة وعمليات المصنع وتسليم المشاريع في منطقة الخليج.</p>
+      </div>
+      <div class="leader">
+        <div class="leader__avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>حبيب الله</h3>
+        <span class="leader__role">الشريك الإداري العام</span>
+        <p>بخبرة تتجاوز 25 عاماً في إدارة مشاريع البناء وتصنيع الألمنيوم، يشرف حبيب الله على عمليات المواقع ويضمن تحقيق معايير الجودة في كل مشروع.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="../js/main.js" defer></script>
+<!-- STATS -->
+<section class="numbers" data-r>
+  <div class="numbers__grid">
+    <div class="numbers__item"><div class="numbers__val">+17</div><div class="numbers__label">مشروع</div></div>
+    <div class="numbers__item"><div class="numbers__val">10</div><div class="numbers__label">سنوات</div></div>
+    <div class="numbers__item"><div class="numbers__val">+90</div><div class="numbers__label">عامل</div></div>
+    <div class="numbers__item"><div class="numbers__val">3</div><div class="numbers__label">شهادات ISO</div></div>
+  </div>
+</section>
 
-  <style>
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 60px;
-    align-items: center;
-  }
+<!-- OUR APPROACH -->
+<section class="s" data-r>
+  <div class="s__inner">
+    <div class="s__head">
+      <span class="s__tag">نهجنا</span>
+      <h2>كيف <em>نعمل</em></h2>
+      <p>ثلاثة مبادئ تحدد كل مشروع نتولاه.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="svc__num">01</div>
+        <h3>خبرة مركّزة</h3>
+        <p>نقوم بشيء واحد ونتقنه بامتياز: تصنيع وتركيب واجهات الألمنيوم. لا تنويع ولا تشتت. كل مواردنا مكرّسة لحرفتنا.</p>
+      </div>
+      <div class="svc">
+        <div class="svc__num">02</div>
+        <h3>شراكات موثوقة</h3>
+        <p>نعمل حصرياً مع أنظمة بروفيلات عالمية — Technal وSch&uuml;co وReynaers — ونتشارك فقط مع المقاولين الرئيسيين المعتمدين الذين يشاركوننا معاييرنا.</p>
+      </div>
+      <div class="svc">
+        <div class="svc__num">03</div>
+        <h3>التسليم في الموعد</h3>
+        <p>مع أكثر من 90 عاملاً موزعين على أكثر من 10 مواقع في وقت واحد، نحافظ على انضباط صارم في الجدولة. مصنعنا يعمل باستمرار لتلبية مواعيد المشاريع دون تنازل.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  @media (min-width: 992px) {
-    .about-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+<!-- CERTIFICATIONS -->
+<section class="s s--gray" data-r>
+  <div class="s__inner">
+    <div class="s__head s__head--center">
+      <span class="s__tag">ضمان الجودة</span>
+      <h2>شهادات <em>الآيزو</em></h2>
+      <p>أنظمة إدارية مدققة بشكل مستقل في مجالات الجودة والبيئة والسلامة.</p>
+    </div>
+    <div class="cert-cards">
+      <div class="cert-card">
+        <div class="cert-card__img" data-lightbox="../img/certs/iso-9001.webp">
+          <img src="../img/certs/iso-9001.webp" alt="شهادة ISO 9001:2015 لإدارة الجودة" width="400" height="560" loading="lazy">
+        </div>
+        <div class="cert-card__body">
+          <h3>ISO 9001:2015</h3>
+          <p>نظام إدارة الجودة</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card__img" data-lightbox="../img/certs/iso-14001.webp">
+          <img src="../img/certs/iso-14001.webp" alt="شهادة ISO 14001:2015 للإدارة البيئية" width="400" height="560" loading="lazy">
+        </div>
+        <div class="cert-card__body">
+          <h3>ISO 14001:2015</h3>
+          <p>نظام الإدارة البيئية</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-card__img" data-lightbox="../img/certs/iso-45001.webp">
+          <img src="../img/certs/iso-45001.webp" alt="شهادة ISO 45001:2018 للصحة والسلامة المهنية" width="400" height="560" loading="lazy">
+        </div>
+        <div class="cert-card__body">
+          <h3>ISO 45001:2018</h3>
+          <p>الصحة والسلامة المهنية</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  .about-grid__content h2 {
-    margin-bottom: 24px;
-  }
+<!-- CTA -->
+<section class="cta">
+  <div class="cta__bg" style="background-image:url('../img/projects/aykon-800.webp')" role="presentation"></div>
+  <div class="cta__content" data-r>
+    <h2>شراكة <em>معنا</em></h2>
+    <p>تبحث عن مقاول باطن موثوق لتصنيع الألمنيوم؟ لنتحدث عن مشروعك القادم ونقدم معاً شيئاً استثنائياً.</p>
+    <div class="cta__btns">
+      <a href="contact.html" class="btn--white">تواصل معنا</a>
+      <a href="tel:+97165260556" class="btn--outline">اتصل 06-5260556</a>
+    </div>
+  </div>
+</section>
 
-  .about-grid__content p {
-    font-size: 1.05rem;
-    line-height: 1.8;
-  }
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" aria-label="إغلاق">&times;</button>
+  <img src="" alt="عرض الشهادة بالحجم الكامل">
+</div>
 
-  .about-grid__highlights {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__brand">
+      <img src="../img/logo.webp" alt="مدينة السعادة" width="36" height="36">
+      <p>تصنيع وتركيب واجهات الألمنيوم بدقة عالية لكبار المقاولين في الإمارات. موثوقون منذ 2016.</p>
+    </div>
+    <div><h4>الشركة</h4><div class="foot__links"><a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="projects.html">مشاريعنا</a><a href="equipment.html">المعدات</a><a href="technical.html">المواصفات</a></div></div>
+    <div><h4>خدماتنا</h4><div class="foot__links"><a href="services.html">الحوائط الستائرية</a><a href="services.html">كلادينج ACP</a><a href="services.html">القبب الزجاجية</a><a href="services.html">الأبواب والنوافذ</a><a href="services.html">الدرابزينات</a></div></div>
+    <div><h4>تواصل معنا</h4><ul class="foot__contact"><li>شارع عمّان، المنطقة الصناعية 1، عجمان</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
+  </div>
+  <div class="foot__bottom">
+    <p>&copy; <span class="yr">2026</span> مدينة السعادة للألمنيوم والزجاج ذ.م.م</p>
+    <p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p>
+  </div>
+</footer>
 
-  .highlight-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+<!-- WHATSAPP -->
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="واتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
-  .highlight-icon {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(26, 58, 92, 0.1);
-    border-radius: 10px;
-    color: var(--navy, #1a3a5c);
-    flex-shrink: 0;
-  }
+<script>
+// Nav
+const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
+drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
+// Scroll nav
+let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
+// Reveal
+const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
+// Year
+document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+// Lightbox
+const lb=document.getElementById('lightbox'),lbImg=lb.querySelector('img');
+document.querySelectorAll('[data-lightbox]').forEach(el=>{el.style.cursor='zoom-in';el.addEventListener('click',()=>{lbImg.src=el.getAttribute('data-lightbox');lb.classList.add('is-open');document.body.style.overflow='hidden'})});
+lb.addEventListener('click',()=>{lb.classList.remove('is-open');document.body.style.overflow=''});
+</script>
 
-  .highlight-item span {
-    font-weight: 600;
-    color: var(--dark-gray, #343a40);
-  }
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","mainEntity":{"@type":"Organization","name":"مدينة السعادة للألمنيوم والزجاج ذ.م.م","url":"https://madinatalsaada.ae/ar/","logo":"https://madinatalsaada.ae/img/logo.webp","description":"تصنيع وتركيب واجهات الألمنيوم بدقة عالية في جميع أنحاء الإمارات. متخصصون في المقاولات من الباطن منذ 2016.","address":{"@type":"PostalAddress","streetAddress":"شارع عمّان، المنطقة الصناعية 1","addressLocality":"عجمان","addressCountry":"AE"},"telephone":"+971-6-526-0556","email":"info@madinatalsaada.ae","foundingDate":"2016","numberOfEmployees":{"@type":"QuantitativeValue","value":90},"founder":[{"@type":"Person","name":"محمد شريف بيشداد","jobTitle":"الشريك الإداري"},{"@type":"Person","name":"حبيب الله","jobTitle":"الشريك الإداري العام"}],"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"ISO 9001:2015"},{"@type":"EducationalOccupationalCredential","credentialCategory":"ISO 14001:2015"},{"@type":"EducationalOccupationalCredential","credentialCategory":"ISO 45001:2018"}]}}</script>
 
-  .about-grid__image {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 8px 40px rgba(26, 58, 92, 0.15);
-  }
-
-  .about-grid__image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Leadership */
-  .leader-card {
-    background: var(--white, #fff);
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(26, 58, 92, 0.12);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .leader-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 60px rgba(26, 58, 92, 0.2);
-  }
-
-  .leader-card__avatar {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--light-gray, #f1f3f5);
-    border-radius: 50%;
-    color: var(--navy, #1a3a5c);
-  }
-
-  .leader-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 8px;
-  }
-
-  .leader-card__title {
-    color: var(--accent, #4a90a4);
-    font-weight: 600;
-    margin-bottom: 4px !important;
-  }
-
-  .leader-card__exp {
-    color: var(--gray, #6c757d);
-    font-size: 0.9rem;
-    margin-bottom: 16px !important;
-  }
-
-  /* Stats dark section */
-  .section--dark {
-    background: var(--navy, #1a3a5c);
-    padding: 60px 0;
-  }
-
-  .section--dark .stat-number {
-    color: var(--white, #fff);
-  }
-
-  .section--dark .stat-label {
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  /* Section alt background */
-  .section--alt {
-    background: var(--off-white, #f8f9fa);
-  }
-
-  /* CTA Section */
-  .cta-section {
-    padding: 80px 0;
-  }
-
-  .cta-section h2 {
-    color: var(--white, #fff);
-    margin-bottom: 16px;
-  }
-
-  .cta-section p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.1rem;
-  }
-
-  /* Grid helpers */
-  .grid--2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  @media (min-width: 768px) {
-    .grid--2 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  .grid--3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  @media (min-width: 768px) {
-    .grid--3 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 992px) {
-    .grid--3 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  </style>
 </body>
 </html>
