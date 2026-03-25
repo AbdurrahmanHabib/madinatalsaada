@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://madinatalsaada.ae/ar/faq.html">
   <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/faq.html">
   <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/faq.html">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#1a3a5c">
   <link rel="icon" type="image/webp" href="../img/logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,65 +28,62 @@
     ul{list-style:none}
     button{font:inherit;cursor:pointer;border:none;background:none}
     ::selection{background:#1a3a5c;color:#fff}
-
     :root{
-      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
-      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
-      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
-      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+      --navy:#1a3a5c;--navy-light:#264d73;--navy-dark:#0f2840;--navy-deeper:#091c30;
+      --white:#fff;--gray-50:#f8fafb;--gray-100:#f1f3f5;--gray-200:#e2e5e9;
+      --gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;--gray-700:#374151;--gray-900:#111827;
+      --ease:cubic-bezier(.16,1,.3,1);
     }
-
-    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
+    .skip{position:absolute;top:-100%;right:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
     .skip:focus{top:16px}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:4px}
 
     /* NAV */
-    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,backdrop-filter .4s}
-    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
-    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,box-shadow .4s}
+    .nav::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.4),transparent);pointer-events:none;transition:opacity .4s}
+    .nav.is-solid::before{opacity:0}
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+    .nav__wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
     @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
-
-    .nav__logo{display:flex;align-items:center;gap:12px}
-    .nav__logo img{height:38px;width:auto;border-radius:0}
-    @media(min-width:768px){.nav__logo img{height:44px}}
-    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav__logo{display:flex;align-items:center;gap:12px;cursor:pointer}
+    .nav__logo img{height:40px;width:auto}
+    @media(min-width:768px){.nav__logo img{height:46px}}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:#fff;transition:color .4s}
+    @media(min-width:768px){.nav__logo-text{font-size:19px}}
     .nav.is-solid .nav__logo-text{color:var(--gray-900)}
     @media(max-width:767px){.nav__logo-text{display:none}}
-
     .nav__links{display:none;gap:32px}
     @media(min-width:1024px){.nav__links{display:flex}}
-    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
-    .nav__links a:hover,.nav__links a[aria-current="page"]{color:#fff}
-    .nav.is-solid .nav__links a{color:var(--gray-600)}
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.75);transition:color .25s;cursor:pointer}
+    .nav__links a:hover{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-500)}
     .nav.is-solid .nav__links a:hover,.nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900)}
-
     .nav__right{display:flex;align-items:center;gap:16px}
-    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
-    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .25s;cursor:pointer}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
     .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
-    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
-
-    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-50)}
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:all .25s;cursor:pointer}
     @media(min-width:768px){.nav__cta-btn{display:block}}
-    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
-
-    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px);box-shadow:0 4px 16px rgba(26,58,92,.3)}
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center;cursor:pointer}
     @media(min-width:1024px){.nav__burger{display:none}}
     .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
     .nav.is-solid .nav__burger span{background:var(--gray-900)}
     .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
     .nav__burger.is-open span:nth-child(2){opacity:0}
     .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-
-    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column;gap:0}
+    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column}
     .nav__drawer.is-open{display:flex}
-    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100);cursor:pointer;transition:color .2s}
+    .nav__drawer a:hover{color:var(--navy)}
     .nav__drawer a:last-child{border:none}
-    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none!important;cursor:pointer}
 
     /* PAGE HERO */
-    .page-hero{position:relative;padding:160px 24px 80px;background:var(--black);text-align:center;overflow:hidden}
+    .page-hero{position:relative;padding:160px 24px 80px;background:var(--navy-deeper);text-align:center;overflow:hidden}
     @media(min-width:768px){.page-hero{padding:200px 40px 100px}}
-    .page-hero__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .page-hero__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:16px;display:block}
     .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:400;color:#fff;line-height:1.1;letter-spacing:-.03em;max-width:800px;margin:0 auto 16px}
     .page-hero h1 em{font-style:italic;font-weight:500}
     .page-hero p{font-size:17px;color:rgba(255,255,255,.5);max-width:560px;margin:0 auto;line-height:1.7}
@@ -94,27 +91,17 @@
     /* SECTIONS */
     .s{padding:80px 24px}
     @media(min-width:768px){.s{padding:120px 40px}}
-    @media(min-width:1200px){.s{padding:160px 40px}}
-    .s--gray{background:var(--gray-100)}
-    .s--dark{background:var(--gray-900)}
     .s__inner{max-width:1200px;margin:0 auto}
-
-    .s__head{margin-bottom:56px}
-    @media(min-width:768px){.s__head{margin-bottom:80px}}
-    .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
-    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
-    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
-    .s__head h2 em{font-style:italic;font-weight:500}
-    .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
-    .s__head--center p{margin:0 auto}
 
     /* FAQ */
     .faq{max-width:720px;margin:0 auto}
     .faq details{border-bottom:1px solid var(--gray-200)}
-    .faq summary{display:flex;align-items:center;justify-content:space-between;padding:24px 0;font-size:16px;font-weight:500;color:var(--gray-900);cursor:pointer;list-style:none}
+    .faq summary{display:flex;align-items:center;justify-content:space-between;padding:24px 0;font-size:16px;font-weight:500;color:var(--gray-900);cursor:pointer;list-style:none;transition:color .2s}
+    .faq summary:hover{color:var(--navy)}
     .faq summary::-webkit-details-marker{display:none}
-    .faq summary::after{content:'+';font-size:24px;font-weight:300;color:var(--gray-400);transition:transform .3s}
-    .faq details[open] summary::after{transform:rotate(45deg)}
+    .faq summary::after{content:'+';font-size:24px;font-weight:300;color:var(--gray-400);transition:transform .3s var(--ease),color .2s}
+    .faq details[open] summary::after{transform:rotate(45deg);color:var(--navy)}
+    .faq details[open] summary{color:var(--navy)}
     .faq .faq__a{padding:0 0 24px;font-size:15px;color:var(--gray-500);line-height:1.7;max-width:600px}
 
     .faq__category{font-family:'Playfair Display',serif;font-size:22px;font-weight:500;color:var(--navy);margin:48px 0 8px;padding-bottom:16px;border-bottom:2px solid var(--gray-200);letter-spacing:-.01em}
@@ -123,52 +110,52 @@
     /* CTA */
     .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
     @media(min-width:768px){.cta{padding:160px 40px}}
-    .cta__bg{position:absolute;inset:0;background:url('../img/hero/aykon-hero.webp') center/cover no-repeat}
-    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
+    .cta__bg{position:absolute;inset:0;background:url('../img/hero/aykon-hero.webp') center/cover no-repeat;will-change:transform}
+    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(9,28,48,.85)}
     .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
     .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
     .cta h2 em{font-style:italic;font-weight:500}
     .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
     .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
     @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
-    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
-    .cta .btn--white:hover{background:var(--gray-100)}
-    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
+    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--navy-deeper);background:#fff;border-radius:100px;transition:all .25s;cursor:pointer}
+    .cta .btn--white:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .25s;cursor:pointer}
     .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
 
     /* FOOTER */
-    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    .foot{background:var(--navy-deeper);padding:72px 24px 0;color:rgba(255,255,255,.45)}
     @media(min-width:768px){.foot{padding:96px 40px 0}}
     .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
     @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
-    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
+    .foot__brand img{height:36px;margin-bottom:16px}
     .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
     .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
-    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s;cursor:pointer}
     .foot__links a:hover{color:#fff}
     .foot__contact li{margin-bottom:10px;font-size:14px}
-    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s;cursor:pointer}
     .foot__contact a:hover{color:#fff}
     .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
     @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
     .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
 
     /* WHATSAPP */
-    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    .wa{position:fixed;bottom:24px;left:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .25s var(--ease);cursor:pointer}
     .wa:hover{transform:scale(1.1);color:#fff}
     .wa svg{width:24px;height:24px}
 
-    /* SCROLL REVEAL */
-    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-    [data-r].in{opacity:1;transform:none}
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(40px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .reveal.is-visible{opacity:1;transform:none}
 
     @media(prefers-reduced-motion:reduce){
-      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
-      [data-r]{opacity:1;transform:none}
+      .reveal{transition-duration:.3s!important}
     }
 
     /* RTL OVERRIDES */
     [dir="rtl"]{font-family:'Cairo','DM Sans',sans-serif}
+    [dir="rtl"] .faq .faq__a{margin-right:0;margin-left:auto}
   </style>
 </head>
 <body>
@@ -178,33 +165,20 @@
 <!-- NAV -->
 <nav class="nav is-solid" id="nav">
   <div class="nav__wrap">
-    <a href="index.html" class="nav__logo">
-      <img src="../img/logo.webp" alt="مدينة السعادة" width="42" height="42">
-      <span class="nav__logo-text">مدينة السعادة</span>
-    </a>
+    <a href="index.html" class="nav__logo"><img src="../img/logo.webp" alt="مدينة السعادة" width="42" height="42"><span class="nav__logo-text">مدينة السعادة</span></a>
     <div class="nav__links">
-      <a href="about.html">من نحن</a>
-      <a href="services.html">خدماتنا</a>
-      <a href="projects.html">مشاريعنا</a>
-      <a href="equipment.html">المعدات</a>
-      <a href="technical.html">المواصفات</a>
-      <a href="contact.html">اتصل بنا</a>
+      <a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="projects.html">مشاريعنا</a>
+      <a href="equipment.html">المعدات</a><a href="technical.html">المواصفات</a><a href="contact.html">اتصل بنا</a>
     </div>
     <div class="nav__right">
       <a href="../faq.html" class="nav__lang">English</a>
       <a href="contact.html" class="nav__cta-btn">طلب عرض سعر</a>
-      <button class="nav__burger" id="burger" aria-label="القائمة" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav__burger" id="burger" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
   <div class="nav__drawer" id="drawer">
-    <a href="about.html">من نحن</a>
-    <a href="services.html">خدماتنا</a>
-    <a href="projects.html">مشاريعنا</a>
-    <a href="equipment.html">المعدات</a>
-    <a href="technical.html">المواصفات</a>
-    <a href="contact.html">اتصل بنا</a>
+    <a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="projects.html">مشاريعنا</a>
+    <a href="equipment.html">المعدات</a><a href="technical.html">المواصفات</a><a href="contact.html">اتصل بنا</a>
     <a href="contact.html" class="nav__drawer-cta">طلب عرض سعر ←</a>
   </div>
 </nav>
@@ -217,8 +191,8 @@
 </header>
 
 <!-- FAQ -->
-<section class="s" data-r>
-  <div class="s__inner">
+<section class="s">
+  <div class="s__inner reveal">
     <div class="faq">
 
       <!-- عام -->
@@ -226,12 +200,12 @@
 
       <details>
         <summary>ماذا تفعل مدينة السعادة؟</summary>
-        <div class="faq__a">مدينة السعادة للألمنيوم والزجاج ذ.م.م متخصصة في تصنيع وتركيب أنظمة واجهات الألمنيوم. نعمل على الحوائط الستائرية، وكلادينج ACP، والقبب الزجاجية، والأبواب والنوافذ، والدرابزينات الزجاجية، والأبواب الأوتوماتيكية، والشتر المتحرك لمشاريع البناء في جميع أنحاء الإمارات.</div>
+        <div class="faq__a">مدينة السعادة للألمنيوم والزجاج ذ.م.م هي مقاول واجهات متخصص يقدم حلول واجهات الألمنيوم المتكاملة — من التنسيق التصميمي والتصنيع في المصنع إلى التركيب في الموقع. نقدم الحوائط الستائرية، وكلادينج ACP، والقبب الزجاجية، والأبواب والنوافذ، والدرابزينات الزجاجية، والأبواب الأوتوماتيكية، والشتر المتحرك لمشاريع البناء في جميع أنحاء الإمارات.</div>
       </details>
 
       <details>
         <summary>هل تعملون مع العملاء النهائيين مباشرة؟</summary>
-        <div class="faq__a">لا. نعمل حصرياً كمقاول من الباطن لمقاولي الألمنيوم الرئيسيين وشركات الواجهات. يتم توريد المواد من قبل المقاول الرئيسي — نحن نقدم العمالة الماهرة والتصنيع في المصنع والتركيب في الموقع. هذا النموذج يتيح لنا التركيز بالكامل على دقة الصنعة.</div>
+        <div class="faq__a">نعمل بشكل رئيسي مع المقاولين الرئيسيين والمطورين ومستشاري الواجهات في المشاريع التجارية والسكنية. بصفتنا مقاول واجهات متخصص، ندير النطاق الكامل لأعمال الألمنيوم والزجاج — التصنيع، مراقبة الجودة، اللوجستيات، والتركيب — لضمان التسليم الدقيق من المصنع إلى الواجهة النهائية.</div>
       </details>
 
       <details>
@@ -253,8 +227,8 @@
       </details>
 
       <details>
-        <summary>هل توردون المواد؟</summary>
-        <div class="faq__a">لا. بصفتنا مقاول من الباطن، يتم توريد المواد (بروفيلات الألمنيوم، الزجاج، العتاد، مواد العزل) من قبل المقاول الرئيسي. نستلم المواد في مصنعنا، ونصنّع وفق الرسومات التنفيذية المعتمدة، ونركّب في الموقع. هذا الفصل يضمن مسؤولية واضحة وشفافية في التكاليف.</div>
+        <summary>ما هو نطاق العمل الذي تغطونه في المشروع؟</summary>
+        <div class="faq__a">نقدم حلول واجهات متكاملة من البداية إلى النهاية. يشمل نطاقنا تنسيق الرسومات التنفيذية، توريد المواد، التصنيع بتقنية CNC في مصنعنا بعجمان، فحص الجودة، التوصيل، والتركيب المهني في الموقع. ندير العملية الكاملة — بروفيلات الألمنيوم، الزجاج، العتاد، مواد العزل، وجميع المكونات المرتبطة — ليحصل عملاؤنا على خدمة متكاملة من نقطة مسؤولية واحدة.</div>
       </details>
 
       <details>
@@ -264,20 +238,20 @@
 
       <details>
         <summary>هل تتولون التصنيع والتركيب معاً؟</summary>
-        <div class="faq__a">نعم. نحن مقاول واجهات من الباطن متكامل الخدمات. مصنعنا في عجمان يتولى جميع عمليات التصنيع — القص والتشغيل الآلي والتجميع وفحوصات الجودة. ثم تقوم فرقنا الميدانية بتركيب المنتجات النهائية في مواقع المشاريع في جميع أنحاء الإمارات. هذا النهج الشامل يضمن الاتساق من المصنع إلى الواجهة.</div>
+        <div class="faq__a">نعم. نحن مقاول واجهات متخصص متكامل الخدمات. مصنعنا في عجمان يتولى جميع عمليات التصنيع — القص والتشغيل الآلي والتجميع وفحوصات الجودة. ثم تقوم فرقنا الميدانية بتركيب المنتجات النهائية في مواقع المشاريع في جميع أنحاء الإمارات. هذا النهج الشامل يضمن الاتساق من المصنع إلى الواجهة.</div>
       </details>
 
       <!-- الجودة -->
       <h3 class="faq__category">الجودة</h3>
 
       <details>
-        <summary>ما هي الشهادات التي تحملونها؟</summary>
-        <div class="faq__a">نحمل ثلاث شهادات ISO: ISO 9001:2015 (نظام إدارة الجودة)، وISO 14001:2015 (نظام الإدارة البيئية)، وISO 45001:2018 (نظام إدارة الصحة والسلامة المهنية). يتم تدقيقها بشكل مستقل وتجديدها سنوياً.</div>
+        <summary>كيف تضمنون الجودة أثناء التصنيع؟</summary>
+        <div class="faq__a">نظام إدارة الجودة ISO 9001 يحكم كل مرحلة — فحص المواد الواردة، دقة التشغيل الآلي CNC، فحوصات التجميع، ومراقبة الجودة النهائية قبل الشحن. نحتفظ بقوائم فحص مفصلة وتقارير عدم المطابقة وسجلات التتبع لكل مشروع. جميع الأعمال تتبع الرسومات التنفيذية المعتمدة من الفريق الهندسي للمشروع.</div>
       </details>
 
       <details>
-        <summary>كيف تضمنون الجودة أثناء التصنيع؟</summary>
-        <div class="faq__a">نظام إدارة الجودة ISO 9001 يحكم كل مرحلة — فحص المواد الواردة، دقة التشغيل الآلي CNC، فحوصات التجميع، ومراقبة الجودة النهائية قبل الشحن. نحتفظ بقوائم فحص مفصلة وتقارير عدم المطابقة وسجلات التتبع لكل مشروع. جميع الأعمال تتبع الرسومات التنفيذية المعتمدة من فريق هندسة المقاول الرئيسي.</div>
+        <summary>ما هي الشهادات التي تحملونها؟</summary>
+        <div class="faq__a">نحمل ثلاث شهادات ISO: ISO 9001:2015 (نظام إدارة الجودة)، وISO 14001:2015 (نظام الإدارة البيئية)، وISO 45001:2018 (نظام إدارة الصحة والسلامة المهنية). يتم تدقيقها بشكل مستقل وتجديدها سنوياً.</div>
       </details>
 
       <details>
@@ -310,7 +284,7 @@
 <!-- CTA -->
 <section class="cta">
   <div class="cta__bg" role="presentation"></div>
-  <div class="cta__content" data-r>
+  <div class="cta__content reveal">
     <h2>لديك المزيد من <em>الأسئلة؟</em></h2>
     <p>فريقنا مستعد لمناقشة متطلبات مشروعك والإجابة على أي أسئلة فنية لديك.</p>
     <div class="cta__btns">
@@ -323,41 +297,46 @@
 <!-- FOOTER -->
 <footer class="foot">
   <div class="foot__grid">
-    <div class="foot__brand">
-      <img src="../img/logo.webp" alt="مدينة السعادة" width="36" height="36">
-      <p>تصنيع وتركيب واجهات الألمنيوم بدقة عالية لكبار المقاولين في الإمارات. موثوقون منذ 2016.</p>
-    </div>
+    <div class="foot__brand"><img src="../img/logo.webp" alt="مدينة السعادة" width="36" height="36"><p>تصنيع وتركيب واجهات الألمنيوم المتكاملة لأبرز المشاريع في الإمارات. موثوقون منذ 2016.</p></div>
     <div><h4>الشركة</h4><div class="foot__links"><a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="projects.html">مشاريعنا</a><a href="equipment.html">المعدات</a><a href="technical.html">المواصفات</a></div></div>
     <div><h4>خدماتنا</h4><div class="foot__links"><a href="services.html">الحوائط الستائرية</a><a href="services.html">كلادينج ACP</a><a href="services.html">القبب الزجاجية</a><a href="services.html">الأبواب والنوافذ</a><a href="services.html">الدرابزينات</a></div></div>
     <div><h4>تواصل معنا</h4><ul class="foot__contact"><li>شارع عمّان، المنطقة الصناعية 1، عجمان</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
   </div>
-  <div class="foot__bottom">
-    <p>&copy; <span class="yr">2026</span> مدينة السعادة للألمنيوم والزجاج ذ.م.م</p>
-    <p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p>
-  </div>
+  <div class="foot__bottom"><p>&copy; <span class="yr">2026</span> مدينة السعادة للألمنيوم والزجاج ذ.م.م</p><p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p></div>
 </footer>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="واتساب">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
 <script>
-// Nav
-const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
-burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
-drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
-let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
-// Reveal
-const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
-// FAQ single open
-document.querySelectorAll('.faq details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.faq details').forEach(o=>{if(o!==d)o.open=false})}));
-// Year
-document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+(function(){
+  'use strict';
+  var burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+
+  /* NAV */
+  if(burger&&drawer&&nav){
+    burger.addEventListener('click',function(){var o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',String(o));document.body.style.overflow=o?'hidden':''});
+    for(var i=0,links=drawer.querySelectorAll('a');i<links.length;i++)links[i].addEventListener('click',function(){burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''});
+    var nt=false;
+    window.addEventListener('scroll',function(){if(!nt){requestAnimationFrame(function(){nav.classList.toggle('is-solid',window.scrollY>60);nt=false});nt=true}},{passive:true});
+  }
+
+  /* SCROLL REVEAL */
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++)if(e[i].isIntersecting){e[i].target.classList.add('is-visible');ro.unobserve(e[i].target)}},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+    var revs=document.querySelectorAll('.reveal');for(var i=0;i<revs.length;i++)ro.observe(revs[i]);
+  }
+
+  /* FAQ single open */
+  var fds=document.querySelectorAll('.faq details');
+  for(var i=0;i<fds.length;i++)fds[i].addEventListener('toggle',(function(d){return function(){if(d.open)for(var j=0;j<fds.length;j++)if(fds[j]!==d)fds[j].open=false}})(fds[i]));
+
+  /* YEAR */
+  var yrs=document.querySelectorAll('.yr');for(var i=0;i<yrs.length;i++)yrs[i].textContent=new Date().getFullYear();
+})();
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ماذا تفعل مدينة السعادة؟","acceptedAnswer":{"@type":"Answer","text":"مدينة السعادة للألمنيوم والزجاج ذ.م.م متخصصة في تصنيع وتركيب أنظمة واجهات الألمنيوم. نعمل على الحوائط الستائرية، وكلادينج ACP، والقبب الزجاجية، والأبواب والنوافذ، والدرابزينات الزجاجية، والأبواب الأوتوماتيكية، والشتر المتحرك لمشاريع البناء في جميع أنحاء الإمارات."}},{"@type":"Question","name":"هل تعملون مع العملاء النهائيين مباشرة؟","acceptedAnswer":{"@type":"Answer","text":"لا. نعمل حصرياً كمقاول من الباطن لمقاولي الألمنيوم الرئيسيين وشركات الواجهات. يتم توريد المواد من قبل المقاول الرئيسي — نحن نقدم العمالة الماهرة والتصنيع والتركيب."}},{"@type":"Question","name":"أين يقع مقركم؟","acceptedAnswer":{"@type":"Answer","text":"يقع مصنعنا ومكتبنا في شارع عمّان بالمنطقة الصناعية 1، عجمان، الإمارات. نخدم المشاريع في جميع الإمارات بما في ذلك دبي وأبوظبي والشارقة والإمارات الشمالية."}},{"@type":"Question","name":"منذ متى والشركة تعمل؟","acceptedAnswer":{"@type":"Answer","text":"تأسست مدينة السعادة في عام 2016. على مدار العقد الماضي، أنجزنا أكثر من 17 مشروعاً رئيسياً تشمل أبراجاً شاهقة ومشاريع تجارية ومجمعات فلل في جميع أنحاء الإمارات."}},{"@type":"Question","name":"ما هي أنظمة الألمنيوم التي تعملون بها؟","acceptedAnswer":{"@type":"Answer","text":"نحن متمرسون في جميع أنظمة الألمنيوم الدولية الرئيسية بما في ذلك Technal وSchüco وReynaers وAluK وGuttmann وHydro وHueck وAlumil وUCS وغيرها. لا نعمل مع البروفيلات العامة."}},{"@type":"Question","name":"هل توردون المواد؟","acceptedAnswer":{"@type":"Answer","text":"لا. بصفتنا مقاول من الباطن، يتم توريد المواد من قبل المقاول الرئيسي. نستلم المواد في مصنعنا، ونصنّع وفق الرسومات التنفيذية المعتمدة، ونركّب في الموقع."}},{"@type":"Question","name":"ما الفرق بين الحوائط الستائرية بنظام الأعمدة والنظام الموحّد؟","acceptedAnswer":{"@type":"Answer","text":"نظام الأعمدة يُجمّع قطعة بقطعة في الموقع. وهو مناسب للمباني المنخفضة والمتوسطة الارتفاع. النظام الموحّد يُجمّع في المصنع كألواح كاملة ويُركّب طابقاً بطابق. وهو أسرع وذو جودة أفضل ومثالي للأبراج الشاهقة."}},{"@type":"Question","name":"هل تتولون التصنيع والتركيب معاً؟","acceptedAnswer":{"@type":"Answer","text":"نعم. نحن مقاول واجهات من الباطن متكامل الخدمات. مصنعنا في عجمان يتولى جميع عمليات التصنيع وفرقنا الميدانية تركّب المنتجات النهائية في مواقع المشاريع."}},{"@type":"Question","name":"ما هي الشهادات التي تحملونها؟","acceptedAnswer":{"@type":"Answer","text":"نحمل ثلاث شهادات ISO: ISO 9001:2015 (إدارة الجودة)، وISO 14001:2015 (الإدارة البيئية)، وISO 45001:2018 (الصحة والسلامة المهنية). يتم تدقيقها بشكل مستقل وتجديدها سنوياً."}},{"@type":"Question","name":"كيف تضمنون الجودة أثناء التصنيع؟","acceptedAnswer":{"@type":"Answer","text":"نظام إدارة الجودة ISO 9001 يحكم كل مرحلة — فحص المواد الواردة، دقة التشغيل الآلي CNC، فحوصات التجميع، ومراقبة الجودة النهائية. نحتفظ بقوائم فحص مفصلة وسجلات تتبع لكل مشروع."}},{"@type":"Question","name":"ما هي المعدات التي تستخدمونها؟","acceptedAnswer":{"@type":"Answer","text":"يضم مصنعنا أكثر من 15 ماكينة متخصصة تشمل مناشير قص ذات رأسين، مراكز تشغيل CNC، آلات نسخ، آلات ضغط، آلات تنظيف الزوايا، معدات معالجة الزجاج، وأنظمة تطبيق مواد العزل."}},{"@type":"Question","name":"كيف نبدأ العمل معاً؟","acceptedAnswer":{"@type":"Answer","text":"تواصل معنا بتفاصيل مشروعك — النطاق، نوع النظام، الكميات، والجدول الزمني. سنراجع المتطلبات ونقدم عرض سعر تنافسي خلال 48 ساعة."}},{"@type":"Question","name":"ما هي المناطق التي تغطونها في الإمارات؟","acceptedAnswer":{"@type":"Answer","text":"نغطي جميع الإمارات السبع. مواقع مشاريعنا النشطة تمتد عبر دبي وأبوظبي والشارقة وعجمان ورأس الخيمة. موقعنا المركزي في عجمان يمنحنا وصولاً فعالاً للمشاريع في جميع أنحاء الإمارات."}},{"@type":"Question","name":"ما هي أحجام المشاريع التي تتعاملون معها؟","acceptedAnswer":{"@type":"Answer","text":"نتعامل مع مشاريع تتراوح من مجمعات الفلل والمباني التجارية المنخفضة إلى الأبراج الشاهقة التي تزيد عن 50 طابقاً. قوتنا العاملة التي تضم أكثر من 90 عاملاً ماهراً تتيح لنا إدارة مشاريع متعددة في وقت واحد."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ماذا تفعل مدينة السعادة؟","acceptedAnswer":{"@type":"Answer","text":"مدينة السعادة للألمنيوم والزجاج ذ.م.م هي مقاول واجهات متخصص يقدم حلول واجهات الألمنيوم المتكاملة — من التنسيق التصميمي والتصنيع في المصنع إلى التركيب في الموقع في جميع أنحاء الإمارات."}},{"@type":"Question","name":"هل تعملون مع العملاء النهائيين مباشرة؟","acceptedAnswer":{"@type":"Answer","text":"نعمل بشكل رئيسي مع المقاولين الرئيسيين والمطورين ومستشاري الواجهات. بصفتنا مقاول واجهات متخصص، ندير النطاق الكامل لأعمال الألمنيوم والزجاج — التصنيع، مراقبة الجودة، اللوجستيات، والتركيب."}},{"@type":"Question","name":"أين يقع مقركم؟","acceptedAnswer":{"@type":"Answer","text":"يقع مصنعنا ومكتبنا في شارع عمّان بالمنطقة الصناعية 1، عجمان، الإمارات. نخدم المشاريع في جميع الإمارات بما في ذلك دبي وأبوظبي والشارقة والإمارات الشمالية."}},{"@type":"Question","name":"منذ متى والشركة تعمل؟","acceptedAnswer":{"@type":"Answer","text":"تأسست مدينة السعادة في عام 2016. على مدار العقد الماضي، أنجزنا أكثر من 17 مشروعاً رئيسياً تشمل أبراجاً شاهقة ومشاريع تجارية ومجمعات فلل في جميع أنحاء الإمارات."}},{"@type":"Question","name":"ما هي أنظمة الألمنيوم التي تعملون بها؟","acceptedAnswer":{"@type":"Answer","text":"نحن متمرسون في جميع أنظمة الألمنيوم الدولية الرئيسية بما في ذلك Technal وSchuco وReynaers وAluK وGuttmann وHydro وHueck وAlumil وUCS وغيرها."}},{"@type":"Question","name":"ما هو نطاق العمل الذي تغطونه في المشروع؟","acceptedAnswer":{"@type":"Answer","text":"نقدم حلول واجهات متكاملة تشمل تنسيق الرسومات التنفيذية، توريد المواد، التصنيع بتقنية CNC، فحص الجودة، التوصيل، والتركيب المهني في الموقع."}},{"@type":"Question","name":"ما الفرق بين الحوائط الستائرية بنظام الأعمدة والنظام الموحّد؟","acceptedAnswer":{"@type":"Answer","text":"نظام الأعمدة يُجمّع قطعة بقطعة في الموقع. وهو مناسب للمباني المنخفضة والمتوسطة الارتفاع. النظام الموحّد يُجمّع في المصنع كألواح كاملة ويُركّب طابقاً بطابق. وهو أسرع وذو جودة أفضل ومثالي للأبراج الشاهقة."}},{"@type":"Question","name":"هل تتولون التصنيع والتركيب معاً؟","acceptedAnswer":{"@type":"Answer","text":"نعم. نحن مقاول واجهات متخصص متكامل الخدمات. مصنعنا في عجمان يتولى جميع عمليات التصنيع وفرقنا الميدانية تركّب المنتجات النهائية في مواقع المشاريع."}},{"@type":"Question","name":"كيف تضمنون الجودة أثناء التصنيع؟","acceptedAnswer":{"@type":"Answer","text":"نظام إدارة الجودة ISO 9001 يحكم كل مرحلة — فحص المواد الواردة، دقة التشغيل الآلي CNC، فحوصات التجميع، ومراقبة الجودة النهائية. نحتفظ بقوائم فحص مفصلة وسجلات تتبع لكل مشروع."}},{"@type":"Question","name":"ما هي الشهادات التي تحملونها؟","acceptedAnswer":{"@type":"Answer","text":"نحمل ثلاث شهادات ISO: ISO 9001:2015 (إدارة الجودة)، وISO 14001:2015 (الإدارة البيئية)، وISO 45001:2018 (الصحة والسلامة المهنية). يتم تدقيقها بشكل مستقل وتجديدها سنوياً."}},{"@type":"Question","name":"ما هي المعدات التي تستخدمونها؟","acceptedAnswer":{"@type":"Answer","text":"يضم مصنعنا أكثر من 15 ماكينة متخصصة تشمل مناشير قص ذات رأسين، مراكز تشغيل CNC، آلات نسخ، آلات ضغط، آلات تنظيف الزوايا، معدات معالجة الزجاج، وأنظمة تطبيق مواد العزل."}},{"@type":"Question","name":"كيف نبدأ العمل معاً؟","acceptedAnswer":{"@type":"Answer","text":"تواصل معنا بتفاصيل مشروعك — النطاق، نوع النظام، الكميات، والجدول الزمني. سنراجع المتطلبات ونقدم عرض سعر تنافسي خلال 48 ساعة."}},{"@type":"Question","name":"ما هي المناطق التي تغطونها في الإمارات؟","acceptedAnswer":{"@type":"Answer","text":"نغطي جميع الإمارات السبع. مواقع مشاريعنا النشطة تمتد عبر دبي وأبوظبي والشارقة وعجمان ورأس الخيمة. موقعنا المركزي في عجمان يمنحنا وصولاً فعالاً للمشاريع في جميع أنحاء الإمارات."}},{"@type":"Question","name":"ما هي أحجام المشاريع التي تتعاملون معها؟","acceptedAnswer":{"@type":"Answer","text":"نتعامل مع مشاريع تتراوح من مجمعات الفلل والمباني التجارية المنخفضة إلى الأبراج الشاهقة التي تزيد عن 50 طابقاً. قوتنا العاملة التي تضم أكثر من 90 عاملاً ماهراً تتيح لنا إدارة مشاريع متعددة في وقت واحد."}}]}</script>
 
 </body>
 </html>
