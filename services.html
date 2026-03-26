@@ -114,7 +114,7 @@
     @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
     @media(min-width:1024px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
     .svc{position:relative;border-radius:0;overflow:hidden;aspect-ratio:4/3;cursor:pointer;display:block}
-    .svc img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+    .svc img{width:100%;height:100%;object-fit:cover;object-position:center center;transition:transform .6s cubic-bezier(.4,0,.2,1)}
     .svc:hover img{transform:scale(1.06)}
     .svc__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(9,28,48,.9) 0%,rgba(9,28,48,.3) 40%,rgba(9,28,48,.15) 100%);transition:background .3s}
     .svc:hover .svc__overlay{background:linear-gradient(to top,rgba(9,28,48,.95) 0%,rgba(9,28,48,.5) 40%,rgba(9,28,48,.25) 100%)}
@@ -136,7 +136,7 @@
     .svc-detail__text ul{margin-top:8px}
     .svc-detail__text li{display:flex;align-items:flex-start;gap:12px;padding:6px 0;font-size:14px;color:var(--gray-600)}
     .svc-detail__text li svg{flex-shrink:0;width:18px;height:18px;color:var(--navy);margin-top:2px}
-    .svc-detail__img{position:relative;min-height:300px;overflow:hidden}
+    .svc-detail__img{position:relative;aspect-ratio:16/9;overflow:hidden}
     @media(min-width:768px){.svc-detail__img{min-height:400px}}
     .svc-detail__img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
     .svc-detail:nth-child(even) .svc-detail__text{order:1}
@@ -163,7 +163,7 @@
     .logo-item:nth-last-child(-n+3){border-bottom:none}
     @media(max-width:639px){.logo-item:nth-last-child(-n+2){border-bottom:none}}
     .logo-item:hover{background:var(--gray-50)}
-    .logo-item img{height:36px;width:auto;max-width:160px;object-fit:contain;opacity:.75;transition:opacity .25s}
+    .logo-item img{height:32px;width:auto;min-width:60px;max-width:140px;object-fit:contain;opacity:.75;transition:opacity .25s}
     .logo-item:hover img{opacity:1}
     .logo-item span{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);opacity:.6;transition:opacity .25s;text-transform:uppercase;letter-spacing:.04em}
     .logo-item:hover span{opacity:1}

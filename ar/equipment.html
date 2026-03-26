@@ -142,8 +142,8 @@
     /* EQUIPMENT IMAGE GALLERY */
     .equip-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
     @media(min-width:768px){.equip-gallery{grid-template-columns:repeat(4,1fr)}}
-    .equip-gallery__item{position:relative;aspect-ratio:4/3;overflow:hidden;cursor:pointer}
-    .equip-gallery__item img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+    .equip-gallery__item{position:relative;aspect-ratio:3/2;overflow:hidden;cursor:pointer}
+    .equip-gallery__item img{width:100%;height:100%;object-fit:cover;object-position:center center;transition:transform .5s cubic-bezier(.4,0,.2,1)}
     .equip-gallery__item:hover img{transform:scale(1.06)}
     .equip-gallery__item span{position:absolute;bottom:0;left:0;right:0;padding:16px;background:linear-gradient(to top,rgba(9,28,48,.85),transparent);font-size:11px;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase;z-index:1}
 
