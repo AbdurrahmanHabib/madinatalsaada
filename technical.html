@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Technical specifications for aluminium facade systems — curtain wall comparisons, glass types, certifications, and premium brand partnerships at Madinat Al Saada.">
-  <title>Technical Specifications | Madinat Al Saada — Aluminium Facade Systems</title>
-  <meta property="og:title" content="Technical Specifications | Madinat Al Saada">
-  <meta property="og:description" content="Aluminium system specs, curtain wall comparisons, glass types, and ISO certifications. Premium facade engineering for UAE construction.">
+  <meta name="description" content="Technical expertise at Madinat Al Saada — Schuco, Technal, AluK, Alumil, Gutmann, Gulf Extrusion aluminium systems. CNC machining, precision fabrication, and structural capabilities.">
+  <title>Technical Expertise | Madinat Al Saada — Aluminium Facade Systems</title>
+  <meta property="og:title" content="Technical Expertise | Madinat Al Saada">
+  <meta property="og:description" content="Aluminium system expertise, CNC fabrication capabilities, and premium brand partnerships. Precision facade engineering for UAE construction.">
   <meta property="og:image" content="https://madinatalsaada.ae/img/og-image.jpg">
   <meta property="og:url" content="https://madinatalsaada.ae/technical.html">
   <meta property="og:type" content="website">
@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://madinatalsaada.ae/technical.html">
   <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/technical.html">
   <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/technical.html">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#1a3a5c">
   <link rel="icon" type="image/webp" href="img/logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,198 +28,169 @@
     ul{list-style:none}
     button{font:inherit;cursor:pointer;border:none;background:none}
     ::selection{background:#1a3a5c;color:#fff}
-
     :root{
-      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
-      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
-      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
-      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+      --navy:#1a3a5c;--navy-light:#264d73;--navy-dark:#0f2840;--navy-deeper:#091c30;
+      --accent:#1a3a5c;--accent-light:#4a7da8;--accent-dark:#0f2840;
+      --white:#fff;--gray-50:#f8fafb;--gray-100:#f1f3f5;--gray-200:#e2e5e9;
+      --gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;--gray-700:#374151;--gray-900:#111827;
+      --ease:cubic-bezier(.16,1,.3,1);
     }
-
-    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
+    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;z-index:9999}
     .skip:focus{top:16px}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
 
     /* NAV */
-    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,backdrop-filter .4s}
-    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
-    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,box-shadow .4s}
+    .nav::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.4),transparent);pointer-events:none;transition:opacity .4s}
+    .nav.is-solid::before{opacity:0}
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+    .nav__wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
     @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
-
-    .nav__logo{display:flex;align-items:center;gap:12px}
-    .nav__logo img{height:38px;width:auto;border-radius:0}
-    @media(min-width:768px){.nav__logo img{height:44px}}
-    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav__logo{display:flex;align-items:center;gap:12px;cursor:pointer}
+    .nav__logo img{height:40px;width:auto}
+    @media(min-width:768px){.nav__logo img{height:46px}}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:#fff;transition:color .4s}
     @media(min-width:768px){.nav__logo-text{font-size:19px}}
     .nav.is-solid .nav__logo-text{color:var(--gray-900)}
     @media(max-width:767px){.nav__logo-text{display:none}}
-
     .nav__links{display:none;gap:32px}
     @media(min-width:1024px){.nav__links{display:flex}}
-    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
-    .nav__links a:hover,.nav__links a[aria-current="page"]{color:#fff}
-    .nav__links a[aria-current="page"]{color:#fff}
-    .nav.is-solid .nav__links a{color:var(--gray-600)}
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.75);transition:color .25s;cursor:pointer}
+    .nav__links a:hover{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-500)}
     .nav.is-solid .nav__links a:hover,.nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900)}
-    .nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900);font-weight:600}
-
     .nav__right{display:flex;align-items:center;gap:16px}
-    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
-    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .25s;cursor:pointer}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
     .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
-    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
-
-    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-50)}
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:var(--navy-deeper);background:#fff;border-radius:100px;transition:all .25s;cursor:pointer}
     @media(min-width:768px){.nav__cta-btn{display:block}}
-    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
-
-    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    .nav__cta-btn:hover{background:var(--gray-100);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+    .nav.is-solid .nav__cta-btn{background:var(--navy);color:#fff}
+    .nav.is-solid .nav__cta-btn:hover{background:var(--navy-dark)}
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center;cursor:pointer}
     @media(min-width:1024px){.nav__burger{display:none}}
     .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
     .nav.is-solid .nav__burger span{background:var(--gray-900)}
     .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
     .nav__burger.is-open span:nth-child(2){opacity:0}
     .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-
-    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column;gap:0}
+    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column}
     .nav__drawer.is-open{display:flex}
-    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100);cursor:pointer;transition:color .2s}
+    .nav__drawer a:hover{color:var(--navy)}
     .nav__drawer a:last-child{border:none}
-    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-bottom:none!important;cursor:pointer}
 
     /* PAGE HERO */
-    .page-hero{position:relative;padding:160px 24px 80px;background:var(--black);text-align:center;overflow:hidden}
+    .page-hero{position:relative;padding:160px 24px 80px;background:var(--navy-deeper);text-align:center;overflow:hidden}
     @media(min-width:768px){.page-hero{padding:200px 40px 100px}}
-    .page-hero__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
-    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:400;color:#fff;line-height:1.1;letter-spacing:-.03em;max-width:800px;margin:0 auto 16px}
-    .page-hero h1 em{font-style:italic;font-weight:500}
+    .page-hero__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:16px;display:block}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:700;color:#fff;line-height:1.1;letter-spacing:-.02em;max-width:800px;margin:0 auto 16px;text-transform:uppercase}
+    .page-hero h1 em{font-style:italic;font-weight:400;text-transform:none}
     .page-hero p{font-size:17px;color:rgba(255,255,255,.5);max-width:560px;margin:0 auto;line-height:1.7}
 
     /* SECTIONS */
     .s{padding:80px 24px}
     @media(min-width:768px){.s{padding:120px 40px}}
-    @media(min-width:1200px){.s{padding:160px 40px}}
-    .s--gray{background:var(--gray-100)}
-    .s--dark{background:var(--gray-900)}
+    .s--gray{background:var(--gray-50)}
+    .s--navy{background:var(--navy-deeper);color:#fff}
     .s__inner{max-width:1200px;margin:0 auto}
-
-    .s__head{margin-bottom:56px}
-    @media(min-width:768px){.s__head{margin-bottom:80px}}
+    .s__tag{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .s--navy .s__tag{color:rgba(255,255,255,.5)}
+    .s__head{margin-bottom:48px}
+    @media(min-width:768px){.s__head{margin-bottom:64px}}
     .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
-    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
-    .s--dark .s__tag{color:var(--accent)}
-    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
-    .s__head h2 em{font-style:italic;font-weight:500}
-    .s--dark .s__head h2{color:#fff}
+    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:700;font-size:clamp(2rem,5vw,3.2rem);text-transform:uppercase}
+    .s__head h2 em{font-style:italic;font-weight:400;text-transform:none}
+    .s--navy .s__head h2{color:#fff}
     .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
     .s__head--center p{margin:0 auto}
-    .s--dark .s__head p{color:rgba(255,255,255,.5)}
+    .s--navy .s__head p{color:rgba(255,255,255,.5)}
 
-    /* BRANDS LOGO IMAGE */
-    .brands-logo{max-width:900px;margin:0 auto 64px;text-align:center}
-    .brands-logo img{display:inline-block;width:100%;border-radius:8px}
+    /* SYSTEM CARDS */
+    .sys-grid{display:grid;grid-template-columns:1fr;gap:2px}
+    @media(min-width:640px){.sys-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.sys-grid{grid-template-columns:repeat(3,1fr)}}
+    .sys{padding:40px 32px;background:#fff;border:1px solid var(--gray-200);transition:all .3s}
+    .sys:hover{border-color:var(--navy);box-shadow:0 8px 32px rgba(26,58,92,.08);transform:translateY(-4px)}
+    .sys__origin{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-light);margin-bottom:12px}
+    .sys h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:8px;text-transform:uppercase;letter-spacing:.02em}
+    .sys__series{font-size:13px;font-weight:600;color:var(--gray-600);margin-bottom:12px}
+    .sys p{font-size:14px;color:var(--gray-500);line-height:1.6;margin:0}
 
-    /* BRANDS GRID */
-    .brands{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--gray-200);border:1px solid var(--gray-200);border-radius:8px;overflow:hidden}
-    @media(min-width:768px){.brands{grid-template-columns:repeat(3,1fr)}}
-    .brand{padding:40px 24px;background:#fff;text-align:center;transition:background .3s}
-    .brand:hover{background:var(--gray-100)}
-    .brand__name{font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);margin-bottom:8px;font-weight:500}
-    .brand p{font-size:13px;color:var(--gray-500);margin:0;line-height:1.5}
-    .brand__features{margin-top:12px;padding:0}
-    .brand__features li{font-size:12px;color:var(--gray-500);padding:3px 0;border-top:1px solid var(--gray-100)}
-    .brand__features li:first-child{border-top:none}
+    /* LOGO GRID */
+    .logo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--gray-200);max-width:900px;margin:0 auto}
+    @media(min-width:640px){.logo-grid{grid-template-columns:repeat(3,1fr)}}
+    .logo-item{display:flex;align-items:center;justify-content:center;padding:32px 24px;border-right:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200);background:#fff;transition:background .25s}
+    .logo-item:nth-child(3n){border-right:none}
+    @media(max-width:639px){.logo-item:nth-child(2n){border-right:none}.logo-item:nth-child(3n){border-right:1px solid var(--gray-200)}}
+    .logo-item:nth-last-child(-n+3){border-bottom:none}
+    @media(max-width:639px){.logo-item:nth-last-child(-n+2){border-bottom:none}}
+    .logo-item:hover{background:var(--gray-50)}
+    .logo-item img{height:36px;width:auto;max-width:160px;object-fit:contain;opacity:.75;transition:opacity .25s}
+    .logo-item:hover img{opacity:1}
 
-    /* COMPARISON */
-    .compare{display:grid;grid-template-columns:1fr;gap:24px}
-    @media(min-width:768px){.compare{grid-template-columns:repeat(2,1fr);gap:32px}}
-    .compare__card{border:1px solid var(--gray-200);border-radius:8px;overflow:hidden;background:#fff}
-    .compare__header{padding:32px 32px 24px;border-bottom:1px solid var(--gray-200)}
-    .compare__header--featured{background:var(--navy);border-bottom:1px solid var(--navy)}
-    .compare__header--featured h3,.compare__header--featured p{color:#fff}
-    .compare__badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-    .compare__header--featured .compare__badge{color:var(--accent)}
-    .compare__header h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:500;margin-bottom:8px;letter-spacing:-.01em}
-    .compare__header p{font-size:14px;color:var(--gray-500);line-height:1.6;margin:0}
-    .compare__body{padding:32px}
-    .compare__body h4{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-600);margin-bottom:16px}
-    .compare__body ul{margin-bottom:24px}
-    .compare__body li{font-size:14px;color:var(--gray-600);padding:8px 0;border-bottom:1px solid var(--gray-100);position:relative;padding-left:20px}
-    .compare__body li::before{content:'';position:absolute;left:0;top:14px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
-    .compare__body li:last-child{border-bottom:none}
-
-    /* GLASS SPECS */
-    .glass-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--gray-200);border:1px solid var(--gray-200);border-radius:8px;overflow:hidden}
-    @media(min-width:768px){.glass-grid{grid-template-columns:repeat(4,1fr)}}
-    .glass{padding:32px 24px;background:#fff;transition:background .3s}
-    .glass:hover{background:var(--gray-100)}
-    .glass__icon{font-size:28px;margin-bottom:16px;line-height:1;color:var(--navy)}
-    .glass h3{font-size:15px;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
-    .glass p{font-size:13px;color:var(--gray-500);line-height:1.6;margin:0}
-
-    /* CERT CARDS WITH IMAGES */
-    .certs-img{display:grid;grid-template-columns:1fr;gap:24px}
-    @media(min-width:768px){.certs-img{grid-template-columns:repeat(3,1fr);gap:32px}}
-    .cert-card{text-align:center;padding:32px 24px;background:#fff;border:1px solid var(--gray-200);border-radius:8px;transition:box-shadow .3s}
-    .cert-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.06)}
-    .cert-card img{width:120px;height:auto;margin:0 auto 24px;border-radius:4px}
-    .cert-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:500;color:var(--navy);margin-bottom:8px}
-    .cert-card p{font-size:13px;color:var(--gray-500);line-height:1.6;margin:0}
-
-    /* DOWNLOAD */
-    .download{display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px}
-    @media(min-width:640px){.download{flex-direction:row;text-align:left;gap:32px}}
-    .download__icon{width:72px;height:72px;background:var(--gray-100);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-    .download__icon svg{width:32px;height:32px;color:var(--navy)}
-    .download__text h3{font-size:18px;font-weight:600;margin-bottom:4px}
-    .download__text p{font-size:14px;color:var(--gray-500);margin:0}
-    .download__btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;font-size:14px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s;flex-shrink:0}
-    .download__btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
+    /* CAPABILITIES */
+    .cap-grid{display:grid;grid-template-columns:1fr;gap:0}
+    @media(min-width:640px){.cap-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.cap-grid{grid-template-columns:repeat(3,1fr)}}
+    .cap{display:flex;align-items:flex-start;gap:16px;padding:24px 20px;border:1px solid var(--gray-200);transition:all .3s}
+    .cap:hover{border-color:var(--accent);background:rgba(26,58,92,.03)}
+    .cap__icon{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin-top:2px}
+    .cap__icon svg{width:14px;height:14px;color:#fff}
+    .cap h3{font-size:14px;font-weight:700;margin-bottom:2px;text-transform:uppercase;letter-spacing:.04em}
+    .cap p{font-size:13px;color:var(--gray-500);line-height:1.5;margin:0}
 
     /* CTA */
-    .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
-    @media(min-width:768px){.cta{padding:160px 40px}}
-    .cta__bg{position:absolute;inset:0;background:url('img/hero/aykon-hero.webp') center/cover no-repeat}
-    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
-    .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
-    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
-    .cta h2 em{font-style:italic;font-weight:500}
+    .cta{position:relative;padding:80px 24px;overflow:hidden;background:var(--navy-deeper)}
+    @media(min-width:768px){.cta{padding:100px 40px}}
+    .cta__content{position:relative;z-index:2;max-width:800px;margin:0 auto;text-align:center}
+    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;font-weight:700;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1;text-transform:uppercase}
     .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
     .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
-    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
-    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
-    .cta .btn--white:hover{background:var(--gray-100)}
-    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
-    .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center;gap:16px}}
+    .cta .btn--white{padding:16px 40px;font-size:13px;font-weight:600;color:var(--navy-deeper);background:#fff;transition:all .25s;cursor:pointer;letter-spacing:.05em;text-transform:uppercase}
+    .cta .btn--white:hover{background:var(--gray-100);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+    .cta .btn--outline{padding:16px 40px;font-size:13px;font-weight:600;color:#fff;border:2px solid rgba(255,255,255,.2);transition:all .25s;cursor:pointer;letter-spacing:.05em;text-transform:uppercase}
+    .cta .btn--outline:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.4)}
 
     /* FOOTER */
-    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    .foot{background:var(--navy-deeper);padding:72px 24px 0;color:rgba(255,255,255,.45)}
     @media(min-width:768px){.foot{padding:96px 40px 0}}
-    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
-    @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
-    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
-    .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
-    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
-    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__brand-large{text-align:center;padding:64px 24px 48px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .foot__brand-large h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+    .foot__brand-large p{font-size:14px;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase}
+    .foot__social{display:flex;justify-content:center;gap:16px;margin-top:24px}
+    .foot__social a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);transition:all .25s}
+    .foot__social a:hover{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.05)}
+    .foot__social svg{width:18px;height:18px}
+    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding:64px 0}
+    @media(min-width:768px){.foot__grid{grid-template-columns:repeat(3,1fr)}}
+    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;margin-bottom:20px}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
     .foot__links a:hover{color:#fff}
     .foot__contact li{margin-bottom:10px;font-size:14px}
-    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a{color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
     .foot__contact a:hover{color:#fff}
-    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
+    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto;border-top:1px solid rgba(255,255,255,.08)}
     @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
-    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
+    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.4);margin:0}
 
     /* WHATSAPP */
-    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .25s var(--ease);cursor:pointer}
     .wa:hover{transform:scale(1.1);color:#fff}
     .wa svg{width:24px;height:24px}
 
-    /* SCROLL REVEAL */
-    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-    [data-r].in{opacity:1;transform:none}
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(40px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .reveal.is-visible{opacity:1;transform:none}
+    .stagger{opacity:0;transform:translateY(25px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+    .stagger.is-visible{opacity:1;transform:none}
 
     @media(prefers-reduced-motion:reduce){
-      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
-      [data-r]{opacity:1;transform:none}
+      .reveal,.stagger{transition-duration:.3s!important}
     }
   </style>
 </head>
@@ -228,285 +199,145 @@
 <a href="#main" class="skip">Skip to content</a>
 
 <!-- NAV -->
-<nav class="nav is-solid" id="nav">
+<nav class="nav" id="nav">
   <div class="nav__wrap">
-    <a href="/" class="nav__logo">
-      <img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42">
-      <span class="nav__logo-text">Madinat Al Saada</span>
-    </a>
+    <a href="/" class="nav__logo"><img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42"><span class="nav__logo-text">Madinat Al Saada</span></a>
     <div class="nav__links">
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="equipment.html">Equipment</a>
-      <a href="technical.html" aria-current="page">Technical</a>
-      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a>
+      <a href="equipment.html">Equipment</a><a href="technical.html" aria-current="page">Technical</a><a href="contact.html">Contact</a>
     </div>
     <div class="nav__right">
       <a href="ar/technical.html" class="nav__lang">العربية</a>
       <a href="contact.html" class="nav__cta-btn">Get Quote</a>
-      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
   <div class="nav__drawer" id="drawer">
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="equipment.html">Equipment</a>
-    <a href="technical.html" aria-current="page">Technical</a>
-    <a href="contact.html">Contact</a>
-    <a href="contact.html" class="nav__drawer-cta">Get Quote →</a>
+    <a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a>
+    <a href="equipment.html">Equipment</a><a href="technical.html" aria-current="page">Technical</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav__drawer-cta">Get Quote</a>
   </div>
 </nav>
 
 <!-- PAGE HERO -->
 <header class="page-hero" id="main">
   <span class="page-hero__tag">Engineering Excellence</span>
-  <h1>Technical <em>Specifications</em></h1>
-  <p>Premium aluminium systems, curtain wall technologies, glass specifications, and internationally recognized certifications.</p>
+  <h1>TECHNICAL <em>Expertise</em></h1>
+  <p>Hands-on fabrication and installation experience with the world's leading aluminium facade systems.</p>
 </header>
 
-<!-- ALUMINIUM SYSTEMS -->
-<section class="s" data-r>
+<!-- SYSTEM EXPERIENCE -->
+<section class="s">
   <div class="s__inner">
-    <div class="s__head s__head--center">
+    <div class="s__head s__head--center reveal">
       <span class="s__tag">Premium Systems</span>
-      <h2>Aluminium <em>Systems</em></h2>
-      <p>We partner with the world's leading aluminium system houses to deliver facades engineered for UAE conditions.</p>
+      <h2>SYSTEMS WE <em>Work With</em></h2>
+      <p>Direct fabrication and installation experience with six internationally recognized aluminium system providers.</p>
     </div>
-    <div class="brands-logo">
-      <img src="img/brands/partner-logos.webp" alt="Our partner brands: Schuco, Guttmann, Hydro, Hueck, Alumil, AluK, UCS, Technal" loading="lazy">
-    </div>
-    <div class="brands">
-      <div class="brand">
-        <div class="brand__name">Technal</div>
-        <p>French-engineered facade solutions with advanced thermal performance</p>
-        <ul class="brand__features">
-          <li>Curtain wall systems</li>
-          <li>Thermal break profiles</li>
-          <li>Sliding &amp; folding doors</li>
-        </ul>
+    <div class="sys-grid">
+      <div class="sys stagger">
+        <div class="sys__origin">Germany</div>
+        <h3>Schuco</h3>
+        <div class="sys__series">FWS Series (Curtain Walls) &middot; ASS Series (Sliding)</div>
+        <p>World-leading German system provider for high-performance curtain walls and sliding door systems. Known for thermal efficiency, structural integrity, and innovative engineering across commercial and residential applications.</p>
       </div>
-      <div class="brand">
-        <div class="brand__name">Sch&uuml;co</div>
-        <p>German-precision building envelopes for high-rise and commercial</p>
-        <ul class="brand__features">
-          <li>Unitized facades</li>
-          <li>Parametric engineering</li>
-          <li>BIM-integrated design</li>
-        </ul>
+      <div class="sys stagger">
+        <div class="sys__origin">France &middot; Hydro Group</div>
+        <h3>Technal</h3>
+        <div class="sys__series">Curtain Wall &middot; Window &middot; Door Systems</div>
+        <p>French aluminium systems by Hydro, widely specified across the Middle East for curtain walls, windows, and doors. Proven track record in high-rise and commercial facade applications with comprehensive technical support.</p>
       </div>
-      <div class="brand">
-        <div class="brand__name">Reynaers</div>
-        <p>Belgian sustainable aluminium systems for energy-efficient buildings</p>
-        <ul class="brand__features">
-          <li>Slim-line profiles</li>
-          <li>Passive house certified</li>
-          <li>Concealed hardware</li>
-        </ul>
+      <div class="sys stagger">
+        <div class="sys__origin">Italy</div>
+        <h3>AluK</h3>
+        <div class="sys__series">58BW Series &middot; GT55 Series</div>
+        <p>Italian-engineered aluminium systems offering premium window, door, and curtain wall solutions. The 58BW and GT55 series deliver precision engineering with excellent thermal break performance for UAE climate conditions.</p>
       </div>
-      <div class="brand">
-        <div class="brand__name">AluK</div>
-        <p>Hot-climate performance profiles designed for Middle East conditions</p>
-        <ul class="brand__features">
-          <li>High thermal resistance</li>
-          <li>Sand &amp; corrosion rated</li>
-          <li>Gulf-spec gaskets</li>
-        </ul>
+      <div class="sys stagger">
+        <div class="sys__origin">Greece</div>
+        <h3>Alumil</h3>
+        <div class="sys__series">M11000 Series &middot; S77 Series</div>
+        <p>Greek manufacturer providing a comprehensive range of architectural aluminium systems. The M11000 curtain wall and S77 sliding series are engineered for large-scale commercial and residential facade projects.</p>
       </div>
-      <div class="brand">
-        <div class="brand__name">Guttmann</div>
-        <p>Structural glazing specialists with spider and point-fix expertise</p>
-        <ul class="brand__features">
-          <li>Structural silicone glazing</li>
-          <li>Spider systems</li>
-          <li>Canopy solutions</li>
-        </ul>
+      <div class="sys stagger">
+        <div class="sys__origin">Germany &middot; Est. 1937</div>
+        <h3>Gutmann</h3>
+        <div class="sys__series">Curtain Wall &middot; Window &middot; Door Systems</div>
+        <p>German aluminium systems manufacturer with over 85 years of engineering heritage. Known for precision-engineered profiles and innovative facade solutions for demanding architectural applications.</p>
       </div>
-      <div class="brand">
-        <div class="brand__name">+ More</div>
-        <p>Bespoke profiles fabricated to your architect's exact specifications</p>
-        <ul class="brand__features">
-          <li>Custom extrusions</li>
-          <li>Prototype capabilities</li>
-          <li>Any system compatibility</li>
-        </ul>
+      <div class="sys stagger">
+        <div class="sys__origin">United Arab Emirates</div>
+        <h3>Gulf Extrusion</h3>
+        <div class="sys__series">Local Extrusion &middot; Custom Profiles</div>
+        <p>UAE-based aluminium extrusion manufacturer providing locally produced profiles optimized for the regional market. Fast lead times, custom die capabilities, and competitive pricing for UAE facade projects.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CURTAIN WALL COMPARISON -->
-<section class="s s--gray" data-r>
+<!-- LOGO GRID -->
+<section class="s s--gray">
   <div class="s__inner">
-    <div class="s__head s__head--center">
-      <span class="s__tag">Facade Engineering</span>
-      <h2>Curtain Wall <em>Comparison</em></h2>
-      <p>Understanding the right facade system for your project — from traditional stick to advanced unitized construction.</p>
+    <div class="s__head s__head--center reveal">
+      <span class="s__tag">Our Partners</span>
+      <h2>TRUSTED <em>Brands</em></h2>
     </div>
-    <div class="compare">
-      <div class="compare__card">
-        <div class="compare__header">
-          <span class="compare__badge">Traditional</span>
-          <h3>Stick System</h3>
-          <p>Site-assembled facade system where individual mullions, transoms, and glass panels are installed piece by piece on the building.</p>
-        </div>
-        <div class="compare__body">
-          <h4>Advantages</h4>
-          <ul>
-            <li>Lower upfront material cost</li>
-            <li>Flexible for irregular geometries</li>
-            <li>Easier to modify during construction</li>
-            <li>Suitable for low to mid-rise buildings</li>
-            <li>Simpler logistics and transport</li>
-          </ul>
-          <h4>Best Applications</h4>
-          <ul>
-            <li>Villas and low-rise commercial</li>
-            <li>Retail facades and shopfronts</li>
-            <li>Renovation and retrofit projects</li>
-            <li>Buildings under 15 floors</li>
-          </ul>
-        </div>
-      </div>
-      <div class="compare__card">
-        <div class="compare__header compare__header--featured">
-          <span class="compare__badge">Advanced</span>
-          <h3>Unitized System</h3>
-          <p>Factory-assembled facade panels shipped as complete units and installed floor-by-floor using crane lifting — minimal on-site labor.</p>
-        </div>
-        <div class="compare__body">
-          <h4>Advantages</h4>
-          <ul>
-            <li>Faster installation (50% time savings)</li>
-            <li>Superior factory quality control</li>
-            <li>Better weather sealing performance</li>
-            <li>Reduced on-site labor requirements</li>
-            <li>Ideal for high-rise with tight schedules</li>
-          </ul>
-          <h4>Best Applications</h4>
-          <ul>
-            <li>High-rise towers (15+ floors)</li>
-            <li>Commercial office towers</li>
-            <li>Projects with accelerated timelines</li>
-            <li>Repetitive floor plate designs</li>
-          </ul>
-        </div>
-      </div>
+    <div class="logo-grid reveal">
+      <div class="logo-item"><img src="img/logos/schuco.svg" alt="Schuco" loading="lazy"></div>
+      <div class="logo-item"><img src="img/logos/technal.svg" alt="Technal" loading="lazy"></div>
+      <div class="logo-item"><img src="img/logos/aluk.svg" alt="AluK" loading="lazy"></div>
+      <div class="logo-item"><img src="img/logos/alumil.svg" alt="Alumil" loading="lazy"></div>
+      <div class="logo-item"><img src="img/logos/gutmann.svg" alt="Gutmann" loading="lazy"></div>
+      <div class="logo-item"><img src="img/logos/gulf-extrusion.svg" alt="Gulf Extrusion" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<!-- GLASS SPECIFICATIONS -->
-<section class="s" data-r>
+<!-- CAPABILITIES -->
+<section class="s">
   <div class="s__inner">
-    <div class="s__head s__head--center">
-      <span class="s__tag">Glass Technology</span>
-      <h2>Glass <em>Specifications</em></h2>
-      <p>We work with every type of architectural glass to meet structural, thermal, acoustic, and aesthetic requirements.</p>
+    <div class="s__head s__head--center reveal">
+      <span class="s__tag">Fabrication Capabilities</span>
+      <h2>PRECISION <em>Manufacturing</em></h2>
+      <p>Our 2,500 sqm Ajman factory houses 17 specialized machines for complete aluminium facade fabrication.</p>
     </div>
-    <div class="glass-grid">
-      <div class="glass">
-        <div class="glass__icon">&#9674;</div>
-        <h3>Tempered</h3>
-        <p>Heat-strengthened safety glass, 4-5x stronger than annealed. Shatters into small granular chunks on impact.</p>
+    <div class="cap-grid reveal">
+      <div class="cap stagger">
+        <div class="cap__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div><h3>CNC Machining</h3><p>Emmegi Phantomatic X4 4-axis CNC machining center for precision drilling, milling, and routing of aluminium profiles.</p></div>
       </div>
-      <div class="glass">
-        <div class="glass__icon">&#9671;</div>
-        <h3>Laminated</h3>
-        <p>Two glass layers bonded with PVB interlayer. Holds together on breakage — ideal for overhead and balustrade use.</p>
+      <div class="cap stagger">
+        <div class="cap__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div><h3>Precision Cutting</h3><p>Emmegi Classic E double-head cutting saws for accurate mitre and straight cuts with tolerances within 0.1mm.</p></div>
       </div>
-      <div class="glass">
-        <div class="glass__icon">&#9635;</div>
-        <h3>Insulated DGU</h3>
-        <p>Double-glazed units with sealed air or argon gap. Reduces heat gain by up to 50% — essential for UAE climate.</p>
+      <div class="cap stagger">
+        <div class="cap__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div><h3>Corner Crimping</h3><p>Pressta Eisele hydraulic crimping machines for strong, precise corner joints on window and door frames.</p></div>
       </div>
-      <div class="glass">
-        <div class="glass__icon">&#9680;</div>
-        <h3>Low-E Coated</h3>
-        <p>Microscopically thin metallic coating reflects infrared heat while allowing visible light transmission.</p>
+      <div class="cap stagger">
+        <div class="cap__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div><h3>Cladding Fabrication</h3><p>Bala CPM composite panel grooving and folding machines for ACP cladding cassette production and custom panel work.</p></div>
       </div>
-      <div class="glass">
-        <div class="glass__icon">&#9639;</div>
-        <h3>Tinted</h3>
-        <p>Body-tinted glass (grey, bronze, green, blue) reduces solar heat gain and glare while maintaining views.</p>
+      <div class="cap stagger">
+        <div class="cap__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div><h3>Structural Silicone Bonding</h3><p>Controlled environment application of structural silicone sealants for curtain wall glazing and weatherproofing systems.</p></div>
       </div>
-      <div class="glass">
-        <div class="glass__icon">&#9673;</div>
-        <h3>Reflective</h3>
-        <p>Metallic oxide coating provides mirror-like exterior appearance and superior solar control performance.</p>
+      <div class="cap stagger">
+        <div class="cap__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div><h3>Copy Routing</h3><p>Template-based copy routers for hardware preparation, drainage slots, and complex profile machining operations.</p></div>
       </div>
-      <div class="glass">
-        <div class="glass__icon">&#9636;</div>
-        <h3>Frosted</h3>
-        <p>Acid-etched or sandblasted for privacy while diffusing natural light. Used in partitions and bathroom screens.</p>
-      </div>
-      <div class="glass">
-        <div class="glass__icon">&#9670;</div>
-        <h3>Fire-Rated</h3>
-        <p>Intumescent interlayer glass providing 30-120 minutes fire resistance. Required for stairwells and escape corridors.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section class="s s--gray" data-r>
-  <div class="s__inner">
-    <div class="s__head s__head--center">
-      <span class="s__tag">Quality Assurance</span>
-      <h2>ISO <em>Certifications</em></h2>
-      <p>Internationally recognized management systems ensuring quality, environmental responsibility, and worker safety.</p>
-    </div>
-    <div class="certs-img">
-      <div class="cert-card">
-        <img src="img/certs/iso-9001.webp" alt="ISO 9001:2015 Quality Management Certificate" loading="lazy">
-        <h3>ISO 9001:2015</h3>
-        <p>Quality Management System — consistent fabrication standards, process control, and continuous improvement across all operations.</p>
-      </div>
-      <div class="cert-card">
-        <img src="img/certs/iso-14001.webp" alt="ISO 14001:2015 Environmental Management Certificate" loading="lazy">
-        <h3>ISO 14001:2015</h3>
-        <p>Environmental Management System — responsible aluminium waste management, recycling programs, and reduced environmental impact.</p>
-      </div>
-      <div class="cert-card">
-        <img src="img/certs/iso-45001.webp" alt="ISO 45001:2018 Health and Safety Certificate" loading="lazy">
-        <h3>ISO 45001:2018</h3>
-        <p>Health &amp; Safety Management — worker protection protocols across factory floor and construction site operations.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DOWNLOAD -->
-<section class="s" data-r>
-  <div class="s__inner">
-    <div class="download">
-      <div class="download__icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-      </div>
-      <div class="download__text">
-        <h3>Company Profile</h3>
-        <p>Download our complete company profile with project portfolio, equipment list, certifications, and technical capabilities.</p>
-      </div>
-      <a href="downloads/company-profile.pdf" class="download__btn">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download PDF
-      </a>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
-  <div class="cta__bg" role="presentation"></div>
-  <div class="cta__content" data-r>
-    <h2>Need Technical <em>Support?</em></h2>
-    <p>Our engineering team can advise on system selection, glass specifications, and structural calculations for your project.</p>
+  <div class="cta__content reveal">
+    <span class="s__tag" style="color:var(--accent-light)">Get Started</span>
+    <h2>DISCUSS YOUR NEXT FACADE PROJECT.</h2>
+    <p>Our engineering team is ready to review your specifications and recommend the optimal system for your project requirements.</p>
     <div class="cta__btns">
-      <a href="contact.html" class="btn--white">Contact Engineering</a>
+      <a href="contact.html" class="btn--white">Get in Touch</a>
       <a href="tel:+97165260556" class="btn--outline">Call 06-5260556</a>
     </div>
   </div>
@@ -514,34 +345,50 @@
 
 <!-- FOOTER -->
 <footer class="foot">
-  <div class="foot__grid">
-    <div class="foot__brand">
-      <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
-      <p>Precision aluminium fabrication and installation for the UAE's leading contractors. Trusted since 2016.</p>
+  <div class="foot__brand-large">
+    <h2>Madinat Al Saada</h2>
+    <p>Aluminium &amp; Glass Works LLC</p>
+    <div class="foot__social">
+      <a href="https://www.linkedin.com/company/madinatalsaada/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
     </div>
-    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a></div></div>
+  </div>
+  <div class="foot__grid">
+    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a><a href="faq.html">FAQ</a></div></div>
     <div><h4>Services</h4><div class="foot__links"><a href="services.html">Curtain Walls</a><a href="services.html">ACP Cladding</a><a href="services.html">Skylights</a><a href="services.html">Doors &amp; Windows</a><a href="services.html">Balustrades</a></div></div>
     <div><h4>Contact</h4><ul class="foot__contact"><li>Amman St, Industrial Area 1, Ajman</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
   </div>
-  <div class="foot__bottom">
-    <p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p>
-    <p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p>
-  </div>
+  <div class="foot__bottom"><p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p><p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p></div>
 </footer>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
 <script>
-const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
-burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
-drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
-let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
-const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
-document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+(function(){
+  'use strict';
+  var burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+
+  /* NAV */
+  if(burger&&drawer&&nav){
+    burger.addEventListener('click',function(){var o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',String(o));document.body.style.overflow=o?'hidden':''});
+    for(var i=0,links=drawer.querySelectorAll('a');i<links.length;i++)links[i].addEventListener('click',function(){burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''});
+    var nt=false;
+    window.addEventListener('scroll',function(){if(!nt){requestAnimationFrame(function(){nav.classList.toggle('is-solid',window.scrollY>60);nt=false});nt=true}},{passive:true});
+  }
+
+  /* SCROLL REVEAL */
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++)if(e[i].isIntersecting){e[i].target.classList.add('is-visible');ro.unobserve(e[i].target)}},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+    var revs=document.querySelectorAll('.reveal');for(var i=0;i<revs.length;i++)ro.observe(revs[i]);
+    var so=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++)if(e[i].isIntersecting){var el=e[i].target,sibs=el.parentElement.querySelectorAll('.stagger'),idx=0;
+      for(var j=0;j<sibs.length;j++)if(sibs[j]===el){idx=j;break}
+      el.style.transitionDelay=(idx*.08)+'s';el.classList.add('is-visible');so.unobserve(el)}},{threshold:.05,rootMargin:'0px 0px -30px 0px'});
+    var stags=document.querySelectorAll('.stagger');for(var i=0;i<stags.length;i++)so.observe(stags[i]);
+  }
+
+  /* YEAR */
+  var yrs=document.querySelectorAll('.yr');for(var i=0;i<yrs.length;i++)yrs[i].textContent=new Date().getFullYear();
+})();
 </script>
 
 </body>

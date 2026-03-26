@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore 17+ completed aluminium facade projects by Madinat Al Saada across Dubai, Abu Dhabi, and Sharjah — curtain walls, ACP cladding, and glass systems.">
-  <title>Projects | Madinat Al Saada — Aluminium Facade Portfolio</title>
-  <meta property="og:title" content="Projects | Madinat Al Saada — Aluminium Facade Portfolio">
-  <meta property="og:description" content="17+ completed facade projects across 5 emirates — curtain walls, ACP cladding, skylights, and architectural glass systems.">
+  <meta name="description" content="Madinat Al Saada project portfolio — 16+ aluminium facade projects across the UAE including curtain walls, ACP cladding, and glazing systems for Emaar, DAMAC, and more.">
+  <title>Our Projects | Madinat Al Saada — Aluminium Facade Portfolio</title>
+  <meta property="og:title" content="Projects | Madinat Al Saada">
+  <meta property="og:description" content="16+ aluminium facade projects across the UAE — curtain walls, ACP cladding, and glazing for top developers.">
   <meta property="og:image" content="https://madinatalsaada.ae/img/og-image.jpg">
   <meta property="og:url" content="https://madinatalsaada.ae/projects.html">
   <meta property="og:type" content="website">
@@ -14,19 +14,12 @@
   <link rel="canonical" href="https://madinatalsaada.ae/projects.html">
   <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/projects.html">
   <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/projects.html">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#1a3a5c">
   <link rel="icon" type="image/webp" href="img/logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="img/hero/marinashores-hero.webp" fetchpriority="high">
   <style>
-    /* ================================================================
-       MADINAT AL SAADA — ARCHITECTURAL EDITORIAL
-       Photography-first. Cinematic. Confident. Premium.
-       Font: Playfair Display (editorial headings) + DM Sans (clean body)
-       ================================================================ */
-
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;font-size:16px}
     body{font-family:'DM Sans',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -35,440 +28,416 @@
     ul{list-style:none}
     button{font:inherit;cursor:pointer;border:none;background:none}
     ::selection{background:#1a3a5c;color:#fff}
-
     :root{
-      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
-      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
-      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
-      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+      --navy:#1a3a5c;--navy-light:#264d73;--navy-dark:#0f2840;--navy-deeper:#091c30;
+      --accent:#1a3a5c;--accent-light:#4a7da8;--accent-dark:#0f2840;
+      --white:#fff;--gray-50:#f8fafb;--gray-100:#f1f3f5;--gray-200:#e2e5e9;
+      --gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;--gray-700:#374151;--gray-900:#111827;
+      --ease:cubic-bezier(.16,1,.3,1);
     }
-
     .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
     .skip:focus{top:16px}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:4px}
 
-    /* ================================================================
-       NAV — Floating, transparent on hero, solid on scroll
-       ================================================================ */
-    .nav{
-      position:fixed;top:0;left:0;right:0;z-index:100;
-      padding:0 24px;transition:background .4s,backdrop-filter .4s;
-    }
-    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
-    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    /* NAV */
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,box-shadow .4s}
+    .nav::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.4),transparent);pointer-events:none;transition:opacity .4s}
+    .nav.is-solid::before{opacity:0}
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+    .nav__wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
     @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
-
-    .nav__logo{display:flex;align-items:center;gap:12px}
-    .nav__logo img{height:38px;width:auto;border-radius:0}
-    @media(min-width:768px){.nav__logo img{height:44px}}
-    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav__logo{display:flex;align-items:center;gap:12px;cursor:pointer}
+    .nav__logo img{height:40px;width:auto}
+    @media(min-width:768px){.nav__logo img{height:46px}}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:#fff;transition:color .4s}
     @media(min-width:768px){.nav__logo-text{font-size:19px}}
     .nav.is-solid .nav__logo-text{color:var(--gray-900)}
     @media(max-width:767px){.nav__logo-text{display:none}}
-
     .nav__links{display:none;gap:32px}
     @media(min-width:1024px){.nav__links{display:flex}}
-    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
-    .nav__links a:hover,.nav__links a[aria-current="page"]{color:#fff}
-    .nav__links a[aria-current="page"]{color:#fff}
-    .nav.is-solid .nav__links a{color:var(--gray-600)}
-    .nav.is-solid .nav__links a:hover,.nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900)}
-    .nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900)}
-
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.75);transition:color .25s;cursor:pointer}
+    .nav__links a:hover{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-500)}
+    .nav.is-solid .nav__links a:hover{color:var(--gray-900)}
     .nav__right{display:flex;align-items:center;gap:16px}
-    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
-    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .25s;cursor:pointer}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
     .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
-    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
-
-    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-50)}
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:var(--navy-deeper);background:#fff;border-radius:100px;transition:all .25s;cursor:pointer}
     @media(min-width:768px){.nav__cta-btn{display:block}}
-    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
-
-    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    .nav__cta-btn:hover{background:var(--gray-100);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+    .nav.is-solid .nav__cta-btn{background:var(--navy);color:#fff}
+    .nav.is-solid .nav__cta-btn:hover{background:var(--navy-dark)}
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center;cursor:pointer}
     @media(min-width:1024px){.nav__burger{display:none}}
     .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
     .nav.is-solid .nav__burger span{background:var(--gray-900)}
     .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
     .nav__burger.is-open span:nth-child(2){opacity:0}
     .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-
-    .nav__drawer{
-      display:none;position:fixed;inset:0;top:72px;background:#fff;
-      padding:32px 24px;z-index:99;flex-direction:column;gap:0;
-    }
+    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column}
     .nav__drawer.is-open{display:flex}
-    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100);cursor:pointer;transition:color .2s}
+    .nav__drawer a:hover{color:var(--navy)}
     .nav__drawer a:last-child{border:none}
-    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none!important;cursor:pointer}
 
-    /* ================================================================
-       HERO — Page hero (shorter than homepage)
-       ================================================================ */
-    .hero{
-      position:relative;min-height:70svh;display:flex;align-items:flex-end;
-      overflow:hidden;background:var(--black);
-    }
-    .hero__img{
-      position:absolute;inset:0;
-      background:url('img/hero/marinashores-hero.webp') center/cover no-repeat;
-      transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate;
-    }
-    @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
-    .hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7) 0%,rgba(0,0,0,.2) 40%,rgba(0,0,0,.1) 70%,rgba(0,0,0,.3) 100%)}
+    /* PAGE HERO */
+    .page-hero{position:relative;min-height:400px;display:flex;align-items:center;justify-content:center;background:var(--navy-deeper);overflow:hidden;padding:120px 24px 80px}
+    @media(min-width:768px){.page-hero{min-height:480px;padding:140px 40px 100px}}
+    .page-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--navy-deeper) 0%,var(--navy-dark) 50%,var(--navy) 100%);opacity:.8}
+    .page-hero__content{position:relative;z-index:2;text-align:center;max-width:800px}
+    .page-hero__tag{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:20px;display:block}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:-.02em;line-height:1.05;margin-bottom:16px}
+    .page-hero h1 em{font-style:italic;font-weight:400;text-transform:none;display:block;font-size:.5em;letter-spacing:0;margin-top:12px;color:rgba(255,255,255,.5)}
+    .page-hero__line{width:60px;height:2px;background:var(--accent-light);margin:0 auto}
 
-    .hero__content{
-      position:relative;z-index:2;padding:0 24px 60px;width:100%;max-width:1400px;margin:0 auto;
-    }
-    @media(min-width:768px){.hero__content{padding:0 40px 80px}}
-    @media(min-width:1200px){.hero__content{padding:0 40px 100px}}
+    /* STATS BAR */
+    .numbers{padding:0;background:#fff;border-bottom:1px solid var(--gray-200)}
+    .numbers__grid{display:grid;grid-template-columns:repeat(2,1fr);max-width:1400px;margin:0 auto}
+    @media(min-width:768px){.numbers__grid{grid-template-columns:repeat(4,1fr)}}
+    .numbers__item{text-align:center;padding:40px 16px;border-right:1px solid var(--gray-200);position:relative}
+    .numbers__item:last-child{border-right:none}
+    @media(max-width:767px){.numbers__item:nth-child(2){border-right:none}}
+    .numbers__val{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,3.5rem);font-weight:700;color:var(--navy);line-height:1}
+    .numbers__label{font-size:12px;color:var(--gray-500);margin-top:8px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
 
-    .hero__tag{
-      display:inline-flex;align-items:center;gap:8px;
-      font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
-      color:rgba(255,255,255,.7);margin-bottom:24px;
-    }
-    .hero__tag::before{content:'';width:40px;height:1px;background:rgba(255,255,255,.4)}
-
-    .hero h1{
-      font-family:'Playfair Display',serif;font-size:clamp(2.5rem,8vw,6rem);
-      font-weight:400;color:#fff;line-height:1.05;letter-spacing:-.03em;
-      max-width:900px;margin-bottom:24px;
-    }
-    .hero h1 strong{font-weight:600;font-style:italic}
-
-    .hero__sub{font-size:clamp(15px,1.8vw,19px);color:rgba(255,255,255,.65);max-width:520px;line-height:1.7;margin-bottom:40px}
-
-    /* ================================================================
-       NUMBERS — Bold stats strip
-       ================================================================ */
-    .numbers{padding:56px 24px;background:var(--gray-900)}
-    @media(min-width:768px){.numbers{padding:72px 40px}}
-    .numbers__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;max-width:1200px;margin:0 auto}
-    @media(min-width:768px){.numbers__grid{grid-template-columns:repeat(4,1fr);gap:48px}}
-    .numbers__item{text-align:center}
-    .numbers__val{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:400;color:#fff;line-height:1;letter-spacing:-.02em}
-    .numbers__label{font-size:13px;color:rgba(255,255,255,.45);margin-top:8px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
-
-    /* ================================================================
-       SECTION — Generous whitespace
-       ================================================================ */
+    /* SECTIONS */
     .s{padding:80px 24px}
     @media(min-width:768px){.s{padding:120px 40px}}
-    @media(min-width:1200px){.s{padding:160px 40px}}
-    .s--gray{background:var(--gray-100)}
-    .s--dark{background:var(--gray-900)}
+    .s--gray{background:var(--gray-50)}
+    .s--navy{background:var(--navy-deeper);color:#fff}
     .s__inner{max-width:1200px;margin:0 auto}
-
-    .s__head{margin-bottom:56px}
-    @media(min-width:768px){.s__head{margin-bottom:80px}}
+    .s__tag{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+    .s--navy .s__tag{color:rgba(255,255,255,.5)}
+    .s__head{margin-bottom:48px}
+    @media(min-width:768px){.s__head{margin-bottom:64px}}
     .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
-    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
-    .s--dark .s__tag{color:var(--accent)}
-    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
-    .s__head h2 em{font-style:italic;font-weight:500}
-    .s--dark .s__head h2{color:#fff}
+    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:700;font-size:clamp(2rem,5vw,3.2rem);text-transform:uppercase}
+    .s__head h2 em{font-style:italic;font-weight:400;text-transform:none}
+    .s--navy .s__head h2{color:#fff}
     .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
     .s__head--center p{margin:0 auto}
-    .s--dark .s__head p{color:rgba(255,255,255,.5)}
+    .s--navy .s__head p{color:rgba(255,255,255,.5)}
 
-    /* ================================================================
-       PROJECTS — Large editorial cards
-       ================================================================ */
-    .proj-grid{display:grid;grid-template-columns:1fr;gap:16px}
-    @media(min-width:768px){.proj-grid{grid-template-columns:repeat(3,1fr);gap:20px}}
-    .proj{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4}
-    @media(min-width:768px){.proj{aspect-ratio:4/5}}
-    .proj img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;border-radius:0}
-    .proj:hover img{transform:scale(1.04)}
-    .proj__info{position:absolute;bottom:0;left:0;right:0;padding:32px;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 100%)}
-    .proj__info h3{font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,24px);color:#fff;font-weight:400;margin-bottom:4px}
-    .proj__info p{font-size:13px;color:rgba(255,255,255,.6);margin:0}
+    /* ONGOING PROJECT CARDS */
+    .ongoing-grid{display:grid;grid-template-columns:1fr;gap:24px}
+    @media(min-width:768px){.ongoing-grid{grid-template-columns:repeat(3,1fr)}}
+    .ongoing-card{border:2px solid var(--navy);padding:0;overflow:hidden;transition:all .3s}
+    .ongoing-card:hover{box-shadow:0 12px 40px rgba(26,58,92,.12);transform:translateY(-4px)}
+    .ongoing-card__img{position:relative;aspect-ratio:16/10;overflow:hidden}
+    .ongoing-card__img img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+    .ongoing-card:hover .ongoing-card__img img{transform:scale(1.05)}
+    .ongoing-card__badge{position:absolute;top:16px;left:16px;background:var(--navy);color:#fff;font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:6px 14px;z-index:1}
+    .ongoing-card__body{padding:28px}
+    .ongoing-card__body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-bottom:16px;color:var(--navy-deeper)}
+    .ongoing-card__detail{display:flex;gap:10px;margin-bottom:10px;font-size:14px;color:var(--gray-600);line-height:1.5}
+    .ongoing-card__detail strong{color:var(--gray-900);min-width:90px;font-weight:600;flex-shrink:0}
 
-    .proj__badge{
-      position:absolute;top:16px;left:16px;z-index:2;
-      padding:6px 14px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
-      border-radius:100px;
-    }
-    .proj__badge--completed{background:rgba(255,255,255,.92);color:var(--gray-900)}
-    .proj__badge--progress{background:var(--accent);color:#fff}
+    /* COMPLETED PROJECT GRID */
+    .proj-grid{display:grid;grid-template-columns:1fr;gap:2px}
+    @media(min-width:640px){.proj-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.proj-grid{grid-template-columns:repeat(3,1fr)}}
+    .proj{position:relative;overflow:hidden;aspect-ratio:4/3;cursor:pointer;display:block}
+    .proj img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+    .proj:hover img{transform:scale(1.05)}
+    .proj__info{position:absolute;bottom:0;left:0;right:0;padding:28px;background:linear-gradient(to top,rgba(9,28,48,.85) 0%,transparent 100%);z-index:1}
+    .proj__info h3{font-family:'Playfair Display',serif;font-size:clamp(16px,2vw,22px);color:#fff;font-weight:700;margin-bottom:4px;transition:transform .3s var(--ease);text-transform:uppercase;letter-spacing:.02em}
+    .proj:hover .proj__info h3{transform:translateY(-3px)}
+    .proj__info p{font-size:12px;color:var(--accent-light);margin:0;letter-spacing:.05em;text-transform:uppercase;font-weight:500}
+    .proj--text{position:relative;aspect-ratio:4/3;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;background:var(--navy-deeper);cursor:default;border:1px solid rgba(255,255,255,.06)}
+    .proj--text h3{font-family:'Playfair Display',serif;font-size:clamp(16px,2vw,20px);color:#fff;font-weight:700;margin-bottom:8px;text-transform:uppercase;letter-spacing:.02em}
+    .proj--text p{font-size:12px;color:var(--accent-light);margin:0 0 4px;letter-spacing:.05em;text-transform:uppercase;font-weight:500}
+    .proj--text .proj__scope{font-size:13px;color:rgba(255,255,255,.5);margin-top:8px;line-height:1.5;text-transform:none;letter-spacing:0;font-weight:400}
 
-    /* ================================================================
-       PARTNERS
-       ================================================================ */
-    .partners{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-    .partner{padding:16px 32px;font-size:14px;font-weight:600;color:var(--gray-700);border:1px solid var(--gray-200);border-radius:100px;transition:border-color .2s}
-    .partner:hover{border-color:var(--navy)}
+    /* COMPANY PROFILE DOWNLOAD */
+    .dl{position:relative;overflow:hidden}
+    .dl__inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px;max-width:700px;margin:0 auto}
+    @media(min-width:768px){.dl__inner{flex-direction:row;text-align:left;gap:48px;max-width:1000px}}
+    .dl__icon{flex-shrink:0;width:80px;height:100px;background:var(--navy);display:flex;align-items:center;justify-content:center;position:relative}
+    .dl__icon::after{content:'PDF';position:absolute;bottom:8px;right:8px;font-size:10px;font-weight:700;color:#fff;background:var(--accent);padding:2px 6px}
+    .dl__icon svg{width:32px;height:32px;color:#fff}
+    .dl__text h3{font-size:22px;font-weight:700;margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em}
+    .dl__text p{font-size:15px;color:var(--gray-500);line-height:1.6;margin-bottom:20px}
+    .dl__btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);transition:all .25s;cursor:pointer;letter-spacing:.05em;text-transform:uppercase}
+    .dl__btn:hover{background:var(--navy-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,58,92,.3)}
+    .dl__btn svg{width:18px;height:18px}
 
-    /* ================================================================
-       CTA — Full-bleed image
-       ================================================================ */
-    .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
-    @media(min-width:768px){.cta{padding:160px 40px}}
-    .cta__bg{position:absolute;inset:0;background:url('img/hero/aykon-hero.webp') center/cover no-repeat}
-    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
-    .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
-    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
-    .cta h2 em{font-style:italic;font-weight:500}
-    .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
+    /* CTA */
+    .cta{position:relative;padding:80px 24px;overflow:hidden;background:var(--navy-deeper)}
+    @media(min-width:768px){.cta{padding:100px 40px}}
+    .cta__content{position:relative;z-index:2;max-width:800px;margin:0 auto;text-align:center}
+    .cta p.cta__lead{font-size:clamp(1.1rem,2.5vw,1.4rem);color:rgba(255,255,255,.7);line-height:1.6;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto}
+    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;font-weight:700;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1;text-transform:uppercase}
     .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
-    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
-    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
-    .cta .btn--white:hover{background:var(--gray-100)}
-    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
-    .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center;gap:16px}}
+    .cta .btn--amber{padding:16px 40px;font-size:13px;font-weight:600;color:var(--navy-deeper);background:#fff;transition:all .25s;cursor:pointer;letter-spacing:.05em;text-transform:uppercase}
+    .cta .btn--amber:hover{background:var(--gray-100);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+    .cta .btn--outline{padding:16px 40px;font-size:13px;font-weight:600;color:#fff;border:2px solid rgba(255,255,255,.2);transition:all .25s;cursor:pointer;letter-spacing:.05em;text-transform:uppercase}
+    .cta .btn--outline:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.4)}
 
-    /* ================================================================
-       FOOTER
-       ================================================================ */
-    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    /* FOOTER */
+    .foot{background:var(--navy-deeper);padding:72px 24px 0;color:rgba(255,255,255,.45)}
     @media(min-width:768px){.foot{padding:96px 40px 0}}
-    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
-    @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
-    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
-    .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
-    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
-    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__brand-large{text-align:center;padding:64px 24px 48px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .foot__brand-large h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+    .foot__brand-large p{font-size:14px;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase}
+    .foot__social{display:flex;justify-content:center;gap:16px;margin-top:24px}
+    .foot__social a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);transition:all .25s}
+    .foot__social a:hover{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.05)}
+    .foot__social svg{width:18px;height:18px}
+    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding:64px 0}
+    @media(min-width:768px){.foot__grid{grid-template-columns:repeat(3,1fr)}}
+    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;margin-bottom:20px}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
     .foot__links a:hover{color:#fff}
     .foot__contact li{margin-bottom:10px;font-size:14px}
-    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a{color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
     .foot__contact a:hover{color:#fff}
-    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
+    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto;border-top:1px solid rgba(255,255,255,.08)}
     @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
-    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
+    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.4);margin:0}
 
-    /* ================================================================
-       WHATSAPP
-       ================================================================ */
-    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    /* WHATSAPP */
+    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .25s var(--ease);cursor:pointer}
     .wa:hover{transform:scale(1.1);color:#fff}
     .wa svg{width:24px;height:24px}
 
-    /* ================================================================
-       SCROLL REVEAL
-       ================================================================ */
-    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-    [data-r].in{opacity:1;transform:none}
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(40px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .reveal.is-visible{opacity:1;transform:none}
+    .stagger{opacity:0;transform:translateY(25px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+    .stagger.is-visible{opacity:1;transform:none}
 
     @media(prefers-reduced-motion:reduce){
-      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
-      [data-r]{opacity:1;transform:none}
-      .hero__img{animation:none;transform:none}
+      .reveal,.stagger{transition-duration:.3s!important}
     }
   </style>
 </head>
 <body>
-
 <a href="#main" class="skip">Skip to content</a>
 
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav__wrap">
-    <a href="/" class="nav__logo">
-      <img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42">
-      <span class="nav__logo-text">Madinat Al Saada</span>
-    </a>
+    <a href="/" class="nav__logo"><img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42"><span class="nav__logo-text">Madinat Al Saada</span></a>
     <div class="nav__links">
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html" aria-current="page">Projects</a>
-      <a href="equipment.html">Equipment</a>
-      <a href="technical.html">Technical</a>
-      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a>
+      <a href="equipment.html">Equipment</a><a href="technical.html">Technical</a><a href="contact.html">Contact</a>
     </div>
     <div class="nav__right">
       <a href="ar/projects.html" class="nav__lang">العربية</a>
       <a href="contact.html" class="nav__cta-btn">Get Quote</a>
-      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
   <div class="nav__drawer" id="drawer">
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html" aria-current="page">Projects</a>
-    <a href="equipment.html">Equipment</a>
-    <a href="technical.html">Technical</a>
-    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a>
+    <a href="equipment.html">Equipment</a><a href="technical.html">Technical</a><a href="contact.html">Contact</a>
     <a href="contact.html" class="nav__drawer-cta">Get Quote →</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<header class="hero" id="main">
-  <div class="hero__img" role="presentation"></div>
-  <div class="hero__overlay"></div>
-  <div class="hero__content" data-r>
-    <div class="hero__tag">Portfolio · UAE &amp; Beyond</div>
-    <h1>Our <strong>Projects</strong></h1>
-    <p class="hero__sub">Over 17 completed aluminium facade projects across 5 emirates — from 52-storey towers to luxury villa communities.</p>
+<!-- PAGE HERO -->
+<header class="page-hero" id="main">
+  <div class="page-hero__content">
+    <span class="page-hero__tag">Portfolio</span>
+    <h1>Our Projects<em>16+ facade projects delivered across the UAE</em></h1>
+    <div class="page-hero__line"></div>
   </div>
 </header>
 
-<!-- NUMBERS -->
-<section class="numbers" data-r>
+<!-- STATS BAR -->
+<section class="numbers">
   <div class="numbers__grid">
-    <div class="numbers__item"><div class="numbers__val">14</div><div class="numbers__label">Completed</div></div>
-    <div class="numbers__item"><div class="numbers__val">3</div><div class="numbers__label">Ongoing</div></div>
-    <div class="numbers__item"><div class="numbers__val">5</div><div class="numbers__label">Emirates</div></div>
-    <div class="numbers__item"><div class="numbers__val">10</div><div class="numbers__label">Years</div></div>
-  </div>
-</section>
-
-<!-- COMPLETED PROJECTS -->
-<section class="s" data-r>
-  <div class="s__inner">
-    <div class="s__head">
-      <span class="s__tag">Portfolio</span>
-      <h2>Completed <em>Projects</em></h2>
-      <p>Aluminium facade systems delivered on time and to spec — curtain walls, cladding, glazing, and architectural metalwork.</p>
-    </div>
-    <div class="proj-grid">
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/aykon-800.webp" alt="AYKON City Tower aluminium curtain wall facade in Dubai" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>AYKON City Tower</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/plot19-800.webp" alt="Dubai Creek Harbour Creek Horizon twin towers facade" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Creek Horizon</h3><p>Dubai · 39 + 36 Floors</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/thecove-800.webp" alt="The Cove at Dubai Creek Harbor aluminium and glass facade" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>The Cove</h3><p>Dubai Creek Harbor</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/aloft1-800.webp" alt="Aloft 4 Star Hotel aluminium facade system in Dubai" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Aloft 4 Star Hotel</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/sixthsense-800.webp" alt="Six Senses The Palm luxury resort facade" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Six Senses The Palm</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/harmony1-800.webp" alt="Tilal Al Ghaf Harmony 1 villa aluminium facades in Dubai" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Tilal Al Ghaf Harmony 1</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/harmony2-800.webp" alt="Tilal Al Ghaf Harmony 2 aluminium windows and doors" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Tilal Al Ghaf Harmony 2</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/harmony3-800.webp" alt="Tilal Al Ghaf Harmony 3 residential aluminium facades" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Tilal Al Ghaf Harmony 3</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/masaar-800.webp" alt="Masaar Villas Phase A and B facades in Sharjah" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Masaar Villas Phase A &amp; B</h3><p>Sharjah</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/malta-800.webp" alt="Damac Lagoons Malta villas aluminium and glass work" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Damac Lagoons Malta</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/sustainablecity-800.webp" alt="Sharjah Sustainability Villas facade systems" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Sharjah Sustainability Villas</h3><p>Sharjah</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/dubaisouth-800.webp" alt="Dubai Southbay Mansions aluminium facades" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Dubai Southbay Mansions</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/plot19-800.webp" alt="Dubai Creek Harbors aluminium curtain wall project" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Dubai Creek Harbors</h3><p>Dubai</p></div>
-      </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--completed">Completed</span>
-        <img src="img/projects/aloft2-800.webp" alt="Aloft Hotel Phase 2 facade installation in Dubai" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Aloft Hotel Phase 2</h3><p>Dubai</p></div>
-      </div>
-
-    </div>
+    <div class="numbers__item reveal"><div class="numbers__val">16+</div><div class="numbers__label">Total Projects</div></div>
+    <div class="numbers__item reveal"><div class="numbers__val">3</div><div class="numbers__label">Ongoing</div></div>
+    <div class="numbers__item reveal"><div class="numbers__val">13</div><div class="numbers__label">Completed</div></div>
+    <div class="numbers__item reveal"><div class="numbers__val">UAE</div><div class="numbers__label">Across All Emirates</div></div>
   </div>
 </section>
 
 <!-- ONGOING PROJECTS -->
-<section class="s s--gray" data-r>
+<section class="s">
   <div class="s__inner">
-    <div class="s__head">
-      <span class="s__tag">In Progress</span>
+    <div class="s__head reveal">
+      <span class="s__tag">Currently Active</span>
       <h2>Ongoing <em>Projects</em></h2>
-      <p>Currently on site — active fabrication and installation underway.</p>
+      <p>Three major facade projects currently in progress across Dubai and Abu Dhabi.</p>
     </div>
-    <div class="proj-grid">
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--progress">In Progress</span>
-        <img src="img/projects/marinashores-800.webp" alt="Marina Shores tower facade installation in progress in Dubai" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Marina Shores</h3><p>Dubai</p></div>
+    <div class="ongoing-grid">
+      <div class="ongoing-card stagger">
+        <div class="ongoing-card__img">
+          <img src="img/projects/marinashores-800.webp" alt="Marina Shores Tower" loading="lazy">
+          <div class="ongoing-card__badge">Ongoing</div>
+        </div>
+        <div class="ongoing-card__body">
+          <h3>Marina Shores Tower</h3>
+          <div class="ongoing-card__detail"><strong>Location</strong> Dubai Marina</div>
+          <div class="ongoing-card__detail"><strong>Developer</strong> Emaar Properties</div>
+          <div class="ongoing-card__detail"><strong>Contractor</strong> National Aluminium LLC</div>
+          <div class="ongoing-card__detail"><strong>Scope</strong> Curtain Wall &amp; Sliding Systems</div>
+        </div>
       </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--progress">In Progress</span>
-        <img src="img/projects/saadiyatinnovo-800.webp" alt="Saadiyat Innovo facade project in Abu Dhabi" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Saadiyat Innovo</h3><p>Abu Dhabi</p></div>
+      <div class="ongoing-card stagger">
+        <div class="ongoing-card__img">
+          <img src="img/projects/saadiyatinnovo-800.webp" alt="Saadiyat Innovo" loading="lazy">
+          <div class="ongoing-card__badge">Ongoing</div>
+        </div>
+        <div class="ongoing-card__body">
+          <h3>Saadiyat Innovo</h3>
+          <div class="ongoing-card__detail"><strong>Location</strong> Abu Dhabi</div>
+          <div class="ongoing-card__detail"><strong>Contractor</strong> National Aluminium LLC</div>
+          <div class="ongoing-card__detail"><strong>Scope</strong> Curtain Wall, Door &amp; Window Fabrication</div>
+        </div>
       </div>
-
-      <div class="proj">
-        <span class="proj__badge proj__badge--progress">In Progress</span>
-        <img src="img/projects/saadiyattrojan-800.webp" alt="Saadiyat Trojan aluminium facade project in Abu Dhabi" width="800" height="1000" loading="lazy">
-        <div class="proj__info"><h3>Saadiyat Trojan</h3><p>Abu Dhabi</p></div>
+      <div class="ongoing-card stagger">
+        <div class="ongoing-card__img">
+          <img src="img/projects/expovalley-800.webp" alt="Expo Valley" loading="lazy">
+          <div class="ongoing-card__badge">Ongoing</div>
+        </div>
+        <div class="ongoing-card__body">
+          <h3>Expo Valley</h3>
+          <div class="ongoing-card__detail"><strong>Location</strong> Expo City Dubai</div>
+          <div class="ongoing-card__detail"><strong>Developer</strong> Emaar Properties</div>
+          <div class="ongoing-card__detail"><strong>Contractor</strong> National Aluminium LLC</div>
+          <div class="ongoing-card__detail"><strong>Scope</strong> Fabrication &amp; Installation</div>
+        </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- PARTNERS -->
-<section class="s" data-r>
+<!-- COMPLETED PROJECTS -->
+<section class="s s--gray">
   <div class="s__inner">
-    <div class="s__head s__head--center">
-      <span class="s__tag">Partners</span>
-      <h2>Main Contractors <em>We Work With</em></h2>
+    <div class="s__head s__head--center reveal">
+      <span class="s__tag">Completed Work</span>
+      <h2>Completed <em>Projects</em></h2>
+      <p>13 successfully delivered facade projects for leading developers and tier-1 contractors across the UAE.</p>
     </div>
-    <div class="partners">
-      <div class="partner">National Aluminium LLC</div>
-      <div class="partner">Al Qassim Aluminium &amp; Glass</div>
-      <div class="partner">Innovo Group</div>
-      <div class="partner">Prime Metal Industries</div>
+    <div class="proj-grid">
+      <div class="proj stagger">
+        <img src="img/projects/aykon-1200.webp" alt="AYKON City Tower" loading="lazy">
+        <div class="proj__info">
+          <h3>AYKON City Tower</h3>
+          <p>Sheikh Zayed Rd · DAMAC · National Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/sustainablecity-800.webp" alt="Sustainability City Sharjah" loading="lazy">
+        <div class="proj__info">
+          <h3>Sustainability City</h3>
+          <p>Sharjah · Al Qassim Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/masaar-800.webp" alt="Masar Villas" loading="lazy">
+        <div class="proj__info">
+          <h3>Masar Villas</h3>
+          <p>Sharjah · Prime Metal Industries</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/aloft1-800.webp" alt="Aloft Hotel Garhoud" loading="lazy">
+        <div class="proj__info">
+          <h3>Aloft Hotel Garhoud</h3>
+          <p>Dubai · National Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/plot19-800.webp" alt="Creek Horizon" loading="lazy">
+        <div class="proj__info">
+          <h3>Creek Horizon</h3>
+          <p>Dubai Creek · Emaar · National Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/thecove-800.webp" alt="The Cove" loading="lazy">
+        <div class="proj__info">
+          <h3>The Cove (3 Blocks)</h3>
+          <p>Dubai Creek · Emaar · National Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/malta-800.webp" alt="DAMAC Lagoons Malta" loading="lazy">
+        <div class="proj__info">
+          <h3>DAMAC Lagoons Malta</h3>
+          <p>DAMAC · National Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/harmony1-800.webp" alt="Tilal Al Ghaf H1" loading="lazy">
+        <div class="proj__info">
+          <h3>Tilal Al Ghaf H1</h3>
+          <p>Majid Al Futtaim · National Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/harmony2-800.webp" alt="Tilal Al Ghaf H2" loading="lazy">
+        <div class="proj__info">
+          <h3>Tilal Al Ghaf H2</h3>
+          <p>Majid Al Futtaim · National Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/harmony3-800.webp" alt="Tilal Al Ghaf H3" loading="lazy">
+        <div class="proj__info">
+          <h3>Tilal Al Ghaf H3</h3>
+          <p>Majid Al Futtaim · Al Qassim Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/dubaisouth-800.webp" alt="Dubai South Mansions" loading="lazy">
+        <div class="proj__info">
+          <h3>Dubai South Mansions</h3>
+          <p>Dubai · National Aluminium</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/aloft2-800.webp" alt="Nadd Al Sheba Gardens" loading="lazy">
+        <div class="proj__info">
+          <h3>Nadd Al Sheba Gardens</h3>
+          <p>Dubai</p>
+        </div>
+      </div>
+      <div class="proj stagger">
+        <img src="img/projects/aloft2-800.webp" alt="Aloft Hotel Raffa" loading="lazy">
+        <div class="proj__info">
+          <h3>Aloft Hotel Raffa</h3>
+          <p>Dubai · National Aluminium</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY PROFILE DOWNLOAD -->
+<section class="s dl">
+  <div class="dl__inner reveal">
+    <div class="dl__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+    </div>
+    <div class="dl__text">
+      <h3>Company Profile</h3>
+      <p>Download our 33-page pre-qualification document — project portfolio, equipment list, manpower overview, ISO certifications, and more.</p>
+      <a href="downloads/Madinat_Al_Saada_PQ_2026_final.pdf" class="dl__btn" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download PQ (PDF)
+      </a>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
-  <div class="cta__bg" role="presentation"></div>
-  <div class="cta__content" data-r>
-    <h2>Ready to Start Your <em>Project?</em></h2>
-    <p>Discuss your next facade project with our team and receive a detailed quotation.</p>
+  <div class="cta__content reveal">
+    <span class="s__tag" style="color:var(--accent-light)">Get Started</span>
+    <h2>Have a Project in Mind?</h2>
+    <p class="cta__lead">Let us discuss how we can deliver precision aluminium facade solutions for your next development.</p>
     <div class="cta__btns">
-      <a href="contact.html" class="btn--white">Get in Touch</a>
+      <a href="contact.html" class="btn--amber">Get in Touch</a>
       <a href="tel:+97165260556" class="btn--outline">Call 06-5260556</a>
     </div>
   </div>
@@ -476,41 +445,51 @@
 
 <!-- FOOTER -->
 <footer class="foot">
-  <div class="foot__grid">
-    <div class="foot__brand">
-      <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
-      <p>Precision aluminium fabrication and installation for the UAE's leading contractors. Trusted since 2016.</p>
+  <div class="foot__brand-large">
+    <h2>Madinat Al Saada</h2>
+    <p>Aluminium &amp; Glass Works LLC</p>
+    <div class="foot__social">
+      <a href="https://www.linkedin.com/company/madinatalsaada/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
     </div>
-    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a></div></div>
+  </div>
+  <div class="foot__grid">
+    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a><a href="faq.html">FAQ</a></div></div>
     <div><h4>Services</h4><div class="foot__links"><a href="services.html">Curtain Walls</a><a href="services.html">ACP Cladding</a><a href="services.html">Skylights</a><a href="services.html">Doors &amp; Windows</a><a href="services.html">Balustrades</a></div></div>
     <div><h4>Contact</h4><ul class="foot__contact"><li>Amman St, Industrial Area 1, Ajman</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
   </div>
-  <div class="foot__bottom">
-    <p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p>
-    <p>ISO 9001 · ISO 14001 · ISO 45001</p>
-  </div>
+  <div class="foot__bottom"><p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p><p>ISO 9001 · ISO 14001 · ISO 45001</p></div>
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
 <script>
-// Nav
-const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
-burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
-drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
-// Scroll nav
-let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
-// Reveal
-const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
-// Year
-document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+(function(){
+  'use strict';
+  var burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+
+  /* NAV */
+  if(burger&&drawer&&nav){
+    burger.addEventListener('click',function(){var o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',String(o));document.body.style.overflow=o?'hidden':''});
+    for(var i=0,links=drawer.querySelectorAll('a');i<links.length;i++)links[i].addEventListener('click',function(){burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''});
+    var nt=false;
+    window.addEventListener('scroll',function(){if(!nt){requestAnimationFrame(function(){nav.classList.toggle('is-solid',window.scrollY>60);nt=false});nt=true}},{passive:true});
+  }
+
+  /* SCROLL REVEAL */
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++)if(e[i].isIntersecting){e[i].target.classList.add('is-visible');ro.unobserve(e[i].target)}},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+    var revs=document.querySelectorAll('.reveal');for(var i=0;i<revs.length;i++)ro.observe(revs[i]);
+    var so=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++)if(e[i].isIntersecting){var el=e[i].target,sibs=el.parentElement.querySelectorAll('.stagger'),idx=0;
+      for(var j=0;j<sibs.length;j++)if(sibs[j]===el){idx=j;break}
+      el.style.transitionDelay=(idx*.08)+'s';el.classList.add('is-visible');so.unobserve(el)}},{threshold:.05,rootMargin:'0px 0px -30px 0px'});
+    var stags=document.querySelectorAll('.stagger');for(var i=0;i<stags.length;i++)so.observe(stags[i]);
+  }
+
+  /* YEAR */
+  var yrs=document.querySelectorAll('.yr');for(var i=0;i<yrs.length;i++)yrs[i].textContent=new Date().getFullYear();
+})();
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Projects | Madinat Al Saada","description":"17+ completed aluminium facade projects across the UAE","url":"https://madinatalsaada.ae/projects.html","isPartOf":{"@type":"WebSite","name":"Madinat Al Saada","url":"https://madinatalsaada.ae"}}</script>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Projects | Madinat Al Saada","description":"16+ aluminium facade projects across the UAE","url":"https://madinatalsaada.ae/projects.html","isPartOf":{"@type":"WebSite","name":"Madinat Al Saada","url":"https://madinatalsaada.ae"}}</script>
 </body>
 </html>

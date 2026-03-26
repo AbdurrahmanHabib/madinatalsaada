@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://madinatalsaada.ae/faq.html">
   <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/faq.html">
   <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/faq.html">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="theme-color" content="#1a3a5c">
   <link rel="icon" type="image/webp" href="img/logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,144 +28,135 @@
     ul{list-style:none}
     button{font:inherit;cursor:pointer;border:none;background:none}
     ::selection{background:#1a3a5c;color:#fff}
-
     :root{
-      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
-      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
-      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
-      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+      --navy:#1a3a5c;--navy-light:#264d73;--navy-dark:#0f2840;--navy-deeper:#091c30;
+      --accent:#1a3a5c;--accent-light:#4a7da8;--accent-dark:#0f2840;
+      --white:#fff;--gray-50:#f8fafb;--gray-100:#f1f3f5;--gray-200:#e2e5e9;
+      --gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;--gray-700:#374151;--gray-900:#111827;
+      --ease:cubic-bezier(.16,1,.3,1);
     }
-
-    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
+    .skip{position:absolute;top:-100%;left:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;z-index:9999}
     .skip:focus{top:16px}
+    a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
 
     /* NAV */
-    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,backdrop-filter .4s}
-    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
-    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,box-shadow .4s}
+    .nav::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.4),transparent);pointer-events:none;transition:opacity .4s}
+    .nav.is-solid::before{opacity:0}
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+    .nav__wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
     @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
-
-    .nav__logo{display:flex;align-items:center;gap:12px}
-    .nav__logo img{height:38px;width:auto;border-radius:0}
-    @media(min-width:768px){.nav__logo img{height:44px}}
-    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav__logo{display:flex;align-items:center;gap:12px;cursor:pointer}
+    .nav__logo img{height:40px;width:auto}
+    @media(min-width:768px){.nav__logo img{height:46px}}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:#fff;transition:color .4s}
     @media(min-width:768px){.nav__logo-text{font-size:19px}}
     .nav.is-solid .nav__logo-text{color:var(--gray-900)}
     @media(max-width:767px){.nav__logo-text{display:none}}
-
     .nav__links{display:none;gap:32px}
     @media(min-width:1024px){.nav__links{display:flex}}
-    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
-    .nav__links a:hover,.nav__links a[aria-current="page"]{color:#fff}
-    .nav.is-solid .nav__links a{color:var(--gray-600)}
-    .nav.is-solid .nav__links a:hover,.nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900)}
-
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.75);transition:color .25s;cursor:pointer}
+    .nav__links a:hover{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-500)}
+    .nav.is-solid .nav__links a:hover{color:var(--gray-900)}
     .nav__right{display:flex;align-items:center;gap:16px}
-    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
-    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .25s;cursor:pointer}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
     .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
-    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
-
-    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-50)}
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:var(--navy-deeper);background:#fff;border-radius:100px;transition:all .25s;cursor:pointer}
     @media(min-width:768px){.nav__cta-btn{display:block}}
-    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
-
-    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    .nav__cta-btn:hover{background:var(--gray-100);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+    .nav.is-solid .nav__cta-btn{background:var(--navy);color:#fff}
+    .nav.is-solid .nav__cta-btn:hover{background:var(--navy-dark)}
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center;cursor:pointer}
     @media(min-width:1024px){.nav__burger{display:none}}
     .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
     .nav.is-solid .nav__burger span{background:var(--gray-900)}
     .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
     .nav__burger.is-open span:nth-child(2){opacity:0}
     .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-
-    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column;gap:0}
+    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column}
     .nav__drawer.is-open{display:flex}
-    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100);cursor:pointer;transition:color .2s}
+    .nav__drawer a:hover{color:var(--navy)}
     .nav__drawer a:last-child{border:none}
-    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-bottom:none!important;cursor:pointer}
 
     /* PAGE HERO */
-    .page-hero{position:relative;padding:160px 24px 80px;background:var(--black);text-align:center;overflow:hidden}
+    .page-hero{position:relative;padding:160px 24px 80px;background:var(--navy-deeper);text-align:center;overflow:hidden}
     @media(min-width:768px){.page-hero{padding:200px 40px 100px}}
-    .page-hero__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
-    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:400;color:#fff;line-height:1.1;letter-spacing:-.03em;max-width:800px;margin:0 auto 16px}
-    .page-hero h1 em{font-style:italic;font-weight:500}
+    .page-hero__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:16px;display:block}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:700;color:#fff;line-height:1.1;letter-spacing:-.02em;max-width:800px;margin:0 auto 16px;text-transform:uppercase}
+    .page-hero h1 em{font-style:italic;font-weight:400;text-transform:none}
     .page-hero p{font-size:17px;color:rgba(255,255,255,.5);max-width:560px;margin:0 auto;line-height:1.7}
 
     /* SECTIONS */
     .s{padding:80px 24px}
     @media(min-width:768px){.s{padding:120px 40px}}
-    @media(min-width:1200px){.s{padding:160px 40px}}
-    .s--gray{background:var(--gray-100)}
-    .s--dark{background:var(--gray-900)}
+    .s--gray{background:var(--gray-50)}
     .s__inner{max-width:1200px;margin:0 auto}
+    .s__tag{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
 
-    .s__head{margin-bottom:56px}
-    @media(min-width:768px){.s__head{margin-bottom:80px}}
-    .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
-    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
-    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
-    .s__head h2 em{font-style:italic;font-weight:500}
-    .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
-    .s__head--center p{margin:0 auto}
-
-    /* FAQ */
-    .faq{max-width:720px;margin:0 auto}
-    .faq details{border-bottom:1px solid var(--gray-200)}
-    .faq summary{display:flex;align-items:center;justify-content:space-between;padding:24px 0;font-size:16px;font-weight:500;color:var(--gray-900);cursor:pointer;list-style:none}
+    /* FAQ — numbered style matching homepage */
+    .faq{max-width:800px;margin:0 auto;counter-reset:faq-counter}
+    .faq details{border-bottom:1px solid var(--gray-200);counter-increment:faq-counter}
+    .faq summary{display:flex;align-items:center;gap:20px;padding:24px 0;font-size:16px;font-weight:600;color:var(--gray-900);cursor:pointer;list-style:none;transition:color .2s}
+    .faq summary:hover{color:var(--navy)}
     .faq summary::-webkit-details-marker{display:none}
-    .faq summary::after{content:'+';font-size:24px;font-weight:300;color:var(--gray-400);transition:transform .3s}
-    .faq details[open] summary::after{transform:rotate(45deg)}
-    .faq .faq__a{padding:0 0 24px;font-size:15px;color:var(--gray-500);line-height:1.7;max-width:600px}
-
-    .faq__category{font-family:'Playfair Display',serif;font-size:22px;font-weight:500;color:var(--navy);margin:48px 0 8px;padding-bottom:16px;border-bottom:2px solid var(--gray-200);letter-spacing:-.01em}
-    .faq__category:first-child{margin-top:0}
+    .faq summary::before{content:counter(faq-counter) '.';font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--accent);min-width:30px}
+    .faq summary::after{content:'+';font-size:24px;font-weight:300;color:var(--gray-400);transition:transform .3s var(--ease),color .2s;margin-left:auto}
+    .faq details[open] summary::after{transform:rotate(45deg);color:var(--accent)}
+    .faq details[open] summary{color:var(--navy)}
+    .faq details[open]{border-bottom-color:var(--accent)}
+    .faq .faq__a{padding:0 0 24px 50px;font-size:15px;color:var(--gray-500);line-height:1.7;max-width:600px}
 
     /* CTA */
-    .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
-    @media(min-width:768px){.cta{padding:160px 40px}}
-    .cta__bg{position:absolute;inset:0;background:url('img/hero/aykon-hero.webp') center/cover no-repeat}
-    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
-    .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
-    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
-    .cta h2 em{font-style:italic;font-weight:500}
+    .cta{position:relative;padding:80px 24px;overflow:hidden;background:var(--navy-deeper)}
+    @media(min-width:768px){.cta{padding:100px 40px}}
+    .cta__content{position:relative;z-index:2;max-width:800px;margin:0 auto;text-align:center}
+    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;font-weight:700;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1;text-transform:uppercase}
     .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
     .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
-    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
-    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
-    .cta .btn--white:hover{background:var(--gray-100)}
-    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
-    .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center;gap:16px}}
+    .cta .btn--white{padding:16px 40px;font-size:13px;font-weight:600;color:var(--navy-deeper);background:#fff;transition:all .25s;cursor:pointer;letter-spacing:.05em;text-transform:uppercase}
+    .cta .btn--white:hover{background:var(--gray-100);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+    .cta .btn--outline{padding:16px 40px;font-size:13px;font-weight:600;color:#fff;border:2px solid rgba(255,255,255,.2);transition:all .25s;cursor:pointer;letter-spacing:.05em;text-transform:uppercase}
+    .cta .btn--outline:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.4)}
 
     /* FOOTER */
-    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    .foot{background:var(--navy-deeper);padding:72px 24px 0;color:rgba(255,255,255,.45)}
     @media(min-width:768px){.foot{padding:96px 40px 0}}
-    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
-    @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
-    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
-    .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
-    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
-    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__brand-large{text-align:center;padding:64px 24px 48px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .foot__brand-large h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+    .foot__brand-large p{font-size:14px;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase}
+    .foot__social{display:flex;justify-content:center;gap:16px;margin-top:24px}
+    .foot__social a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);transition:all .25s}
+    .foot__social a:hover{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.05)}
+    .foot__social svg{width:18px;height:18px}
+    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding:64px 0}
+    @media(min-width:768px){.foot__grid{grid-template-columns:repeat(3,1fr)}}
+    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.15em;margin-bottom:20px}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
     .foot__links a:hover{color:#fff}
     .foot__contact li{margin-bottom:10px;font-size:14px}
-    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a{color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
     .foot__contact a:hover{color:#fff}
-    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
+    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto;border-top:1px solid rgba(255,255,255,.08)}
     @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
-    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
+    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.4);margin:0}
 
     /* WHATSAPP */
-    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    .wa{position:fixed;bottom:24px;right:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .25s var(--ease);cursor:pointer}
     .wa:hover{transform:scale(1.1);color:#fff}
     .wa svg{width:24px;height:24px}
 
-    /* SCROLL REVEAL */
-    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-    [data-r].in{opacity:1;transform:none}
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(40px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .reveal.is-visible{opacity:1;transform:none}
 
     @media(prefers-reduced-motion:reduce){
-      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
-      [data-r]{opacity:1;transform:none}
+      .reveal{transition-duration:.3s!important}
     }
   </style>
 </head>
@@ -174,99 +165,67 @@
 <a href="#main" class="skip">Skip to content</a>
 
 <!-- NAV -->
-<nav class="nav is-solid" id="nav">
+<nav class="nav" id="nav">
   <div class="nav__wrap">
-    <a href="/" class="nav__logo">
-      <img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42">
-      <span class="nav__logo-text">Madinat Al Saada</span>
-    </a>
+    <a href="/" class="nav__logo"><img src="img/logo.webp" alt="Madinat Al Saada" width="42" height="42"><span class="nav__logo-text">Madinat Al Saada</span></a>
     <div class="nav__links">
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="equipment.html">Equipment</a>
-      <a href="technical.html">Technical</a>
-      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a>
+      <a href="equipment.html">Equipment</a><a href="technical.html">Technical</a><a href="contact.html">Contact</a>
     </div>
     <div class="nav__right">
       <a href="ar/faq.html" class="nav__lang">العربية</a>
       <a href="contact.html" class="nav__cta-btn">Get Quote</a>
-      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
   <div class="nav__drawer" id="drawer">
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="equipment.html">Equipment</a>
-    <a href="technical.html">Technical</a>
-    <a href="contact.html">Contact</a>
-    <a href="contact.html" class="nav__drawer-cta">Get Quote →</a>
+    <a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a>
+    <a href="equipment.html">Equipment</a><a href="technical.html">Technical</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav__drawer-cta">Get Quote</a>
   </div>
 </nav>
 
 <!-- PAGE HERO -->
 <header class="page-hero" id="main">
   <span class="page-hero__tag">Knowledge Base</span>
-  <h1>Frequently Asked <em>Questions</em></h1>
+  <h1>FREQUENTLY ASKED <em>Questions</em></h1>
   <p>Everything you need to know about our aluminium facade fabrication, installation services, and partnership process.</p>
 </header>
 
 <!-- FAQ -->
-<section class="s" data-r>
-  <div class="s__inner">
+<section class="s">
+  <div class="s__inner reveal">
     <div class="faq">
 
-      <!-- GENERAL -->
-      <h3 class="faq__category">General</h3>
-
       <details>
-        <summary>What does Madinat Al Saada do?</summary>
-        <div class="faq__a">Madinat Al Saada Aluminium &amp; Glass Works LLC specializes in the fabrication and installation of aluminium facade systems. We work on curtain walls, ACP cladding, skylights, doors &amp; windows, glass balustrades, automatic doors, and rolling shutters for construction projects across the UAE.</div>
+        <summary>What services does Madinat Al Saada provide?</summary>
+        <div class="faq__a">We provide complete facade solutions including curtain walls (unitized and stick), ACP cladding, skylights, doors &amp; windows, glass balustrades, rolling shutters, and automatic doors — from design coordination and factory fabrication to on-site installation across the UAE.</div>
       </details>
 
       <details>
-        <summary>Do you work directly with end clients?</summary>
-        <div class="faq__a">No. We operate exclusively as a subcontractor for main aluminium contractors and facade companies. Materials are supplied by the main contractor — we provide the skilled labor, factory fabrication, and on-site installation. This model allows us to focus entirely on precision workmanship.</div>
+        <summary>How does the project process work?</summary>
+        <div class="faq__a">We handle the full facade lifecycle — shop drawing coordination, material procurement, CNC fabrication in our Ajman factory, quality inspection, delivery, and on-site installation by our own trained crews. A dedicated project manager is assigned from day one.</div>
       </details>
 
       <details>
-        <summary>Where is your facility located?</summary>
-        <div class="faq__a">Our factory and office are located on Amman Street in Industrial Area 1, Ajman, United Arab Emirates. We serve projects across all Emirates including Dubai, Abu Dhabi, Sharjah, Ras Al Khaimah, and the Northern Emirates.</div>
+        <summary>Where is your factory located?</summary>
+        <div class="faq__a">Our 2,500 sqm factory and office are located on Amman Street in Industrial Area 1, Ajman, United Arab Emirates. We serve projects across all Emirates including Dubai, Abu Dhabi, Sharjah, Ras Al Khaimah, and the Northern Emirates.</div>
       </details>
 
       <details>
-        <summary>How long has the company been in business?</summary>
-        <div class="faq__a">Madinat Al Saada was established in 2016. Over the past decade, we have completed 17+ major projects including high-rise towers, commercial developments, and villa communities across the UAE, building a reputation for reliable, high-quality facade work.</div>
-      </details>
-
-      <!-- SERVICES -->
-      <h3 class="faq__category">Services</h3>
-
-      <details>
-        <summary>What aluminium systems do you work with?</summary>
-        <div class="faq__a">We are proficient with all major international aluminium systems including Technal, Sch&uuml;co, Reynaers, AluK, Guttmann, Hydro, Hueck, Alumil, UCS, and others. We do not work with generic or unbranded profiles — only premium systems engineered for performance.</div>
-      </details>
-
-      <details>
-        <summary>Do you supply the materials?</summary>
-        <div class="faq__a">No. As a subcontractor, materials (aluminium profiles, glass, hardware, sealants) are supplied by the main contractor. We receive the materials at our factory, fabricate according to approved shop drawings, and install on site. This separation ensures clear accountability and cost transparency.</div>
-      </details>
-
-      <details>
-        <summary>What is the difference between stick and unitized curtain walls?</summary>
-        <div class="faq__a">Stick systems are assembled piece-by-piece on site — mullions, transoms, and glass installed individually. They suit low to mid-rise buildings and irregular geometries. Unitized systems are factory-assembled as complete panels, then crane-lifted and installed floor by floor. They are faster (up to 50% time savings), have better quality control, and are ideal for high-rise towers with repetitive floor plates.</div>
+        <summary>Which aluminium systems do you work with?</summary>
+        <div class="faq__a">We have hands-on fabrication and installation experience with Sch&uuml;co (Germany), Technal (France/Hydro), AluK (Italy), Alumil (Greece), Gutmann (Germany), Gulf Extrusion (UAE), and all other major aluminium systems available in the UAE market.</div>
       </details>
 
       <details>
         <summary>Do you handle both fabrication and installation?</summary>
-        <div class="faq__a">Yes. We are a full-service facade subcontractor. Our factory in Ajman handles all fabrication — cutting, machining, assembly, and quality checks. Our site crews then install the finished products across project locations in the UAE. This end-to-end approach ensures consistency from factory to facade.</div>
+        <div class="faq__a">Yes. We operate our own factory with 17 specialized machines and deploy our own 50+ trained installation crews to site. We are a complete facade provider — managing the entire process from factory to finished facade under one roof.</div>
       </details>
 
-      <!-- QUALITY -->
-      <h3 class="faq__category">Quality</h3>
+      <details>
+        <summary>What types of projects do you handle?</summary>
+        <div class="faq__a">We handle projects ranging from villa communities and low-rise commercial buildings to 50+ floor high-rise towers. Our workforce of 90+ skilled workers across 10+ active sites allows us to manage multiple projects simultaneously without compromising quality or timelines.</div>
+      </details>
 
       <details>
         <summary>What certifications do you hold?</summary>
@@ -274,31 +233,8 @@
       </details>
 
       <details>
-        <summary>How do you ensure quality during fabrication?</summary>
-        <div class="faq__a">Our ISO 9001 quality management system governs every stage — incoming material inspection, CNC machining tolerances, assembly checks, and final QC before dispatch. We maintain detailed checklists, non-conformance reports, and traceability records for every project. All work follows approved shop drawings signed off by the main contractor's engineering team.</div>
-      </details>
-
-      <details>
-        <summary>What equipment do you use?</summary>
-        <div class="faq__a">Our factory houses 15+ specialized machines including double-head cutting saws, CNC machining centers, copy routers, crimping machines, corner cleaning machines, glass processing equipment, and sealant application systems. All equipment is regularly maintained and calibrated to manufacturer standards.</div>
-      </details>
-
-      <!-- PARTNERSHIP -->
-      <h3 class="faq__category">Partnership</h3>
-
-      <details>
-        <summary>How do we start working together?</summary>
-        <div class="faq__a">Contact us with your project details — scope, system type, quantities, and timeline. We will review the requirements, visit the site if needed, and provide a competitive quotation within 48 hours. Once awarded, we assign a dedicated project manager and begin shop drawing coordination immediately.</div>
-      </details>
-
-      <details>
-        <summary>What areas of the UAE do you cover?</summary>
-        <div class="faq__a">We cover all seven Emirates. Our active project sites span Dubai (Marina, Business Bay, Creek Harbour, Dubai South), Abu Dhabi, Sharjah, Ajman, and Ras Al Khaimah. Our central location in Ajman gives us efficient access to projects across the northern and central UAE.</div>
-      </details>
-
-      <details>
-        <summary>What project sizes do you handle?</summary>
-        <div class="faq__a">We handle projects ranging from villa communities and low-rise commercial buildings to 50+ floor high-rise towers. Our workforce of 90+ skilled workers across 10+ active sites allows us to manage multiple projects simultaneously without compromising quality or timelines.</div>
+        <summary>What is the typical project timeline?</summary>
+        <div class="faq__a">Timelines depend on scope and complexity. Typically, shop drawings take 2-3 weeks, fabrication 4-8 weeks, and installation varies by project size. We provide a competitive quotation within 48 hours of receiving your project details, including a detailed timeline breakdown.</div>
       </details>
 
     </div>
@@ -307,12 +243,12 @@
 
 <!-- CTA -->
 <section class="cta">
-  <div class="cta__bg" role="presentation"></div>
-  <div class="cta__content" data-r>
-    <h2>Have More <em>Questions?</em></h2>
+  <div class="cta__content reveal">
+    <span class="s__tag" style="color:var(--accent-light)">Have More Questions</span>
+    <h2>CONTACT US <em>Today.</em></h2>
     <p>Our team is ready to discuss your project requirements and answer any technical questions you may have.</p>
     <div class="cta__btns">
-      <a href="contact.html" class="btn--white">Contact Us</a>
+      <a href="contact.html" class="btn--white">Get in Touch</a>
       <a href="tel:+97165260556" class="btn--outline">Call 06-5260556</a>
     </div>
   </div>
@@ -320,42 +256,53 @@
 
 <!-- FOOTER -->
 <footer class="foot">
-  <div class="foot__grid">
-    <div class="foot__brand">
-      <img src="img/logo.webp" alt="Madinat Al Saada" width="36" height="36">
-      <p>Precision aluminium fabrication and installation for the UAE's leading contractors. Trusted since 2016.</p>
+  <div class="foot__brand-large">
+    <h2>Madinat Al Saada</h2>
+    <p>Aluminium &amp; Glass Works LLC</p>
+    <div class="foot__social">
+      <a href="https://www.linkedin.com/company/madinatalsaada/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
     </div>
-    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a></div></div>
+  </div>
+  <div class="foot__grid">
+    <div><h4>Company</h4><div class="foot__links"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="equipment.html">Equipment</a><a href="technical.html">Technical</a><a href="faq.html">FAQ</a></div></div>
     <div><h4>Services</h4><div class="foot__links"><a href="services.html">Curtain Walls</a><a href="services.html">ACP Cladding</a><a href="services.html">Skylights</a><a href="services.html">Doors &amp; Windows</a><a href="services.html">Balustrades</a></div></div>
     <div><h4>Contact</h4><ul class="foot__contact"><li>Amman St, Industrial Area 1, Ajman</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
   </div>
-  <div class="foot__bottom">
-    <p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p>
-    <p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p>
-  </div>
+  <div class="foot__bottom"><p>&copy; <span class="yr">2026</span> Madinat Al Saada Aluminium &amp; Glass Works LLC</p><p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p></div>
 </footer>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
 <script>
-// Nav
-const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
-burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
-drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
-let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
-// Reveal
-const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
-// FAQ single open
-document.querySelectorAll('.faq details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.faq details').forEach(o=>{if(o!==d)o.open=false})}));
-// Year
-document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+(function(){
+  'use strict';
+  var burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+
+  /* NAV */
+  if(burger&&drawer&&nav){
+    burger.addEventListener('click',function(){var o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',String(o));document.body.style.overflow=o?'hidden':''});
+    for(var i=0,links=drawer.querySelectorAll('a');i<links.length;i++)links[i].addEventListener('click',function(){burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''});
+    var nt=false;
+    window.addEventListener('scroll',function(){if(!nt){requestAnimationFrame(function(){nav.classList.toggle('is-solid',window.scrollY>60);nt=false});nt=true}},{passive:true});
+  }
+
+  /* SCROLL REVEAL */
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++)if(e[i].isIntersecting){e[i].target.classList.add('is-visible');ro.unobserve(e[i].target)}},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+    var revs=document.querySelectorAll('.reveal');for(var i=0;i<revs.length;i++)ro.observe(revs[i]);
+  }
+
+  /* FAQ single open */
+  var fds=document.querySelectorAll('.faq details');
+  for(var i=0;i<fds.length;i++)fds[i].addEventListener('toggle',(function(d){return function(){if(d.open)for(var j=0;j<fds.length;j++)if(fds[j]!==d)fds[j].open=false}})(fds[i]));
+
+  /* YEAR */
+  var yrs=document.querySelectorAll('.yr');for(var i=0;i<yrs.length;i++)yrs[i].textContent=new Date().getFullYear();
+})();
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Madinat Al Saada do?","acceptedAnswer":{"@type":"Answer","text":"Madinat Al Saada Aluminium & Glass Works LLC specializes in the fabrication and installation of aluminium facade systems. We work on curtain walls, ACP cladding, skylights, doors & windows, glass balustrades, automatic doors, and rolling shutters for construction projects across the UAE."}},{"@type":"Question","name":"Do you work directly with end clients?","acceptedAnswer":{"@type":"Answer","text":"No. We operate exclusively as a subcontractor for main aluminium contractors and facade companies. Materials are supplied by the main contractor — we provide the skilled labor, factory fabrication, and on-site installation."}},{"@type":"Question","name":"Where is your facility located?","acceptedAnswer":{"@type":"Answer","text":"Our factory and office are located on Amman Street in Industrial Area 1, Ajman, United Arab Emirates. We serve projects across all Emirates including Dubai, Abu Dhabi, Sharjah, and the Northern Emirates."}},{"@type":"Question","name":"How long has the company been in business?","acceptedAnswer":{"@type":"Answer","text":"Madinat Al Saada was established in 2016. Over the past decade, we have completed 17+ major projects including high-rise towers, commercial developments, and villa communities across the UAE."}},{"@type":"Question","name":"What aluminium systems do you work with?","acceptedAnswer":{"@type":"Answer","text":"We are proficient with all major international aluminium systems including Technal, Schüco, Reynaers, AluK, Guttmann, Hydro, Hueck, Alumil, UCS, and others. We do not work with generic or unbranded profiles."}},{"@type":"Question","name":"Do you supply the materials?","acceptedAnswer":{"@type":"Answer","text":"No. As a subcontractor, materials are supplied by the main contractor. We receive the materials at our factory, fabricate according to approved shop drawings, and install on site."}},{"@type":"Question","name":"What is the difference between stick and unitized curtain walls?","acceptedAnswer":{"@type":"Answer","text":"Stick systems are assembled piece-by-piece on site. They suit low to mid-rise buildings and irregular geometries. Unitized systems are factory-assembled as complete panels, then crane-lifted and installed floor by floor. They are faster, have better quality control, and are ideal for high-rise towers."}},{"@type":"Question","name":"Do you handle both fabrication and installation?","acceptedAnswer":{"@type":"Answer","text":"Yes. We are a full-service facade subcontractor. Our factory in Ajman handles all fabrication and our site crews install the finished products across project locations in the UAE."}},{"@type":"Question","name":"What certifications do you hold?","acceptedAnswer":{"@type":"Answer","text":"We hold three ISO certifications: ISO 9001:2015 (Quality Management), ISO 14001:2015 (Environmental Management), and ISO 45001:2018 (Occupational Health & Safety). These are independently audited and renewed annually."}},{"@type":"Question","name":"How do you ensure quality during fabrication?","acceptedAnswer":{"@type":"Answer","text":"Our ISO 9001 quality management system governs every stage — incoming material inspection, CNC machining tolerances, assembly checks, and final QC before dispatch. We maintain detailed checklists and traceability records for every project."}},{"@type":"Question","name":"What equipment do you use?","acceptedAnswer":{"@type":"Answer","text":"Our factory houses 15+ specialized machines including double-head cutting saws, CNC machining centers, copy routers, crimping machines, corner cleaning machines, glass processing equipment, and sealant application systems."}},{"@type":"Question","name":"How do we start working together?","acceptedAnswer":{"@type":"Answer","text":"Contact us with your project details — scope, system type, quantities, and timeline. We will review the requirements, visit the site if needed, and provide a competitive quotation within 48 hours."}},{"@type":"Question","name":"What areas of the UAE do you cover?","acceptedAnswer":{"@type":"Answer","text":"We cover all seven Emirates. Our active project sites span Dubai, Abu Dhabi, Sharjah, Ajman, and Ras Al Khaimah. Our central location in Ajman gives us efficient access to projects across the UAE."}},{"@type":"Question","name":"What project sizes do you handle?","acceptedAnswer":{"@type":"Answer","text":"We handle projects ranging from villa communities and low-rise commercial buildings to 50+ floor high-rise towers. Our workforce of 90+ skilled workers across 10+ active sites allows us to manage multiple projects simultaneously."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What services does Madinat Al Saada provide?","acceptedAnswer":{"@type":"Answer","text":"We provide complete facade solutions including curtain walls, ACP cladding, skylights, doors & windows, glass balustrades, rolling shutters, and automatic doors — from design coordination and factory fabrication to on-site installation across the UAE."}},{"@type":"Question","name":"How does the project process work?","acceptedAnswer":{"@type":"Answer","text":"We handle the full facade lifecycle — shop drawing coordination, material procurement, CNC fabrication in our Ajman factory, quality inspection, delivery, and on-site installation by our own trained crews."}},{"@type":"Question","name":"Where is your factory located?","acceptedAnswer":{"@type":"Answer","text":"Our 2,500 sqm factory and office are located on Amman Street in Industrial Area 1, Ajman, United Arab Emirates. We serve projects across all Emirates."}},{"@type":"Question","name":"Which aluminium systems do you work with?","acceptedAnswer":{"@type":"Answer","text":"We have hands-on experience with Schuco, Technal, AluK, Alumil, Gutmann, Gulf Extrusion, and all other major aluminium systems available in the UAE market."}},{"@type":"Question","name":"Do you handle both fabrication and installation?","acceptedAnswer":{"@type":"Answer","text":"Yes. We operate our own factory with 17 specialized machines and deploy our own 50+ trained installation crews to site."}},{"@type":"Question","name":"What types of projects do you handle?","acceptedAnswer":{"@type":"Answer","text":"We handle projects from villa communities to 50+ floor high-rise towers. Our 90+ skilled workers across 10+ active sites manage multiple projects simultaneously."}},{"@type":"Question","name":"What certifications do you hold?","acceptedAnswer":{"@type":"Answer","text":"We hold ISO 9001:2015 (Quality), ISO 14001:2015 (Environmental), and ISO 45001:2018 (Health & Safety). Independently audited and renewed annually."}},{"@type":"Question","name":"What is the typical project timeline?","acceptedAnswer":{"@type":"Answer","text":"Shop drawings take 2-3 weeks, fabrication 4-8 weeks, and installation varies by project size. We provide a quotation within 48 hours including a detailed timeline."}}]}</script>
 
 </body>
 </html>

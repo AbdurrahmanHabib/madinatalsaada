@@ -1,484 +1,490 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html dir="rtl" lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="خدمات واجهات الألمنيوم من مدينة السعادة — حوائط ستائرية، كسوة ACP، مناور، أبواب ونوافذ، درابزينات زجاجية، أبواب أوتوماتيكية، وشتر رول.">
-  <title>خدماتنا | مدينة السعادة — متخصصون في واجهات الألمنيوم</title>
+  <meta name="description" content="خدمات واجهات الألمنيوم من مدينة السعادة — جدران ستائرية، كسوة ACP، أسقف زجاجية، أبواب ونوافذ، درابزين زجاجي، وشتر متحرك. حلول واجهات متكاملة في الإمارات.">
+  <title>خدماتنا | مدينة السعادة — أعمال الألمنيوم والزجاج</title>
   <meta property="og:title" content="خدماتنا | مدينة السعادة — متخصصون في واجهات الألمنيوم">
-  <meta property="og:description" content="حوائط ستائرية، كسوة ACP، مناور، أبواب ونوافذ، درابزينات زجاجية، أبواب أوتوماتيكية، وشتر رول. تصنيع داخلي وتركيب بفرقنا المتخصصة.">
-  <meta property="og:image" content="https://madinatalsaada.ae/img/hero/aykon-hero.webp">
+  <meta property="og:description" content="جدران ستائرية، كسوة ACP، أسقف زجاجية، أبواب ونوافذ، درابزين زجاجي، وشتر متحرك. تصنيع داخلي وتركيب بفرقنا.">
+  <meta property="og:image" content="https://madinatalsaada.ae/img/og-image.jpg">
   <meta property="og:url" content="https://madinatalsaada.ae/ar/services.html">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="ar_AE">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://madinatalsaada.ae/ar/services.html">
-  <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/services.html">
   <link rel="alternate" hreflang="en" href="https://madinatalsaada.ae/services.html">
-  <meta name="theme-color" content="#0a0a0a">
+  <link rel="alternate" hreflang="ar" href="https://madinatalsaada.ae/ar/services.html">
+  <meta name="theme-color" content="#1a3a5c">
   <link rel="icon" type="image/webp" href="../img/logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="../img/hero/aykon-hero.webp" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;font-size:16px}
-    body{font-family:'DM Sans',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-    [dir="rtl"]{font-family:'Cairo','DM Sans',sans-serif}
+    body{font-family:'Cairo','DM Sans',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
     img{display:block;max-width:100%;height:auto}
     a{color:inherit;text-decoration:none}
     ul{list-style:none}
     button{font:inherit;cursor:pointer;border:none;background:none}
     ::selection{background:#1a3a5c;color:#fff}
-
     :root{
-      --navy:#1a3a5c;--navy-dark:#0f2840;--navy-darker:#091c30;
-      --accent:#5ba3b8;--white:#fff;--black:#0a0a0a;
-      --gray-100:#f5f5f5;--gray-200:#e5e5e5;--gray-400:#a3a3a3;
-      --gray-500:#737373;--gray-600:#525252;--gray-700:#404040;--gray-900:#171717;
+      --navy:#1a3a5c;--navy-light:#264d73;--navy-dark:#0f2840;--navy-deeper:#091c30;
+      --accent:#1a3a5c;--accent-light:#4a7da8;--accent-dark:#0f2840;
+      --white:#fff;--gray-50:#f8fafb;--gray-100:#f1f3f5;--gray-200:#e2e5e9;
+      --gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;--gray-700:#374151;--gray-900:#111827;
+      --ease:cubic-bezier(.16,1,.3,1);
     }
-
     .skip{position:absolute;top:-100%;right:16px;padding:8px 16px;background:var(--navy);color:#fff;font-size:14px;border-radius:4px;z-index:9999}
     .skip:focus{top:16px}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:4px}
 
     /* NAV */
-    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,backdrop-filter .4s}
-    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
-    .nav__wrap{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 24px;transition:background .4s,box-shadow .4s}
+    .nav::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.4),transparent);pointer-events:none;transition:opacity .4s}
+    .nav.is-solid::before{opacity:0}
+    .nav.is-solid{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+    .nav__wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1400px;margin:0 auto}
     @media(min-width:768px){.nav__wrap{height:80px}.nav{padding:0 40px}}
-
-    .nav__logo{display:flex;align-items:center;gap:12px}
-    .nav__logo img{height:38px;width:auto;border-radius:0}
-    @media(min-width:768px){.nav__logo img{height:44px}}
-    .nav__logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;transition:color .4s;letter-spacing:-.01em}
+    .nav__logo{display:flex;align-items:center;gap:12px;cursor:pointer}
+    .nav__logo img{height:40px;width:auto}
+    @media(min-width:768px){.nav__logo img{height:46px}}
+    .nav__logo-text{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:#fff;transition:color .4s}
+    @media(min-width:768px){.nav__logo-text{font-size:19px}}
     .nav.is-solid .nav__logo-text{color:var(--gray-900)}
     @media(max-width:767px){.nav__logo-text{display:none}}
-
     .nav__links{display:none;gap:32px}
     @media(min-width:1024px){.nav__links{display:flex}}
-    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s;letter-spacing:.02em}
-    .nav__links a:hover,.nav__links a[aria-current="page"]{color:#fff}
-    .nav__links a[aria-current="page"]{color:#fff}
-    .nav.is-solid .nav__links a{color:var(--gray-600)}
-    .nav.is-solid .nav__links a:hover,.nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900)}
-    .nav.is-solid .nav__links a[aria-current="page"]{color:var(--gray-900);font-weight:600}
-
+    .nav__links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.75);transition:color .25s;cursor:pointer}
+    .nav__links a:hover{color:#fff}
+    .nav.is-solid .nav__links a{color:var(--gray-500)}
+    .nav.is-solid .nav__links a:hover{color:var(--gray-900)}
     .nav__right{display:flex;align-items:center;gap:16px}
-    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.2);border-radius:100px;transition:all .3s}
-    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4)}
+    .nav__lang{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);padding:6px 14px;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .25s;cursor:pointer}
+    .nav__lang:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
     .nav.is-solid .nav__lang{color:var(--gray-600);border-color:var(--gray-200)}
-    .nav.is-solid .nav__lang:hover{background:var(--gray-100);border-color:var(--gray-400)}
-
-    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);border-radius:100px;transition:background .2s,transform .2s}
+    .nav.is-solid .nav__lang:hover{background:var(--gray-50)}
+    .nav__cta-btn{display:none;padding:10px 24px;font-size:13px;font-weight:600;color:var(--navy-deeper);background:#fff;border-radius:100px;transition:all .25s;cursor:pointer}
     @media(min-width:768px){.nav__cta-btn{display:block}}
-    .nav__cta-btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
-
-    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center}
+    .nav__cta-btn:hover{background:var(--gray-100);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+    .nav.is-solid .nav__cta-btn{background:var(--navy);color:#fff}
+    .nav.is-solid .nav__cta-btn:hover{background:var(--navy-dark)}
+    .nav__burger{display:flex;flex-direction:column;gap:6px;padding:10px;width:44px;height:44px;justify-content:center;align-items:center;cursor:pointer}
     @media(min-width:1024px){.nav__burger{display:none}}
     .nav__burger span{width:22px;height:1.5px;background:#fff;transition:all .3s}
     .nav.is-solid .nav__burger span{background:var(--gray-900)}
-    .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+    .nav__burger.is-open span:nth-child(1){transform:translateY(7.5px) rotate(-45deg)}
     .nav__burger.is-open span:nth-child(2){opacity:0}
-    .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-
-    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column;gap:0}
+    .nav__burger.is-open span:nth-child(3){transform:translateY(-7.5px) rotate(45deg)}
+    .nav__drawer{display:none;position:fixed;inset:0;top:72px;background:#fff;padding:32px 24px;z-index:99;flex-direction:column}
     .nav__drawer.is-open{display:flex}
-    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
+    .nav__drawer a{padding:20px 0;font-size:18px;font-weight:500;color:var(--gray-700);border-bottom:1px solid var(--gray-100);cursor:pointer;transition:color .2s}
+    .nav__drawer a:hover{color:var(--navy)}
     .nav__drawer a:last-child{border:none}
-    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none !important}
+    .nav__drawer-cta{margin-top:32px;padding:18px;text-align:center;font-weight:600;color:#fff;background:var(--navy);border-radius:8px;border-bottom:none!important;cursor:pointer}
 
     /* PAGE HERO */
-    .page-hero{position:relative;min-height:50svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--black)}
-    .page-hero__img{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat;transform:scale(1.03);animation:heroZoom 20s ease-in-out infinite alternate}
-    @keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.08)}}
-    .page-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.4) 100%)}
-    .page-hero__content{position:relative;z-index:2;padding:0 24px 48px;width:100%;max-width:1400px;margin:0 auto}
-    @media(min-width:768px){.page-hero__content{padding:0 40px 64px}}
-    @media(min-width:1200px){.page-hero__content{padding:0 40px 80px}}
-
-    .page-hero__breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.5);margin-bottom:20px}
-    .page-hero__breadcrumb a{color:rgba(255,255,255,.5);transition:color .2s}
-    .page-hero__breadcrumb a:hover{color:#fff}
-    .page-hero__breadcrumb span{color:rgba(255,255,255,.3)}
-
-    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,4.5rem);font-weight:400;color:#fff;line-height:1.1;letter-spacing:-.03em;max-width:800px;margin-bottom:16px}
-    [dir="rtl"] .page-hero h1{font-family:'Cairo','Playfair Display',serif;letter-spacing:0}
-    .page-hero h1 strong{font-weight:600;font-style:italic}
-    .page-hero__sub{font-size:clamp(15px,1.6vw,18px);color:rgba(255,255,255,.6);max-width:560px;line-height:1.7}
+    .page-hero{position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;background:var(--navy-deeper);text-align:center;padding:120px 24px 60px}
+    @media(min-width:768px){.page-hero{min-height:400px;padding:140px 40px 80px}}
+    .page-hero__tag{font-size:11px;font-weight:700;letter-spacing:.2em;color:rgba(255,255,255,.5);margin-bottom:16px;display:block}
+    .page-hero h1{font-family:'Cairo',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;color:#fff;line-height:1.15}
+    .page-hero h1 em{font-style:normal;font-weight:400;display:block;font-size:.5em;letter-spacing:0;margin-top:12px;color:rgba(255,255,255,.5)}
+    .page-hero__line{width:60px;height:2px;background:var(--accent-light);margin:24px auto 0}
 
     /* SECTIONS */
     .s{padding:80px 24px}
     @media(min-width:768px){.s{padding:120px 40px}}
-    @media(min-width:1200px){.s{padding:160px 40px}}
-    .s--gray{background:var(--gray-100)}
-    .s--dark{background:var(--gray-900)}
+    .s--gray{background:var(--gray-50)}
+    .s--navy{background:var(--navy-deeper);color:#fff}
     .s__inner{max-width:1200px;margin:0 auto}
-
-    .s__head{margin-bottom:56px}
-    @media(min-width:768px){.s__head{margin-bottom:80px}}
+    .s__tag{font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:16px;display:block}
+    .s--navy .s__tag{color:rgba(255,255,255,.5)}
+    .s__head{margin-bottom:48px}
+    @media(min-width:768px){.s__head{margin-bottom:64px}}
     .s__head--center{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
-    .s__tag{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
-    .s--dark .s__tag{color:var(--accent)}
-    .s__head h2{font-family:'Playfair Display',serif;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-weight:400}
-    [dir="rtl"] .s__head h2{font-family:'Cairo','Playfair Display',serif;letter-spacing:0}
-    .s__head h2 em{font-style:italic;font-weight:500}
-    .s--dark .s__head h2{color:#fff}
+    .s__head h2{font-family:'Cairo',sans-serif;line-height:1.2;margin-bottom:16px;font-weight:700;font-size:clamp(2rem,5vw,3.2rem)}
+    .s__head h2 em{font-style:normal;font-weight:400}
+    .s--navy .s__head h2{color:#fff}
     .s__head p{font-size:17px;color:var(--gray-500);line-height:1.7;max-width:560px}
     .s__head--center p{margin:0 auto}
-    .s--dark .s__head p{color:rgba(255,255,255,.5)}
+    .s--navy .s__head p{color:rgba(255,255,255,.5)}
 
-    /* CALLOUT */
-    .callout{background:var(--gray-100);border-right:3px solid var(--accent);padding:24px 28px;border-radius:8px 0 0 8px;margin-top:24px}
-    .callout h4{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:8px}
-    .callout p{font-size:15px;color:var(--gray-600);line-height:1.7;margin:0}
+    /* SERVICE CARDS GRID */
+    .svc-grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+    .svc{position:relative;border-radius:0;overflow:hidden;aspect-ratio:4/3;cursor:pointer;display:block}
+    .svc img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+    .svc:hover img{transform:scale(1.06)}
+    .svc__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(9,28,48,.9) 0%,rgba(9,28,48,.3) 40%,rgba(9,28,48,.15) 100%);transition:background .3s}
+    .svc:hover .svc__overlay{background:linear-gradient(to top,rgba(9,28,48,.95) 0%,rgba(9,28,48,.5) 40%,rgba(9,28,48,.25) 100%)}
+    .svc__content{position:absolute;bottom:0;left:0;right:0;padding:28px;z-index:1}
+    .svc__num{font-size:11px;color:var(--accent-light);margin-bottom:8px;font-weight:700;letter-spacing:.15em}
+    .svc h3{font-size:20px;font-weight:700;color:#fff;margin-bottom:6px;transition:transform .3s var(--ease);letter-spacing:.02em}
+    .svc:hover h3{transform:translateY(-3px)}
+    .svc p{font-size:13px;color:rgba(255,255,255,.6);line-height:1.6;margin:0}
 
-    /* SERVICE DETAIL */
-    .sd{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
-    @media(min-width:768px){.sd{grid-template-columns:1fr 1fr;gap:80px}}
-    .sd--reverse .sd__img{order:0}
-    @media(min-width:768px){.sd--reverse .sd__img{order:2}}
+    /* SERVICE DETAIL SECTIONS */
+    .svc-detail{display:grid;grid-template-columns:1fr;gap:0;border-bottom:1px solid var(--gray-200)}
+    @media(min-width:768px){.svc-detail{grid-template-columns:1fr 1fr}}
+    .svc-detail:last-child{border-bottom:none}
+    .svc-detail__text{padding:48px 24px;display:flex;flex-direction:column;justify-content:center}
+    @media(min-width:768px){.svc-detail__text{padding:64px 48px}}
+    .svc-detail__num{font-size:11px;font-weight:700;letter-spacing:.15em;color:var(--accent-light);margin-bottom:12px}
+    .svc-detail__text h3{font-family:'Cairo',sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:700;line-height:1.15;margin-bottom:16px}
+    .svc-detail__text p{font-size:15px;color:var(--gray-500);line-height:1.8;margin-bottom:16px}
+    .svc-detail__text ul{margin-top:8px}
+    .svc-detail__text li{display:flex;align-items:flex-start;gap:12px;padding:6px 0;font-size:14px;color:var(--gray-600)}
+    .svc-detail__text li svg{flex-shrink:0;width:18px;height:18px;color:var(--navy);margin-top:2px}
+    .svc-detail__img{position:relative;min-height:300px;overflow:hidden}
+    @media(min-width:768px){.svc-detail__img{min-height:400px}}
+    .svc-detail__img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+    .svc-detail:nth-child(even) .svc-detail__text{order:1}
+    @media(max-width:767px){.svc-detail:nth-child(even) .svc-detail__text{order:0}}
+    .svc-detail:nth-child(even) .svc-detail__img{order:0}
 
-    .sd__img{border-radius:8px;overflow:hidden}
-    .sd__img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:0;transition:transform .6s}
-    .sd__img:hover img{transform:scale(1.03)}
+    /* FEATURES */
+    .features{display:grid;grid-template-columns:1fr;gap:0}
+    @media(min-width:640px){.features{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.features{grid-template-columns:repeat(3,1fr)}}
+    .feature{display:flex;align-items:flex-start;gap:16px;padding:24px 20px;border:1px solid var(--gray-200);transition:all .3s}
+    .feature:hover{border-color:var(--accent);background:rgba(26,58,92,.03)}
+    .feature__check{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin-top:2px}
+    .feature__check svg{width:14px;height:14px;color:#fff}
+    .feature h3{font-size:14px;font-weight:600;margin-bottom:2px;letter-spacing:.04em}
+    .feature p{font-size:13px;color:var(--gray-500);line-height:1.5;margin:0}
 
-    .sd__text span.s__tag{margin-bottom:12px}
-    .sd__text h3{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:400;line-height:1.2;letter-spacing:-.02em;margin-bottom:16px}
-    [dir="rtl"] .sd__text h3{font-family:'Cairo','Playfair Display',serif;letter-spacing:0}
-    .sd__text h3 em{font-style:italic;font-weight:500}
-    .sd__text p{font-size:15px;color:var(--gray-500);line-height:1.8;margin-bottom:24px}
+    /* LOGO GRID */
+    .logo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--gray-200);max-width:900px;margin:0 auto}
+    @media(min-width:640px){.logo-grid{grid-template-columns:repeat(3,1fr)}}
+    .logo-item{display:flex;align-items:center;justify-content:center;padding:32px 24px;border-left:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200);background:#fff;transition:background .25s}
+    .logo-item:nth-child(3n){border-left:none}
+    @media(max-width:639px){.logo-item:nth-child(2n){border-left:none}.logo-item:nth-child(3n){border-left:1px solid var(--gray-200)}}
+    .logo-item:nth-last-child(-n+3){border-bottom:none}
+    @media(max-width:639px){.logo-item:nth-last-child(-n+2){border-bottom:none}}
+    .logo-item:hover{background:var(--gray-50)}
+    .logo-item img{height:36px;width:auto;max-width:160px;object-fit:contain;opacity:.75;transition:opacity .25s}
+    .logo-item:hover img{opacity:1}
+    .logo-item span{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);opacity:.6;transition:opacity .25s;letter-spacing:.04em}
+    .logo-item:hover span{opacity:1}
 
-    .sd__features{display:flex;flex-direction:column;gap:12px}
-    .sd__feature{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--gray-600);line-height:1.6}
-    .sd__feature::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%;flex-shrink:0;margin-top:7px}
-
-    .sd-divider{max-width:1200px;margin:0 auto;height:1px;background:var(--gray-200)}
-
-    /* PROCESS */
-    .process{display:grid;grid-template-columns:1fr;gap:32px;counter-reset:step}
-    @media(min-width:768px){.process{grid-template-columns:repeat(5,1fr);gap:24px}}
-    .process__step{position:relative;padding:32px 24px;background:#fff;border:1px solid var(--gray-200);border-radius:8px;counter-increment:step;transition:box-shadow .3s}
-    .process__step:hover{box-shadow:0 8px 32px rgba(0,0,0,.06)}
-    .process__step::before{content:counter(step,decimal-leading-zero);font-family:'Playfair Display',serif;font-size:28px;color:var(--gray-200);display:block;margin-bottom:16px;font-weight:400;line-height:1}
-    .process__step h4{font-size:15px;font-weight:600;margin-bottom:8px;color:var(--gray-900)}
-    .process__step p{font-size:13px;color:var(--gray-500);line-height:1.65;margin:0}
-    @media(min-width:768px){
-      .process__step:not(:last-child)::after{content:'';position:absolute;top:46px;left:-13px;width:24px;height:1px;background:var(--gray-200)}
-    }
+    /* COMPANY PROFILE DOWNLOAD */
+    .dl{position:relative;overflow:hidden}
+    .dl__inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px;max-width:700px;margin:0 auto}
+    @media(min-width:768px){.dl__inner{flex-direction:row;text-align:right;gap:48px;max-width:1000px}}
+    .dl__icon{flex-shrink:0;width:80px;height:100px;background:var(--navy);display:flex;align-items:center;justify-content:center;position:relative}
+    .dl__icon::after{content:'PDF';position:absolute;bottom:8px;left:8px;font-size:10px;font-weight:700;color:#fff;background:var(--accent);padding:2px 6px}
+    .dl__icon svg{width:32px;height:32px;color:#fff}
+    .dl__text h3{font-size:22px;font-weight:700;margin-bottom:8px;letter-spacing:.04em}
+    .dl__text p{font-size:15px;color:var(--gray-500);line-height:1.6;margin-bottom:20px}
+    .dl__btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-size:13px;font-weight:600;color:#fff;background:var(--navy);transition:all .25s;cursor:pointer;letter-spacing:.05em}
+    .dl__btn:hover{background:var(--navy-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,58,92,.3)}
+    .dl__btn svg{width:18px;height:18px}
 
     /* CTA */
-    .cta{position:relative;padding:120px 24px;overflow:hidden;text-align:center}
-    @media(min-width:768px){.cta{padding:160px 40px}}
-    .cta__bg{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat}
-    .cta__bg::after{content:'';position:absolute;inset:0;background:rgba(10,10,10,.8)}
-    .cta__content{position:relative;z-index:2;max-width:600px;margin:0 auto}
-    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);color:#fff;font-weight:400;margin-bottom:16px;letter-spacing:-.02em;line-height:1.1}
-    [dir="rtl"] .cta h2{font-family:'Cairo','Playfair Display',serif;letter-spacing:0}
-    .cta p{color:rgba(255,255,255,.55);font-size:17px;margin-bottom:40px;line-height:1.7}
+    .cta{position:relative;padding:80px 24px;overflow:hidden;background:var(--navy-deeper)}
+    @media(min-width:768px){.cta{padding:100px 40px}}
+    .cta__content{position:relative;z-index:2;max-width:800px;margin:0 auto;text-align:center}
+    .cta p.cta__lead{font-size:clamp(1.1rem,2.5vw,1.4rem);color:rgba(255,255,255,.7);line-height:1.6;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto}
+    .cta h2{font-family:'Cairo',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);color:#fff;font-weight:700;margin-bottom:16px;line-height:1.2}
     .cta__btns{display:flex;flex-direction:column;gap:12px;align-items:center}
-    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center}}
-    .cta .btn--white{padding:16px 36px;font-size:14px;font-weight:600;color:var(--black);background:#fff;border-radius:100px;transition:all .2s}
-    .cta .btn--white:hover{background:var(--gray-100)}
-    .cta .btn--outline{padding:16px 36px;font-size:14px;font-weight:600;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:100px;transition:all .2s}
-    .cta .btn--outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+    @media(min-width:480px){.cta__btns{flex-direction:row;justify-content:center;gap:16px}}
+    .cta .btn--amber{padding:16px 40px;font-size:13px;font-weight:600;color:var(--navy-deeper);background:#fff;transition:all .25s;cursor:pointer;letter-spacing:.05em}
+    .cta .btn--amber:hover{background:var(--gray-100);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+    .cta .btn--outline{padding:16px 40px;font-size:13px;font-weight:600;color:#fff;border:2px solid rgba(255,255,255,.2);transition:all .25s;cursor:pointer;letter-spacing:.05em}
+    .cta .btn--outline:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.4)}
 
     /* FOOTER */
-    .foot{background:var(--black);padding:72px 24px 0;color:rgba(255,255,255,.45)}
+    .foot{background:var(--navy-deeper);padding:72px 24px 0;color:rgba(255,255,255,.45)}
     @media(min-width:768px){.foot{padding:96px 40px 0}}
-    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.08)}
-    @media(min-width:768px){.foot__grid{grid-template-columns:2fr 1fr 1fr 1fr}}
-    .foot__brand img{height:36px;margin-bottom:16px;border-radius:0}
-    .foot__brand p{font-size:14px;line-height:1.6;max-width:280px}
-    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
-    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__brand-large{text-align:center;padding:64px 24px 48px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .foot__brand-large h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+    .foot__brand-large p{font-size:14px;color:rgba(255,255,255,.4);letter-spacing:.1em;text-transform:uppercase}
+    .foot__social{display:flex;justify-content:center;gap:16px;margin-top:24px}
+    .foot__social a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);transition:all .25s}
+    .foot__social a:hover{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.05)}
+    .foot__social svg{width:18px;height:18px}
+    .foot__grid{display:grid;grid-template-columns:1fr;gap:48px;max-width:1200px;margin:0 auto;padding:64px 0}
+    @media(min-width:768px){.foot__grid{grid-template-columns:repeat(3,1fr)}}
+    .foot h4{color:rgba(255,255,255,.7);font-size:11px;font-weight:700;letter-spacing:.15em;margin-bottom:20px}
+    .foot__links a{display:block;padding:5px 0;font-size:14px;color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
     .foot__links a:hover{color:#fff}
     .foot__contact li{margin-bottom:10px;font-size:14px}
-    .foot__contact a{color:rgba(255,255,255,.4);transition:color .2s}
+    .foot__contact a{color:rgba(255,255,255,.55);transition:color .2s;cursor:pointer}
     .foot__contact a:hover{color:#fff}
-    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto}
+    .foot__bottom{display:flex;flex-direction:column;gap:12px;align-items:center;padding:24px 0;text-align:center;max-width:1200px;margin:0 auto;border-top:1px solid rgba(255,255,255,.08)}
     @media(min-width:768px){.foot__bottom{flex-direction:row;justify-content:space-between}}
-    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.25);margin:0}
+    .foot__bottom p{font-size:12px;color:rgba(255,255,255,.4);margin:0}
 
     /* WHATSAPP */
-    .wa{position:fixed;bottom:24px;left:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .2s}
+    .wa{position:fixed;bottom:24px;left:24px;z-index:50;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25d366;border-radius:50%;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.35);transition:transform .25s var(--ease);cursor:pointer}
     .wa:hover{transform:scale(1.1);color:#fff}
     .wa svg{width:24px;height:24px}
 
-    /* SCROLL REVEAL */
-    [data-r]{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
-    [data-r].in{opacity:1;transform:none}
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(40px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .reveal.is-visible{opacity:1;transform:none}
+    .stagger{opacity:0;transform:translateY(25px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+    .stagger.is-visible{opacity:1;transform:none}
 
     @media(prefers-reduced-motion:reduce){
-      *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
-      [data-r]{opacity:1;transform:none}
-      .page-hero__img{animation:none;transform:none}
+      .reveal,.stagger{transition-duration:.3s!important}
     }
   </style>
 </head>
 <body>
-
-<a href="#main" class="skip">انتقل إلى المحتوى</a>
+<a href="#main" class="skip">تخطي إلى المحتوى</a>
 
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav__wrap">
-    <a href="index.html" class="nav__logo">
-      <img src="../img/logo.webp" alt="مدينة السعادة" width="42" height="42">
-      <span class="nav__logo-text">مدينة السعادة</span>
-    </a>
+    <a href="index.html" class="nav__logo"><img src="../img/logo.webp" alt="مدينة السعادة" width="42" height="42"><span class="nav__logo-text">Madinat Al Saada</span></a>
     <div class="nav__links">
-      <a href="about.html">من نحن</a>
-      <a href="services.html" aria-current="page">خدماتنا</a>
-      <a href="projects.html">مشاريعنا</a>
-      <a href="equipment.html">المعدات</a>
-      <a href="technical.html">المواصفات</a>
-      <a href="contact.html">اتصل بنا</a>
+      <a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="projects.html">المشاريع</a>
+      <a href="equipment.html">المعدات</a><a href="technical.html">التقنية</a><a href="contact.html">اتصل بنا</a>
     </div>
     <div class="nav__right">
       <a href="../services.html" class="nav__lang">English</a>
       <a href="contact.html" class="nav__cta-btn">طلب عرض سعر</a>
-      <button class="nav__burger" id="burger" aria-label="القائمة" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="nav__burger" id="burger" aria-label="القائمة" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
   <div class="nav__drawer" id="drawer">
-    <a href="about.html">من نحن</a>
-    <a href="services.html">خدماتنا</a>
-    <a href="projects.html">مشاريعنا</a>
-    <a href="equipment.html">المعدات</a>
-    <a href="technical.html">المواصفات</a>
-    <a href="contact.html">اتصل بنا</a>
-    <a href="contact.html" class="nav__drawer-cta">طلب عرض سعر &larr;</a>
+    <a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="projects.html">المشاريع</a>
+    <a href="equipment.html">المعدات</a><a href="technical.html">التقنية</a><a href="contact.html">اتصل بنا</a>
+    <a href="contact.html" class="nav__drawer-cta">طلب عرض سعر ←</a>
   </div>
 </nav>
 
 <!-- PAGE HERO -->
 <header class="page-hero" id="main">
-  <div class="page-hero__img" style="background-image:url('../img/hero/aykon-hero.webp')" role="presentation"></div>
-  <div class="page-hero__overlay"></div>
-  <div class="page-hero__content" data-r>
-    <div class="page-hero__breadcrumb">
-      <a href="index.html">الرئيسية</a>
-      <span>/</span>
-      <span>خدماتنا</span>
-    </div>
-    <h1><strong>خدماتنا</strong></h1>
-    <p class="page-hero__sub">حلول متكاملة لواجهات الألمنيوم والزجاج — تصنيع في مصنعنا الخاص، وتركيب بفرقنا المتخصصة.</p>
+  <div>
+    <span class="page-hero__tag">حلول واجهات متكاملة</span>
+    <h1>خدماتنا<em>تصنيع وتركيب في جميع الإمارات.</em></h1>
+    <div class="page-hero__line"></div>
   </div>
 </header>
 
-<!-- INTRO -->
-<section class="s" data-r>
+<!-- SERVICE CARDS GRID -->
+<section class="s">
   <div class="s__inner">
-    <div class="s__head">
-      <span class="s__tag">ما نقوم به</span>
-      <h2>تصنيع <em>وتركيب</em></h2>
-      <p>نقوم بتصنيع وتركيب سبع فئات من أنظمة الألمنيوم والزجاج لصالح كبار المقاولين الرئيسيين في الإمارات. جميع الأعمال تتم داخلياً من مصنعنا في عجمان وتُنفذ بواسطة فرق الموقع الخاصة بنا.</p>
+    <div class="s__head s__head--center reveal">
+      <span class="s__tag">ماذا نقدم</span>
+      <h2>حلول واجهات <em>متكاملة</em></h2>
+      <p>من التنسيق التصميمي والتصنيع إلى التركيب الميداني — نتولى كل مرحلة داخلياً في جميع الإمارات.</p>
     </div>
-    <div class="callout">
-      <h4>ملاحظة مهمة</h4>
-      <p>تعمل مدينة السعادة حصرياً كمقاول من الباطن (B2B). نعمل فقط مع مقاولي الألمنيوم والزجاج الرئيسيين — وليس مباشرة مع المطورين أو الاستشاريين أو العملاء النهائيين. يتم توفير المواد وأنظمة البروفيلات من قبل المقاول الرئيسي.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICE 1: Curtain Walls -->
-<section class="s s--gray" data-r>
-  <div class="s__inner">
-    <div class="sd">
-      <div class="sd__img">
-        <img src="../img/projects/aykon-800.webp" alt="تركيب حائط ستائري في مشروع AYKON City" width="800" height="600" loading="lazy">
+    <div class="svc-grid">
+      <div class="svc stagger">
+        <img src="../img/services/curtain-wall.jpg" alt="واجهة جدار ستائري زجاجي" loading="lazy">
+        <div class="svc__overlay"></div>
+        <div class="svc__content"><div class="svc__num">01</div><h3>الجدران الستائرية</h3><p>واجهات موحدة ونظام العصا للأبراج العالية والمباني التجارية.</p></div>
       </div>
-      <div class="sd__text">
-        <span class="s__tag">01</span>
-        <h3>أنظمة الحوائط <em>الستائرية</em></h3>
-        <p>واجهات حوائط ستائرية عالية الأداء بنظامي الوحدات الجاهزة والأعمدة للأبراج التجارية والسكنية والمشاريع متعددة الاستخدامات. نتولى التصنيع الكامل والتجميع والتركيب في الموقع.</p>
-        <div class="sd__features">
-          <div class="sd__feature">تصنيع وحدات جاهزة بوصلات محكمة الإغلاق من المصنع</div>
-          <div class="sd__feature">تجميع بنظام الأعمدة للأشكال الهندسية المعقدة</div>
-          <div class="sd__feature">تزجيج بالسيليكون الهيكلي وأنظمة ألواح الضغط</div>
-          <div class="sd__feature">متوافق مع بروفيلات Technal وSch&uuml;co وReynaers وAluK</div>
-        </div>
+      <div class="svc stagger">
+        <img src="../img/services/acp-cladding.jpg" alt="كسوة ألواح الألمنيوم المركبة ACP" loading="lazy">
+        <div class="svc__overlay"></div>
+        <div class="svc__content"><div class="svc__num">02</div><h3>كسوة ACP</h3><p>أنظمة ألواح الألمنيوم المركبة بتثبيت مخفي لتشطيبات عصرية نظيفة.</p></div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICE 2: ACP Cladding -->
-<section class="s" data-r>
-  <div class="s__inner">
-    <div class="sd sd--reverse">
-      <div class="sd__img">
-        <img src="../img/projects/malta-800.webp" alt="مشروع كسوة ACP في فلل مالطا" width="800" height="600" loading="lazy">
+      <div class="svc stagger">
+        <img src="../img/services/skylight.jpg" alt="نظام سقف زجاجي" loading="lazy">
+        <div class="svc__overlay"></div>
+        <div class="svc__content"><div class="svc__num">03</div><h3>الأسقف الزجاجية</h3><p>أنظمة أسقف زجاجية هيكلية — أهرامات وتلال وأقبية أسطوانية وهندسات مخصصة.</p></div>
       </div>
-      <div class="sd__text">
-        <span class="s__tag">02</span>
-        <h3>كسوة <em>ACP</em></h3>
-        <p>أنظمة كسوة الألواح المركبة من الألمنيوم بإطارات تثبيت مخفية لأغلفة المباني العصرية والأنيقة. يتم التفريز والطي بدقة في مصنعنا للتجميع السلس في الموقع.</p>
-        <div class="sd__features">
-          <div class="sd__feature">أنظمة التثبيت المخفي والكاسيت بالبرشام</div>
-          <div class="sd__feature">تفريز وطي CNC لهندسة الألواح الدقيقة</div>
-          <div class="sd__feature">ألواح بقلب مقاوم للحريق من فئة A2 متوفرة</div>
-          <div class="sd__feature">مطابقة ألوان مخصصة وتنسيق التشطيبات</div>
-        </div>
+      <div class="svc stagger">
+        <img src="../img/services/doors-windows.jpg" alt="نظام نوافذ ألمنيوم منزلقة" loading="lazy">
+        <div class="svc__overlay"></div>
+        <div class="svc__content"><div class="svc__num">04</div><h3>الأبواب والنوافذ</h3><p>أنظمة مفصلية ومنزلقة وقابلة للإمالة والدوران والطي مع بروفيلات عازلة حرارياً.</p></div>
+      </div>
+      <div class="svc stagger">
+        <img src="../img/services/glass-balustrade.jpg" alt="درابزين زجاجي بدون إطار" loading="lazy">
+        <div class="svc__overlay"></div>
+        <div class="svc__content"><div class="svc__num">05</div><h3>الدرابزين الزجاجي</h3><p>أنظمة بدون إطار وشبه بدون إطار للشرفات والسلالم وحواف المنصات.</p></div>
+      </div>
+      <div class="svc stagger">
+        <img src="../img/services/rolling-shutter.jpg" alt="شتر ألمنيوم متحرك" loading="lazy">
+        <div class="svc__overlay"></div>
+        <div class="svc__content"><div class="svc__num">06</div><h3>الشتر المتحرك</h3><p>شتر ألمنيوم آلي ويدوي للأمان والخصوصية والتحكم في المناخ.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICE 3: Skylights -->
-<section class="s s--gray" data-r>
+<!-- SERVICE DETAILS -->
+<section class="s s--gray" style="padding-top:0;padding-bottom:0">
+  <div style="max-width:1200px;margin:0 auto">
+
+    <!-- Curtain Walls -->
+    <div class="svc-detail reveal" id="curtain-walls">
+      <div class="svc-detail__img">
+        <img src="../img/services/curtain-wall.jpg" alt="نظام جدار ستائري" loading="lazy">
+      </div>
+      <div class="svc-detail__text">
+        <div class="svc-detail__num">01 — خدمة</div>
+        <h3>أنظمة الجدران الستائرية</h3>
+        <p>نصنع ونركب أنظمة الجدران الستائرية الموحدة والعصا للأبراج التجارية والمشاريع متعددة الاستخدامات والمباني السكنية العالية. يضمن التصنيع بتقنية CNC داخلياً تجميعات دقيقة تلبي أدق التفاوتات.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة جدران ستائرية موحدة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة جدران ستائرية بالعصا</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>زجاج هيكلي بوصلات سيليكون</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>بروفيلات ألمنيوم بعزل حراري</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ACP Cladding -->
+    <div class="svc-detail reveal" id="acp-cladding">
+      <div class="svc-detail__img">
+        <img src="../img/services/acp-cladding.jpg" alt="نظام كسوة ACP" loading="lazy">
+      </div>
+      <div class="svc-detail__text">
+        <div class="svc-detail__num">02 — خدمة</div>
+        <h3>كسوة ACP</h3>
+        <p>أنظمة كسوة ألواح الألمنيوم المركبة بتثبيت مخفي ومكشوف. نتولى كل شيء من تجويف وطي الألواح في مصنعنا إلى التركيب الكامل في الموقع بما في ذلك الهيكل الفرعي.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة كاسيت بتثبيت مخفي</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة بمسامير مكشوفة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>ألواح بنواة مقاومة للحريق FR</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>خيارات ألوان وتشطيبات مخصصة</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Skylights -->
+    <div class="svc-detail reveal" id="skylights">
+      <div class="svc-detail__img">
+        <img src="../img/services/skylight.jpg" alt="نظام سقف زجاجي" loading="lazy">
+      </div>
+      <div class="svc-detail__text">
+        <div class="svc-detail__num">03 — خدمة</div>
+        <h3>الأسقف الزجاجية</h3>
+        <p>أنظمة أسقف زجاجية هيكلية مصممة للإضاءة الطبيعية والأثر المعماري. نصمم ونركب أنظمة أسقف هرمية وتلالية وأقبية أسطوانية وهندسات مخصصة للردهات والبهو والمساحات العامة.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أسقف هرمية وتلالية</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة أقبية أسطوانية</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>تكوينات هندسية مخصصة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>خيارات زجاج آمان مغلف</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Doors & Windows -->
+    <div class="svc-detail reveal" id="doors-windows">
+      <div class="svc-detail__img">
+        <img src="../img/services/doors-windows.jpg" alt="أنظمة أبواب ونوافذ ألمنيوم" loading="lazy">
+      </div>
+      <div class="svc-detail__text">
+        <div class="svc-detail__num">04 — خدمة</div>
+        <h3>الأبواب والنوافذ</h3>
+        <p>مجموعة كاملة من أنظمة أبواب ونوافذ الألمنيوم بما في ذلك المفصلية والقابلة للإمالة والدوران والمنزلقة والقابلة للطي. جميع الأنظمة متوفرة مع بروفيلات عازلة حرارياً لكفاءة الطاقة والأداء الصوتي.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>نوافذ مفصلية وقابلة للإمالة والدوران</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>نوافذ وأبواب منزلقة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة طي ثنائي ورفع ومنزلقة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>بروفيلات عازلة حرارياً للعزل</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Glass Balustrades -->
+    <div class="svc-detail reveal" id="balustrades">
+      <div class="svc-detail__img">
+        <img src="../img/services/glass-balustrade.jpg" alt="نظام درابزين زجاجي بدون إطار" loading="lazy">
+      </div>
+      <div class="svc-detail__text">
+        <div class="svc-detail__num">05 — خدمة</div>
+        <h3>الدرابزين الزجاجي</h3>
+        <p>أنظمة درابزين زجاجي بدون إطار وشبه بدون إطار للشرفات والتراسات والسلالم وحواف المنصات. نورد ونركب أنظمة كاملة بما في ذلك قنوات القاعدة وتثبيتات الحوامل والدرابزين.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة قنوات بدون إطار</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>درابزين بتثبيت نقطي</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة أعمدة شبه بدون إطار</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>زجاج آمان مقسى ومغلف</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rolling Shutters -->
+    <div class="svc-detail reveal" id="rolling-shutters">
+      <div class="svc-detail__img">
+        <img src="../img/services/rolling-shutter.jpg" alt="نظام شتر ألمنيوم متحرك" loading="lazy">
+      </div>
+      <div class="svc-detail__text">
+        <div class="svc-detail__num">06 — خدمة</div>
+        <h3>الشتر المتحرك</h3>
+        <p>أنظمة شتر ألمنيوم متحرك آلي ويدوي للتطبيقات التجارية والسكنية. توفر الأمان والخصوصية والتحكم في المناخ والحماية من العواصف مع تكامل جمالي نظيف.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>تشغيل آلي محرك</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>أنظمة يدوية بنابض</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>خيارات شرائح مثقبة</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>تشطيبات ألمنيوم مطلية بالمسحوق</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURES / CAPABILITIES -->
+<section class="s">
   <div class="s__inner">
-    <div class="sd">
-      <div class="sd__img">
-        <img src="../img/projects/harmony1-800.webp" alt="نظام مناور في مشروع Harmony" width="800" height="600" loading="lazy">
-      </div>
-      <div class="sd__text">
-        <span class="s__tag">03</span>
-        <h3><em>المناور</em></h3>
-        <p>أنظمة أسقف زجاجية هيكلية تجلب الإضاءة الطبيعية إلى الردهات والأتريومات والمساحات العامة. مصممة هندسياً للأداء الحراري والعزل المائي ومقاومة أحمال الرياح في مناخ الإمارات.</p>
-        <div class="sd__features">
-          <div class="sd__feature">تكوينات هرمية وحرفية وأسطوانية ومسطحة</div>
-          <div class="sd__feature">أنظمة عوارض ألمنيوم بقطع حراري</div>
-          <div class="sd__feature">خيارات زجاج مصفح ومعزول</div>
-          <div class="sd__feature">أنظمة تصريف وإدارة التكاثف متكاملة</div>
-        </div>
-      </div>
+    <div class="s__head s__head--center reveal">
+      <span class="s__tag">لماذا نحن</span>
+      <h2>قدراتنا <em>الأساسية</em></h2>
+    </div>
+    <div class="features reveal">
+      <div class="feature stagger"><div class="feature__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><h3>تصميم مخصص</h3><p>أنظمة واجهات مصممة لتتوافق مع أي رؤية معمارية.</p></div></div>
+      <div class="feature stagger"><div class="feature__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><h3>تصنيع CNC</h3><p>تشغيل آلي دقيق بـ 17 آلة متخصصة.</p></div></div>
+      <div class="feature stagger"><div class="feature__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><h3>تركيب احترافي</h3><p>أكثر من 50 فنياً مدرباً في جميع الإمارات.</p></div></div>
+      <div class="feature stagger"><div class="feature__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><h3>الصيانة والإصلاح</h3><p>دعم ما بعد البيع وخدمة الضمان.</p></div></div>
+      <div class="feature stagger"><div class="feature__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><h3>ضمان الجودة</h3><p>شهادات أيزو ثلاثية (9001، 14001، 45001).</p></div></div>
+      <div class="feature stagger"><div class="feature__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><h3>كفاءة الطاقة</h3><p>أنظمة عزل حراري وزجاج عالي الأداء.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- SERVICE 4: Doors & Windows -->
-<section class="s" data-r>
+<!-- SYSTEMS WE WORK WITH -->
+<section class="s s--gray">
   <div class="s__inner">
-    <div class="sd sd--reverse">
-      <div class="sd__img">
-        <img src="../img/projects/masaar-800.webp" alt="أبواب ونوافذ مشروع Masaar" width="800" height="600" loading="lazy">
-      </div>
-      <div class="sd__text">
-        <span class="s__tag">04</span>
-        <h3>الأبواب <em>والنوافذ</em></h3>
-        <p>تصنيع شامل للأبواب والنوافذ بجميع التكوينات القياسية والمتميزة. بروفيلات بقطع حراري مع إقفال متعدد النقاط لتوفير الأمان وعزل الصوت والأداء في استهلاك الطاقة.</p>
-        <div class="sd__features">
-          <div class="sd__feature">أنظمة فتح جانبي وانزلاقي وإمالة ودوران وقابلة للطي</div>
-          <div class="sd__feature">بروفيلات بقطع حراري لكفاءة الطاقة</div>
-          <div class="sd__feature">تركيب إقفال متعدد النقاط والأجهزة</div>
-          <div class="sd__feature">أبواب انزلاقية كبيرة بارتفاع يصل إلى 3 أمتار</div>
-        </div>
-      </div>
+    <div class="s__head s__head--center reveal">
+      <span class="s__tag">أنظمة متميزة</span>
+      <h2>الأنظمة التي <em>نعمل بها</em></h2>
+      <p>خبرة عملية في تصنيع وتركيب أنظمة مزودي الألمنيوم الرائدين عالمياً.</p>
+    </div>
+    <div class="logo-grid reveal">
+      <div class="logo-item"><img src="../img/logos/schuco.svg" alt="Schüco" loading="lazy"></div>
+      <div class="logo-item"><img src="../img/logos/technal.svg" alt="Technal" loading="lazy"></div>
+      <div class="logo-item"><img src="../img/logos/aluk.svg" alt="AluK" loading="lazy"></div>
+      <div class="logo-item"><img src="../img/logos/alumil.svg" alt="Alumil" loading="lazy"></div>
+      <div class="logo-item"><img src="../img/logos/gutmann.svg" alt="Gutmann" loading="lazy"></div>
+      <div class="logo-item"><img src="../img/logos/gulf-extrusion.svg" alt="Gulf Extrusion" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<!-- SERVICE 5: Glass Balustrades -->
-<section class="s s--gray" data-r>
-  <div class="s__inner">
-    <div class="sd">
-      <div class="sd__img">
-        <img src="../img/projects/thecove-800.webp" alt="تركيب درابزينات زجاجية في The Cove" width="800" height="600" loading="lazy">
-      </div>
-      <div class="sd__text">
-        <span class="s__tag">05</span>
-        <h3>الدرابزينات <em>الزجاجية</em></h3>
-        <p>أنظمة درابزينات زجاجية بدون إطار وشبه بدون إطار للشرفات والسلالم وحواف المنصات ومحيط المسابح. مصممة هندسياً للسلامة وبأقل عائق بصري.</p>
-        <div class="sd__features">
-          <div class="sd__feature">أنظمة بدون إطار بقنوات وتثبيت نقطي</div>
-          <div class="sd__feature">شبه بدون إطار مع أعمدة ألمنيوم أو ستانلس ستيل</div>
-          <div class="sd__feature">زجاج أمان مقسى ومصفح</div>
-          <div class="sd__feature">دمج الدرابزين ببروفيلات دائرية ومستطيلة</div>
-        </div>
-      </div>
+<!-- COMPANY PROFILE DOWNLOAD -->
+<section class="s dl">
+  <div class="dl__inner reveal">
+    <div class="dl__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
     </div>
-  </div>
-</section>
-
-<!-- SERVICE 6: Automatic Doors -->
-<section class="s" data-r>
-  <div class="s__inner">
-    <div class="sd sd--reverse">
-      <div class="sd__img">
-        <img src="../img/projects/aloft1-800.webp" alt="تركيب أبواب أوتوماتيكية في فندق Aloft" width="800" height="600" loading="lazy">
-      </div>
-      <div class="sd__text">
-        <span class="s__tag">06</span>
-        <h3>الأبواب <em>الأوتوماتيكية</em></h3>
-        <p>أنظمة أبواب آلية انزلاقية ومفصلية ودوارة للفنادق والمباني التجارية ومساحات التجزئة. تركيب شامل يشمل المحركات وأجهزة الاستشعار والامتثال لمعايير السلامة.</p>
-        <div class="sd__features">
-          <div class="sd__feature">محركات أوتوماتيكية انزلاقية ومفصلية وتلسكوبية</div>
-          <div class="sd__feature">دمج مستشعرات الحركة وأشعة السلامة</div>
-          <div class="sd__feature">تكوينات مقاومة للحريق وفتح الطوارئ</div>
-          <div class="sd__feature">دعم الصيانة والخدمة</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICE 7: Rolling Shutters -->
-<section class="s s--gray" data-r>
-  <div class="s__inner">
-    <div class="sd">
-      <div class="sd__img">
-        <img src="../img/projects/dubaisouth-800.webp" alt="تركيب شتر رول في Dubai South" width="800" height="600" loading="lazy">
-      </div>
-      <div class="sd__text">
-        <span class="s__tag">07</span>
-        <h3>الشتر <em>الرول</em></h3>
-        <p>شتر رول ألمنيوم آلي ويدوي للمستودعات ووحدات التجزئة ومداخل المواقف والتطبيقات السكنية. مصمم للمتانة والأمان والتشغيل اليومي السلس.</p>
-        <div class="sd__features">
-          <div class="sd__feature">خيارات محرك أنبوبي ونظام سلسلة آلي</div>
-          <div class="sd__feature">بروفيلات شرائح مثقبة وصلبة وبلوحات رؤية</div>
-          <div class="sd__feature">أدلة قفل الرياح للتعرض العالي للرياح</div>
-          <div class="sd__feature">تحكم عن بعد وتكامل مع المنزل الذكي</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section class="s s--gray" style="padding-top:0" data-r>
-  <div class="s__inner">
-    <div class="s__head s__head--center">
-      <span class="s__tag">آلية العمل</span>
-      <h2>مراحل <em>العمل</em></h2>
-      <p>من رسومات التصنيع إلى التسليم، سير عمل واضح من خمس خطوات يبقي كل مشروع على المسار الصحيح.</p>
-    </div>
-    <div class="process">
-      <div class="process__step">
-        <h4>رسومات التصنيع</h4>
-        <p>إعداد رسومات تصنيع تفصيلية من المخططات المعمارية المعتمدة من الاستشاري.</p>
-      </div>
-      <div class="process__step">
-        <h4>تنسيق المواد</h4>
-        <p>تأكيد أنظمة البروفيلات ومواصفات الزجاج مع المقاول الرئيسي.</p>
-      </div>
-      <div class="process__step">
-        <h4>التصنيع في المصنع</h4>
-        <p>قص CNC وتشغيل وتجميع وفحص الجودة في منشأتنا بعجمان.</p>
-      </div>
-      <div class="process__step">
-        <h4>التركيب في الموقع</h4>
-        <p>فرقنا تقوم بتركيب جميع الأنظمة في الموقع مع الالتزام الكامل بمعايير السلامة والتنسيق.</p>
-      </div>
-      <div class="process__step">
-        <h4>التسليم والملاحظات</h4>
-        <p>الفحص النهائي وتصفية الملاحظات ووثائق التسليم لإغلاق المشروع.</p>
-      </div>
+    <div class="dl__text">
+      <h3>ملف الشركة</h3>
+      <p>حمّل ملف التأهيل المسبق المكون من 33 صفحة — محفظة المشاريع وقائمة المعدات ونظرة على القوى العاملة وشهادات الأيزو والمزيد.</p>
+      <a href="../downloads/Madinat_Al_Saada_PQ_2026_final.pdf" class="dl__btn" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        تحميل PQ (PDF)
+      </a>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta">
-  <div class="cta__bg" style="background-image:url('../img/factory/factory-overview.webp')" role="presentation"></div>
-  <div class="cta__content" data-r>
-    <h2>تحتاج خدمات <em>تصنيع؟</em></h2>
-    <p>سواء كانت حوائط ستائرية لبرج من 50 طابقاً أو شتر رول لمحلات تجارية، لدينا القدرة والفريق. تواصل معنا.</p>
+  <div class="cta__content reveal">
+    <span class="s__tag" style="color:var(--accent-light)">ابدأ الآن</span>
+    <h2>هل لديك مشروع في بالك؟</h2>
+    <p class="cta__lead">تواصل معنا اليوم لمناقشة متطلبات واجهتك. فريقنا جاهز لتقديم حلول ألمنيوم دقيقة.</p>
     <div class="cta__btns">
-      <a href="contact.html" class="btn--white">طلب عرض سعر</a>
+      <a href="contact.html" class="btn--amber">تواصل معنا</a>
       <a href="tel:+97165260556" class="btn--outline">اتصل 06-5260556</a>
     </div>
   </div>
@@ -486,41 +492,51 @@
 
 <!-- FOOTER -->
 <footer class="foot">
-  <div class="foot__grid">
-    <div class="foot__brand">
-      <img src="../img/logo.webp" alt="مدينة السعادة" width="36" height="36">
-      <p>تصنيع وتركيب ألمنيوم دقيق لصالح كبار المقاولين في الإمارات. موثوقون منذ 2016.</p>
+  <div class="foot__brand-large">
+    <h2>Madinat Al Saada</h2>
+    <p>Aluminium &amp; Glass Works LLC</p>
+    <div class="foot__social">
+      <a href="https://www.linkedin.com/company/madinatalsaada/" target="_blank" rel="noopener" aria-label="لينكدإن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
     </div>
-    <div><h4>الشركة</h4><div class="foot__links"><a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="projects.html">مشاريعنا</a><a href="equipment.html">المعدات</a><a href="technical.html">المواصفات</a></div></div>
-    <div><h4>الخدمات</h4><div class="foot__links"><a href="services.html">حوائط ستائرية</a><a href="services.html">كسوة ACP</a><a href="services.html">مناور</a><a href="services.html">أبواب ونوافذ</a><a href="services.html">درابزينات</a></div></div>
-    <div><h4>تواصل معنا</h4><ul class="foot__contact"><li>شارع عمّان، المنطقة الصناعية 1، عجمان</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
   </div>
-  <div class="foot__bottom">
-    <p>&copy; <span class="yr">2026</span> مدينة السعادة للألمنيوم والزجاج ذ.م.م</p>
-    <p>ISO 9001 &middot; ISO 14001 &middot; ISO 45001</p>
+  <div class="foot__grid">
+    <div><h4>الشركة</h4><div class="foot__links"><a href="about.html">من نحن</a><a href="services.html">خدماتنا</a><a href="projects.html">المشاريع</a><a href="equipment.html">المعدات</a><a href="technical.html">التقنية</a><a href="faq.html">الأسئلة الشائعة</a></div></div>
+    <div><h4>الخدمات</h4><div class="foot__links"><a href="services.html">الجدران الستائرية</a><a href="services.html">كسوة ACP</a><a href="services.html">الأسقف الزجاجية</a><a href="services.html">الأبواب والنوافذ</a><a href="services.html">الدرابزين</a></div></div>
+    <div><h4>اتصل بنا</h4><ul class="foot__contact"><li>شارع عمان، المنطقة الصناعية 1، عجمان</li><li><a href="tel:+97165260556">+971 6 526 0556</a></li><li><a href="mailto:info@madinatalsaada.ae">info@madinatalsaada.ae</a></li></ul></div>
   </div>
+  <div class="foot__bottom"><p>&copy; <span class="yr">2026</span> مدينة السعادة للألمنيوم والزجاج ذ.م.م</p><p>ISO 9001 · ISO 14001 · ISO 45001</p></div>
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="واتساب">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+<a href="https://wa.me/97165260556" class="wa" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 
 <script>
-// Nav
-const burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
-burger.addEventListener('click',()=>{const o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''});
-drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}));
-// Scroll nav
-let last=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.classList.toggle('is-solid',y>80);last=y},{passive:true});
-// Reveal
-const ro=new IntersectionObserver(e=>e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('[data-r]').forEach(e=>ro.observe(e));
-// Year
-document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());
+(function(){
+  'use strict';
+  var burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),nav=document.getElementById('nav');
+
+  /* NAV */
+  if(burger&&drawer&&nav){
+    burger.addEventListener('click',function(){var o=burger.classList.toggle('is-open');drawer.classList.toggle('is-open');burger.setAttribute('aria-expanded',String(o));document.body.style.overflow=o?'hidden':''});
+    for(var i=0,links=drawer.querySelectorAll('a');i<links.length;i++)links[i].addEventListener('click',function(){burger.classList.remove('is-open');drawer.classList.remove('is-open');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''});
+    var nt=false;
+    window.addEventListener('scroll',function(){if(!nt){requestAnimationFrame(function(){nav.classList.toggle('is-solid',window.scrollY>60);nt=false});nt=true}},{passive:true});
+  }
+
+  /* SCROLL REVEAL */
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++)if(e[i].isIntersecting){e[i].target.classList.add('is-visible');ro.unobserve(e[i].target)}},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+    var revs=document.querySelectorAll('.reveal');for(var i=0;i<revs.length;i++)ro.observe(revs[i]);
+    var so=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++)if(e[i].isIntersecting){var el=e[i].target,sibs=el.parentElement.querySelectorAll('.stagger'),idx=0;
+      for(var j=0;j<sibs.length;j++)if(sibs[j]===el){idx=j;break}
+      el.style.transitionDelay=(idx*.08)+'s';el.classList.add('is-visible');so.unobserve(el)}},{threshold:.05,rootMargin:'0px 0px -30px 0px'});
+    var stags=document.querySelectorAll('.stagger');for(var i=0;i<stags.length;i++)so.observe(stags[i]);
+  }
+
+  /* YEAR */
+  var yrs=document.querySelectorAll('.yr');for(var i=0;i<yrs.length;i++)yrs[i].textContent=new Date().getFullYear();
+})();
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","provider":{"@type":"Organization","name":"مدينة السعادة للألمنيوم والزجاج ذ.م.م","url":"https://madinatalsaada.ae"},"serviceType":"تصنيع وتركيب واجهات الألمنيوم","areaServed":{"@type":"Country","name":"الإمارات العربية المتحدة"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"خدمات الواجهات","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"أنظمة الحوائط الستائرية","description":"واجهات بنظام الوحدات الجاهزة والأعمدة للأبراج والمباني التجارية"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"كسوة ACP","description":"أنظمة ألواح الألمنيوم المركبة بتثبيت مخفي لتشطيبات عصرية ونظيفة"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"المناور","description":"أنظمة أسقف زجاجية هيكلية تشمل الأهرامات والحروف والأقبية الأسطوانية"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"الأبواب والنوافذ","description":"أنظمة فتح جانبي وانزلاقي وإمالة ودوران وقابلة للطي ببروفيلات بقطع حراري"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"الدرابزينات الزجاجية","description":"أنظمة بدون إطار وشبه بدون إطار للشرفات والسلالم وحواف المنصات"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"الأبواب الأوتوماتيكية","description":"أنظمة أبواب آلية انزلاقية ومفصلية ودوارة"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"الشتر الرول","description":"شتر ألمنيوم آلي ويدوي للأمان والتحكم المناخي"}}]}}</script>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"تصنيع وتركيب واجهات الألمنيوم","provider":{"@type":"Organization","name":"Madinat Al Saada Aluminium & Glass Works LLC","url":"https://madinatalsaada.ae","telephone":"+971-6-526-0556"},"areaServed":{"@type":"Country","name":"الإمارات العربية المتحدة"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"خدمات الواجهات","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"أنظمة الجدران الستائرية","description":"تصنيع وتركيب جدران ستائرية موحدة وبنظام العصا"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"كسوة ACP","description":"أنظمة كسوة ألواح الألمنيوم المركبة"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"الأسقف الزجاجية","description":"أنظمة أسقف وسقف زجاجية هيكلية"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"الأبواب والنوافذ","description":"أنظمة أبواب ونوافذ ألمنيوم بعزل حراري"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"الدرابزين الزجاجي","description":"أنظمة درابزين زجاجي بدون إطار وشبه بدون إطار"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"الشتر المتحرك","description":"أنظمة شتر ألمنيوم متحرك آلي ويدوي"}}]}}</script>
 </body>
 </html>
