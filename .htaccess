@@ -10,9 +10,65 @@ Options -Indexes
 Options +FollowSymLinks
 
 # --------------------------------------------------------------------------
+#  HARDENING — site is 100% static HTML, NO PHP/CGI execution allowed.
+#  Even if an attacker uploads a PHP file, it will be served as plain text
+#  instead of executed.  (Recovered from full compromise on 2026-05-08.)
+# --------------------------------------------------------------------------
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|php8|phar|pht|phps|cgi|pl|py|rb|asp|aspx|jsp|sh|exe)$">
+    Require all denied
+    SetHandler default-handler
+    ForceType text/plain
+</FilesMatch>
+
+# Disable PHP engine entirely (defense in depth)
+<IfModule mod_php.c>
+    php_admin_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_admin_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_admin_flag engine off
+</IfModule>
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+
+# Block sensitive / commonly-probed files
+<FilesMatch "(^\.htaccess$|^\.htpasswd$|^\.git|^\.env|composer\.(json|lock)$|package(-lock)?\.json$|wp-config|readme\.html$|license\.txt$)">
+    Require all denied
+</FilesMatch>
+
+# Block backup/temp file extensions
+<FilesMatch "(~|\.bak|\.backup|\.swp|\.old|\.orig|\.save|\.tmp)$">
+    Require all denied
+</FilesMatch>
+
+RewriteEngine On
+
+# Block requests for WordPress/CMS attack paths (no CMS here, never will be)
+RewriteRule ^wp-admin(/.*)?$ - [F,L]
+RewriteRule ^wp-content(/.*)?$ - [F,L]
+RewriteRule ^wp-includes(/.*)?$ - [F,L]
+RewriteRule ^wordpress(/.*)?$ - [F,L]
+RewriteRule ^xmlrpc\.php$ - [F,L]
+RewriteRule ^wp-(login|cron|config|signup|activate|trackback|mail|comments-post|blog-header|load|settings|links-opml)\.php$ - [F,L]
+RewriteRule ^(install|upgrade|setup-config)\.php$ - [F,L]
+
+# Block User-Agents commonly used for scanning / exploitation
+RewriteCond %{HTTP_USER_AGENT} (sqlmap|nikto|nmap|masscan|w3af|acunetix|wpscan|nessus|openvas|metasploit|hydra|havij|jbrofuzz|burpsuite|paros|httrack|webcopier) [NC]
+RewriteRule .* - [F,L]
+
+# Block common exploitation patterns in query strings
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} (base64_encode|base64_decode|eval\(|system\(|exec\(|shell_exec|passthru|proc_open) [NC,OR]
+RewriteCond %{QUERY_STRING} (concat.*\(|union.*select|select.*from|drop.*table) [NC]
+RewriteRule .* - [F,L]
+
+# --------------------------------------------------------------------------
 #  FORCE HTTPS
 # --------------------------------------------------------------------------
-RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
